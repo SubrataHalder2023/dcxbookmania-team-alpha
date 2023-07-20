@@ -10,7 +10,7 @@
         <requires-extension name="dcxbookmaniacore"/>
                 		
         
-        <coremodule generated="true" manager="de.hybris.platform.jalo.extension.GenericManager" packageroot="com.dcxbookmania.initialdata"/>
+        <coremodule generated="true" manager="de.hybris.platform.jalo.extension.GenericManager" packageroot="com.dcx.bookmania.initialdata"/>
                 		
         
         	

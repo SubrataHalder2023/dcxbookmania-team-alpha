@@ -5,7 +5,7 @@
 # Import the Content Catalog
 #
 $contentCatalog=dcxbookmaniaContentCatalog
-$languages=ja,en,de,zh
+$languages=en
 
 # Content catalog for CMS contents
 INSERT_UPDATE ContentCatalog;id[unique=true]

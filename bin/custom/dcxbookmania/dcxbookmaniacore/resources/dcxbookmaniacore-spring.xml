@@ -19,12 +19,12 @@
 	<import resource="classpath:/dcxbookmaniacore/integration/hot-folder-common-spring.xml"/>
 
 	<!-- SystemSetup for the DcxbookmaniaCore -->
-	<bean id="acceleratorCoreSystemSetup" class="com.dcxbookmania.core.setup.CoreSystemSetup"
+	<bean id="acceleratorCoreSystemSetup" class="com.dcx.bookmania.core.setup.CoreSystemSetup"
 	       parent="abstractCoreSystemSetup"/>
 
 	<!-- Solr field value providers -->
 
-	<bean id="volumeAwareProductPriceValueProvider" class="com.dcxbookmania.core.search.solrfacetsearch.provider.impl.VolumeAwareProductPriceValueProvider"  parent="abstractPropertyFieldValueProvider">
+	<bean id="volumeAwareProductPriceValueProvider" class="com.dcx.bookmania.core.search.solrfacetsearch.provider.impl.VolumeAwareProductPriceValueProvider"  parent="abstractPropertyFieldValueProvider">
         <property name="fieldNameProvider" ref="solrFieldNameProvider"/>
         <property name="priceService" ref="priceService"/>
         <property name="commonI18NService" ref="commonI18NService"/>
@@ -34,9 +34,9 @@
         <property name="catalogVersionService" ref="catalogVersionService"/>
     </bean>
 
-    <bean id="volumePriceComparator" class="com.dcxbookmania.core.comparators.VolumeAwarePriceInformationComparator" scope="singleton"/>
+    <bean id="volumePriceComparator" class="com.dcx.bookmania.core.comparators.VolumeAwarePriceInformationComparator" scope="singleton"/>
 
-    <bean id="productVolumePricesProvider" class="com.dcxbookmania.core.search.solrfacetsearch.provider.impl.ProductVolumePricesProvider"  parent="abstractPropertyFieldValueProvider">
+    <bean id="productVolumePricesProvider" class="com.dcx.bookmania.core.search.solrfacetsearch.provider.impl.ProductVolumePricesProvider"  parent="abstractPropertyFieldValueProvider">
         <property name="fieldNameProvider" ref="solrFieldNameProvider"/>
         <property name="priceService" ref="priceService"/>
     </bean>
@@ -148,13 +148,13 @@
 	</bean>
 
 	<bean id="colorFacetValueProvider"
-	      class="com.dcxbookmania.core.search.solrfacetsearch.provider.impl.ColorFacetValueProvider"
+	      class="com.dcx.bookmania.core.search.solrfacetsearch.provider.impl.ColorFacetValueProvider"
 	       parent="abstractPropertyFieldValueProvider">
 		<property name="fieldNameProvider" ref="solrFieldNameProvider"/>
 	</bean>
 
 	<bean id="colorFacetDisplayNameProvider"
-	      class="com.dcxbookmania.core.search.solrfacetsearch.provider.impl.ColorFacetDisplayNameProvider"
+	      class="com.dcx.bookmania.core.search.solrfacetsearch.provider.impl.ColorFacetDisplayNameProvider"
 	      >
 		<property name="enumerationService" ref="enumerationService"/>
 		<property name="i18nService" ref="i18nService"/>
@@ -162,25 +162,25 @@
 	</bean>
 
 	<bean id="apparelPointOfServiceFacetDisplayNameProvider"
-	      class="com.dcxbookmania.core.search.solrfacetsearch.provider.impl.PointOfServiceFacetDisplayNameProvider"
+	      class="com.dcx.bookmania.core.search.solrfacetsearch.provider.impl.PointOfServiceFacetDisplayNameProvider"
 	      >
 		<property name="pointOfServiceService" ref="pointOfServiceService"/>
 	</bean>
 
 	<bean id="electronicsPointOfServiceFacetDisplayNameProvider"
-	      class="com.dcxbookmania.core.search.solrfacetsearch.provider.impl.PointOfServiceFacetDisplayNameProvider"
+	      class="com.dcx.bookmania.core.search.solrfacetsearch.provider.impl.PointOfServiceFacetDisplayNameProvider"
 	      >
 		<property name="pointOfServiceService" ref="pointOfServiceService"/>
 	</bean>
 
 	<bean id="genderValueProvider"
-	      class="com.dcxbookmania.core.search.solrfacetsearch.provider.impl.GenderValueProvider"
+	      class="com.dcx.bookmania.core.search.solrfacetsearch.provider.impl.GenderValueProvider"
 	       parent="abstractPropertyFieldValueProvider">
 		<property name="fieldNameProvider" ref="solrFieldNameProvider"/>
 	</bean>
 
 	<bean id="genderFacetDisplayNameProvider"
-	      class="com.dcxbookmania.core.search.solrfacetsearch.provider.impl.GenderFacetDisplayNameProvider"
+	      class="com.dcx.bookmania.core.search.solrfacetsearch.provider.impl.GenderFacetDisplayNameProvider"
 	      >
 		<property name="enumerationService" ref="enumerationService"/>
 		<property name="i18nService" ref="i18nService"/>
@@ -192,61 +192,61 @@
 		must be configured with a lookup method.
 	-->
 	<bean id="orderCancelledEventListener"
-	      class="com.dcxbookmania.core.event.OrderCancelledEventListener" parent="abstractAcceleratorSiteEventListener">
+	      class="com.dcx.bookmania.core.event.OrderCancelledEventListener" parent="abstractAcceleratorSiteEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 	<bean id="orderRefundEventListener"
-	      class="com.dcxbookmania.core.event.OrderRefundEventListener" parent="abstractAcceleratorSiteEventListener">
+	      class="com.dcx.bookmania.core.event.OrderRefundEventListener" parent="abstractAcceleratorSiteEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 	<bean id="customerRegistrationEventListener"
-	      class="com.dcxbookmania.core.event.RegistrationEventListener" parent="abstractAcceleratorSiteEventListener">
+	      class="com.dcx.bookmania.core.event.RegistrationEventListener" parent="abstractAcceleratorSiteEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 	<bean id="forgottenPasswordEventListener"
-	      class="com.dcxbookmania.core.event.ForgottenPasswordEventListener" parent="abstractAcceleratorSiteEventListener">
+	      class="com.dcx.bookmania.core.event.ForgottenPasswordEventListener" parent="abstractAcceleratorSiteEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
-	<bean id="submitOrderEventListener" class="com.dcxbookmania.core.event.SubmitOrderEventListener" parent="abstractAcceleratorSiteEventListener">
+	<bean id="submitOrderEventListener" class="com.dcx.bookmania.core.event.SubmitOrderEventListener" parent="abstractAcceleratorSiteEventListener">
 		<property name="businessProcessService" ref="businessProcessService"/>
 		<property name="modelService" ref="modelService"/>
 		<property name="baseStoreService" ref="baseStoreService"/>
 	</bean>
 	<bean id="orderConfirmationEventListener"
-	      class="com.dcxbookmania.core.event.OrderConfirmationEventListener" parent="abstractAcceleratorSiteEventListener">
+	      class="com.dcx.bookmania.core.event.OrderConfirmationEventListener" parent="abstractAcceleratorSiteEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 	<bean id="sendDeliveryMessageEventListener"
-	      class="com.dcxbookmania.core.event.SendDeliveryMessageEventListener" parent="abstractAcceleratorSiteEventListener">
+	      class="com.dcx.bookmania.core.event.SendDeliveryMessageEventListener" parent="abstractAcceleratorSiteEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 	<bean id="sendReadyForPickupMessageEventListener"
-	      class="com.dcxbookmania.core.event.SendReadyForPickupMessageEventListener" parent="abstractAcceleratorSiteEventListener">
+	      class="com.dcx.bookmania.core.event.SendReadyForPickupMessageEventListener" parent="abstractAcceleratorSiteEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 	<bean id="sendOrderPartiallyCanceledMessageEventListener"
-	      class="com.dcxbookmania.core.event.SendOrderPartiallyCanceledMessageEventListener" parent="abstractAcceleratorSiteEventListener">
+	      class="com.dcx.bookmania.core.event.SendOrderPartiallyCanceledMessageEventListener" parent="abstractAcceleratorSiteEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 	<bean id="sendOrderPartiallyRefundedMessageEventListener"
-	      class="com.dcxbookmania.core.event.SendOrderPartiallyRefundedMessageEventListener" parent="abstractAcceleratorSiteEventListener">
+	      class="com.dcx.bookmania.core.event.SendOrderPartiallyRefundedMessageEventListener" parent="abstractAcceleratorSiteEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 	<bean id="sendNotPickedUpConsignmentCanceledMessageEventListener"
-	      class="com.dcxbookmania.core.event.SendNotPickedUpConsignmentCanceledMessageEventListener" parent="abstractAcceleratorSiteEventListener">
+	      class="com.dcx.bookmania.core.event.SendNotPickedUpConsignmentCanceledMessageEventListener" parent="abstractAcceleratorSiteEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
-	<bean id="orderCompletedEventListener" class="com.dcxbookmania.core.event.OrderCompletedEventListener" parent="abstractAcceleratorSiteEventListener">
+	<bean id="orderCompletedEventListener" class="com.dcx.bookmania.core.event.OrderCompletedEventListener" parent="abstractAcceleratorSiteEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
@@ -359,7 +359,7 @@
 	</bean>
 
     <bean id="markQuoteNotificationAsSent"
-          class="com.dcxbookmania.core.actions.quote.MarkQuoteNotificationAsSentAction"
+          class="com.dcx.bookmania.core.actions.quote.MarkQuoteNotificationAsSentAction"
           parent="abstractAction" abstract="true">
         <property name="quoteService" ref="quoteService"/>
     </bean>
@@ -367,12 +367,12 @@
 	<!-- Simple Suggestion Service -->
 	<alias alias="simpleSuggestionService" name="defaultSimpleSuggestionService"/>
 	<bean id="defaultSimpleSuggestionService"
-	      class="com.dcxbookmania.core.suggestion.impl.DefaultSimpleSuggestionService" >
+	      class="com.dcx.bookmania.core.suggestion.impl.DefaultSimpleSuggestionService" >
 		<property name="simpleSuggestionDao" ref="simpleSuggestionDao"/>
 	</bean>
 	<alias alias="simpleSuggestionDao" name="defaultSimpleSuggestionDao"/>
 	<bean id="defaultSimpleSuggestionDao"
-	      class="com.dcxbookmania.core.suggestion.dao.impl.DefaultSimpleSuggestionDao"
+	      class="com.dcx.bookmania.core.suggestion.dao.impl.DefaultSimpleSuggestionDao"
 	      parent="abstractItemDao" >
 		<property name="flexibleSearchService" ref="flexibleSearchService"/>
 	</bean>
@@ -389,7 +389,7 @@
 	</bean>
 
 	<bean id="apparelSizeProductReferenceTargetStrategy"
-	      class="com.dcxbookmania.core.strategies.impl.ApparelSizeProductReferenceTargetStrategy">
+	      class="com.dcx.bookmania.core.strategies.impl.ApparelSizeProductReferenceTargetStrategy">
 		<property name="commerceCategoryService" ref="commerceCategoryService"/>
 		<property name="rootCategoryCode" value="categories"/>
 	</bean>
@@ -397,43 +397,43 @@
 	<!-- Sales quote process actions -->
 
 	<!-- quote-->
-	<bean id="quoteBuyerSubmitEventListener" class="com.dcxbookmania.core.event.QuoteBuyerSubmitEventListener"
+	<bean id="quoteBuyerSubmitEventListener" class="com.dcx.bookmania.core.event.QuoteBuyerSubmitEventListener"
 		  parent="abstractEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 
-	<bean id="quoteSalesRepSubmitEventListener" class="com.dcxbookmania.core.event.QuoteSalesRepSubmitEventListener"
+	<bean id="quoteSalesRepSubmitEventListener" class="com.dcx.bookmania.core.event.QuoteSalesRepSubmitEventListener"
 		  parent="abstractEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 
-	<bean id="quoteSellerApprovalSubmitEventListener" class="com.dcxbookmania.core.event.QuoteSellerApprovalSubmitEventListener"
+	<bean id="quoteSellerApprovalSubmitEventListener" class="com.dcx.bookmania.core.event.QuoteSellerApprovalSubmitEventListener"
 		  parent="abstractEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 
-	<bean id="quoteBuyerOrderPlacedEventListener" class="com.dcxbookmania.core.event.QuoteBuyerOrderPlacedEventListener"
+	<bean id="quoteBuyerOrderPlacedEventListener" class="com.dcx.bookmania.core.event.QuoteBuyerOrderPlacedEventListener"
 		  parent="abstractEventListener">
 		<property name="commerceQuoteService" ref="commerceQuoteService"/>
 		<property name="modelService" ref="modelService"/>
 	</bean>
 
-	<bean id="quoteToExpireSoonEventListener" class="com.dcxbookmania.core.event.QuoteToExpireSoonEventListener"
+	<bean id="quoteToExpireSoonEventListener" class="com.dcx.bookmania.core.event.QuoteToExpireSoonEventListener"
 		  parent="abstractEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 	
-	<bean id="quoteExpiredEventListener" class="com.dcxbookmania.core.event.QuoteExpiredEventListener"
+	<bean id="quoteExpiredEventListener" class="com.dcx.bookmania.core.event.QuoteExpiredEventListener"
 		  parent="abstractEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
 	</bean>
 
-	<bean id="quoteCancelEventListener" class="com.dcxbookmania.core.event.QuoteCancelEventListener"
+	<bean id="quoteCancelEventListener" class="com.dcx.bookmania.core.event.QuoteCancelEventListener"
 		  parent="abstractEventListener">
 		<property name="modelService" ref="modelService"/>
 		<property name="businessProcessService" ref="businessProcessService"/>
@@ -472,7 +472,7 @@
 
 	<!-- Quotes email notification jobs -->
 	<bean id="quoteToExpireSoonJobPerformable"
-		  class="com.dcxbookmania.core.job.QuoteToExpireSoonJobPerformable"
+		  class="com.dcx.bookmania.core.job.QuoteToExpireSoonJobPerformable"
 		  parent="abstractJobPerformable">
 		<property name="supportedQuoteStatuses">
 			<set value-type="de.hybris.platform.core.enums.QuoteState">
@@ -486,7 +486,7 @@
 	</bean>
 	
 	<bean id="quoteExpiredJobPerformable"
-		  class="com.dcxbookmania.core.job.QuoteExpiredJobPerformable"
+		  class="com.dcx.bookmania.core.job.QuoteExpiredJobPerformable"
 		  parent="abstractJobPerformable">
 		<property name="supportedQuoteStatuses">
 			<set value-type="de.hybris.platform.core.enums.QuoteState">
@@ -509,7 +509,7 @@
 	
 	<!-- Customer cleanup -->
 	<alias name="defaultCustomerCleanupRelatedObjectsAction" alias="customerCleanupRelatedObjectsAction"/>
-	<bean id="defaultCustomerCleanupRelatedObjectsAction" class="com.dcxbookmania.core.retention.impl.DefaultCustomerCleanupRelatedObjectsAction" parent="abstractExtensibleRemoveCleanupAction">
+	<bean id="defaultCustomerCleanupRelatedObjectsAction" class="com.dcx.bookmania.core.retention.impl.DefaultCustomerCleanupRelatedObjectsAction" parent="abstractExtensibleRemoveCleanupAction">
 		<property name="itemCleanupHooks" ref="customerCleanupHooks"/>
 	</bean>
 	
@@ -534,7 +534,7 @@
 
 	<!-- CsTicket Stagnation action -->
 	<alias name="defaultCSTicketStagnationAction" alias="csTicketStagnationAction"/>
-	<bean id="defaultCSTicketStagnationAction" class="com.dcxbookmania.core.retention.impl.DefaultCSTicketStagnationAction" parent="abstractExtensibleRemoveCleanupAction">
+	<bean id="defaultCSTicketStagnationAction" class="com.dcx.bookmania.core.retention.impl.DefaultCSTicketStagnationAction" parent="abstractExtensibleRemoveCleanupAction">
 		<property name="itemCleanupHooks" ref="csTicketRetentionHooks"/>
 		<property name="ticketBusinessService" ref="ticketBusinessService"/>
 	</bean>

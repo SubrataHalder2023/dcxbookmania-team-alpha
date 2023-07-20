@@ -8,8 +8,12 @@
     <extension name='commerceservicesbackoffice' />
     <extension name='solrfacetsearchbackoffice' />
     <extension name='solrserver' />
-    <extension name='ycommercewebservices' />
-    <extension name='ycommercewebservicestest' />
+    <!-- <extension name='yacceleratorbackoffice' /> -->
+    <!-- <extension name='yacceleratorinitialdata' /> -->
+    <!-- <extension name='yacceleratorfulfilmentprocess' /> -->
+    <!-- <extension name='yacceleratorstorefront' /> -->
+    <!-- <extension name='ycommercewebservices' /> -->
+    <!-- <extension name='ycommercewebservicestest' /> -->
     <extension name='electronicsstore' />
     <extension name='captchaaddon' />
     <extension name='acceleratorwebservicesaddon' />
@@ -40,12 +44,12 @@
     <extension name='pcmbackofficesamplesaddon' />
     <extension name='platformbackoffice' />
     <extension name='notificationoccaddon' />
-	<extension dir="C:\DCXBookMania\hybris\bin/custom/dcxbookmania/dcxbookmaniacore"/>
-    <extension dir="C:\DCXBookMania\hybris\bin/custom/dcxbookmania/dcxbookmaniabackoffice"/>
-    <extension dir="C:\DCXBookMania\hybris\bin/custom/dcxbookmania/dcxbookmaniafacades"/>
-    <extension dir="C:\DCXBookMania\hybris\bin/custom/dcxbookmania/dcxbookmaniafulfilmentprocess"/>
-    <extension dir="C:\DCXBookMania\hybris\bin/custom/dcxbookmania/dcxbookmaniainitialdata"/>
-    <extension dir="C:\DCXBookMania\hybris\bin/custom/dcxbookmania/dcxbookmaniatest"/>
-    <extension dir="C:\DCXBookMania\hybris\bin/custom/dcxbookmania/dcxbookmaniastorefront"/>
+	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniacore"/>
+	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniabackoffice"/>
+	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniafacades"/>
+	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniafulfilmentprocess"/>
+	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniainitialdata"/>
+	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniatest"/>
+	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniastorefront"/>
   </extensions>
 </hybrisconfig>

@@ -55,7 +55,7 @@
 			Filter used to server file resources by bypassing the other filters.
 		</description>
 		<filter-name>resourceFilter</filter-name>
-		<filter-class>com.dcxbookmania.storefront.filters.StaticResourceFilter</filter-class>
+		<filter-class>com.dcx.bookmania.storefront.filters.StaticResourceFilter</filter-class>
 	</filter>
 	
 	<filter>
@@ -115,7 +115,7 @@
 			the platform as parent context. With having the global context set as parent you can access
 			or override beans of the global context and get the 'tenant' scope.
 		</description>
-		<listener-class>com.dcxbookmania.storefront.filters.HybrisStorefrontContextLoaderListener</listener-class>
+		<listener-class>com.dcx.bookmania.storefront.filters.HybrisStorefrontContextLoaderListener</listener-class>
 	</listener>
 
 	<listener>
@@ -158,7 +158,7 @@
 			this web.xml portable to different containers.
 		</description>
 		<servlet-name>DefaultServletAdapter</servlet-name>
-		<servlet-class>com.dcxbookmania.storefront.web.servlet.DefaultServletAdapter</servlet-class>
+		<servlet-class>com.dcx.bookmania.storefront.web.servlet.DefaultServletAdapter</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 

@@ -14,7 +14,7 @@
 
     <alias name="defaultCheckForQuoteAutoApprovalAction" alias="checkForQuoteAutoApprovalAction"/>
     <bean id="defaultCheckForQuoteAutoApprovalAction"
-          class="com.dcxbookmania.core.actions.quote.CheckForQuoteAutoApprovalAction"
+          class="com.dcx.bookmania.core.actions.quote.CheckForQuoteAutoApprovalAction"
           parent="abstractAction">
         <property name="commerceQuoteService" ref="commerceQuoteService"/>
         <property name="quoteService" ref="quoteService"/>
@@ -22,7 +22,7 @@
 
     <alias name="defaultCreateBuyerOfferAction" alias="createBuyerOfferAction"/>
     <bean id="defaultCreateBuyerOfferAction"
-          class="com.dcxbookmania.core.actions.quote.CreateBuyerOfferAction"
+          class="com.dcx.bookmania.core.actions.quote.CreateBuyerOfferAction"
           parent="abstractAction">
         <property name="commerceQuoteService" ref="commerceQuoteService"/>
         <property name="quoteService" ref="quoteService"/>

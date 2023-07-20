@@ -1,0 +1,12 @@
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$supercategories=supercategories(code, $catalogVersion)
+$baseProduct=baseProduct(code,$catalogVersion)
+$approved=approvalstatus(code)[default='approved']
+$lang=en
+
+# Insert Products
+INSERT_UPDATE Product;code[unique=true];$supercategories;name[lang=$lang];summary[lang=$lang];description[lang=$lang];manufacturerName;manufacturerAID;unit(code);ean;variantType(code);$catalogVersion;$approved
+;SH001;SH01;SHRESTH SAH;BEST QUALITY books;BEST horror book of the year;SHRESTH;119;pieces
+;SH002;SH02;SHRESTH KUMAR;BEST QUALITY;COMEDY BOOK OF THE YEAR;SHRESTH;120;pieces

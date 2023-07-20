@@ -13,7 +13,7 @@
         <requires-extension name="ticketsystem"/>
                 		
         
-        <coremodule generated="true" manager="com.dcxbookmania.fulfilmentprocess.jalo.DcxbookmaniaFulfilmentProcessManager" packageroot="com.dcxbookmania.fulfilmentprocess"/>
+        <coremodule generated="true" manager="com.dcx.bookmania.fulfilmentprocess.jalo.DcxbookmaniaFulfilmentProcessManager" packageroot="com.dcx.bookmania.fulfilmentprocess"/>
                 		
         
         <meta key="extgen-template-extension" value="true"/>

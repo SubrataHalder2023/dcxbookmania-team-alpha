@@ -20,7 +20,7 @@
     </bean>
 
     <bean id="markQuoteExpiredEmailAsSent"
-          class="com.dcxbookmania.core.actions.quote.MarkQuoteNotificationAsSentAction"
+          class="com.dcx.bookmania.core.actions.quote.MarkQuoteNotificationAsSentAction"
           parent="markQuoteNotificationAsSent">
         <property name="quoteNotificationType">
             <util:constant

@@ -10,4 +10,4 @@ $lang=en
 
 # Create Content Catalog
 UPDATE ContentCatalog;id[unique=true];name[lang=$lang]
-;dcxbookmaniaContentCatalog;"Dcxbookmania Content Catalog"
+;dcxbookmaniaContentCatalog;"bookstore Content Catalog"

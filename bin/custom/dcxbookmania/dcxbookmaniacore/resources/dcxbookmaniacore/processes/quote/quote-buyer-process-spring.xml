@@ -14,7 +14,7 @@
 
     <alias name="defaultQuoteBuyerSubmitAction" alias="quoteBuyerSubmitAction"/>
     <bean id="defaultQuoteBuyerSubmitAction"
-          class="com.dcxbookmania.core.actions.quote.QuoteBuyerSubmitAction"
+          class="com.dcx.bookmania.core.actions.quote.QuoteBuyerSubmitAction"
           parent="abstractAction">
         <property name="commerceQuoteService" ref="commerceQuoteService"/>
         <property name="quoteService" ref="quoteService"/>

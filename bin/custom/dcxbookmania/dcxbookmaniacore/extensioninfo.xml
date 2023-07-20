@@ -14,7 +14,7 @@
         <requires-extension name="acceleratorcms"/>
                 		
         
-        <coremodule generated="true" manager="com.dcxbookmania.core.jalo.DcxbookmaniaCoreManager" packageroot="com.dcxbookmania.core"/>
+        <coremodule generated="true" manager="com.dcx.bookmania.core.jalo.DcxbookmaniaCoreManager" packageroot="com.dcx.bookmania.core"/>
                 		
         
         		

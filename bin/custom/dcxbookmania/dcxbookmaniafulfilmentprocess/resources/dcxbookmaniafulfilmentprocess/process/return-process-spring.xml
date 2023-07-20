@@ -14,26 +14,26 @@
 
     <!-- Return Process Actions -->
 
-    <bean id="initialReturnAction" class="com.dcxbookmania.fulfilmentprocess.actions.returns.InitialReturnAction" parent="abstractAction"/>
+    <bean id="initialReturnAction" class="com.dcx.bookmania.fulfilmentprocess.actions.returns.InitialReturnAction" parent="abstractAction"/>
 
-    <bean id="captureRefundAction" class="com.dcxbookmania.fulfilmentprocess.actions.returns.CaptureRefundAction" parent="abstractAction"/>
+    <bean id="captureRefundAction" class="com.dcx.bookmania.fulfilmentprocess.actions.returns.CaptureRefundAction" parent="abstractAction"/>
 
-    <bean id="successCaptureAction" class="com.dcxbookmania.fulfilmentprocess.actions.returns.SuccessCaptureAction" parent="abstractAction"/>
+    <bean id="successCaptureAction" class="com.dcx.bookmania.fulfilmentprocess.actions.returns.SuccessCaptureAction" parent="abstractAction"/>
 
-    <bean id="approveReturnAction" class="com.dcxbookmania.fulfilmentprocess.actions.returns.ApproveReturnAction" parent="abstractAction"/>
+    <bean id="approveReturnAction" class="com.dcx.bookmania.fulfilmentprocess.actions.returns.ApproveReturnAction" parent="abstractAction"/>
 
-    <bean id="cancelReturnAction" class="com.dcxbookmania.fulfilmentprocess.actions.returns.CancelReturnAction" parent="abstractAction"/>
+    <bean id="cancelReturnAction" class="com.dcx.bookmania.fulfilmentprocess.actions.returns.CancelReturnAction" parent="abstractAction"/>
 
-    <bean id="printReturnLabelAction" class="com.dcxbookmania.fulfilmentprocess.actions.returns.PrintReturnLabelAction" parent="abstractAction"/>
+    <bean id="printReturnLabelAction" class="com.dcx.bookmania.fulfilmentprocess.actions.returns.PrintReturnLabelAction" parent="abstractAction"/>
 
-    <bean id="printPackingLabelAction" class="com.dcxbookmania.fulfilmentprocess.actions.returns.PrintPackingLabelAction" parent="abstractAction"/>
+    <bean id="printPackingLabelAction" class="com.dcx.bookmania.fulfilmentprocess.actions.returns.PrintPackingLabelAction" parent="abstractAction"/>
 
-    <bean id="acceptGoodsAction" class="com.dcxbookmania.fulfilmentprocess.actions.returns.AcceptGoodsAction" parent="abstractAction"/>
+    <bean id="acceptGoodsAction" class="com.dcx.bookmania.fulfilmentprocess.actions.returns.AcceptGoodsAction" parent="abstractAction"/>
 
-    <bean id="taxReverseAction" class="com.dcxbookmania.fulfilmentprocess.actions.returns.TaxReverseAction" parent="abstractAction"/>
+    <bean id="taxReverseAction" class="com.dcx.bookmania.fulfilmentprocess.actions.returns.TaxReverseAction" parent="abstractAction"/>
 
-    <bean id="successTaxReverseAction" class="com.dcxbookmania.fulfilmentprocess.actions.returns.SuccessTaxReverseAction" parent="abstractAction"/>
+    <bean id="successTaxReverseAction" class="com.dcx.bookmania.fulfilmentprocess.actions.returns.SuccessTaxReverseAction" parent="abstractAction"/>
 
-    <bean id="inventoryUpdateAction" class="com.dcxbookmania.fulfilmentprocess.actions.returns.InventoryUpdateAction" parent="abstractAction"/>
+    <bean id="inventoryUpdateAction" class="com.dcx.bookmania.fulfilmentprocess.actions.returns.InventoryUpdateAction" parent="abstractAction"/>
 
 </beans>
