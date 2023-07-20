@@ -1,0 +1,11 @@
+#Ant properties
+#Wed Feb 08 03:31:45 CET 2023
+version.api=2211
+vendor=hybris
+group.id=de.hybris.platform
+name=dcxbookmaniafacades
+description=dcxbookmaniafacades
+builddate=20230208 0330
+releasedate=20221109 1322
+version=2211.3
+module.name=platform-module

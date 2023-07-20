@@ -45,14 +45,3 @@ base.properties
 *_bof.jar
 
 
-# Custom git ignore
-bin/
-config/
-data/
-log/
-roles/
-temp/
-
-!bin/custom
-!config/local.properties
-!config/localextensions.xml
