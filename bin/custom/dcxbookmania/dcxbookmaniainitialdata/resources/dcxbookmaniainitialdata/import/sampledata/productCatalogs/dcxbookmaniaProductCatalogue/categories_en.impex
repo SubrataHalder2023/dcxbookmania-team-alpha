@@ -16,8 +16,11 @@ $lang=en
 
 # Create Categories
 UPDATE Category;code[unique=true];$catalogVersion;name[lang=$lang]
-;c1;;Classics;
-;c2;;Advanture;
+;c1;;Fiction;
+;c2;;Horror;
+;c1;;SelfHelp;
+;c1;;Mystery;
+;c1;;Biography;
 
 
 
