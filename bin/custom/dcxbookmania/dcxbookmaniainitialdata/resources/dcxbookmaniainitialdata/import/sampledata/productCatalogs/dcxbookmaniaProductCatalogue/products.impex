@@ -7,5 +7,13 @@ $approved=approvalstatus(code)[default='check']
 
 # Insert Products
 INSERT_UPDATE Product;code[unique=true];$supercategories;manufacturerName;manufacturerAID;unit(code);ean;variantType(code);$catalogVersion;$approved
-;p1;c1;SubrataHalder;SH001;pieces
-;p2;c2;SubrataHalder;SH001;pieces
+;p1;c1;Alex Michaelides;TA001;pieces
+;p2;c1;Fredrik Backman;TA002;pieces
+;p3;c1;Paulo Coelho;TA003;pieces
+;p4;c1;George Orwell;TA004;pieces
+;p5;c1;F.Scott Fitzgerald;TA005;pieces
+;p6;c2;Mary Shelley;TA006;pieces
+;p7;c2;Bram Stoker;TA007;pieces
+;p8;c2;Stephen King;TA008;pieces
+;p9;c2;William Peter Blatty;TA009;pieces
+;p10;c2;Shirley Jackson;TA010;pieces
