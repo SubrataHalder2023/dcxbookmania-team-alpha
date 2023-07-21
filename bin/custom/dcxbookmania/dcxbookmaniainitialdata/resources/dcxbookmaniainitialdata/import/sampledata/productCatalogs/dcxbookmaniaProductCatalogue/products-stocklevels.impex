@@ -4,8 +4,8 @@
 # ImpEx for Importing Products Stock Levels and Warehouses
 
 # Macros / Replacement Parameter definitions
-$productCatalog=__PRODUCT_CATALOG_NAME__
-$productCatalogName=__PRODUCT_CATALOG_FULL_NAME__
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
 $vendor=__VENDOR_NAME__
 
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
@@ -15,7 +15,15 @@ INSERT_UPDATE Vendor;code[unique=true]
 #;$vendor
 
 INSERT_UPDATE Warehouse;code[unique=true];vendor(code);default[default=true]
+;warehouse_s;Warehouse South;Warehouse South
+;warehouse_e;Warehouse East;Warehouse East
+;warehouse_w;Warehouse West;Warehouse West
+;warehouse_n;Warehouse North;Warehouse North
 
 INSERT_UPDATE StockLevel;available;warehouse(code)[unique=true];inStockStatus(code);maxPreOrder;maxStockLevelHistoryCount;overSelling;preOrder;productCode[unique=true];reserved
+;157;warehouse_s;notSpecified;1;0;0;0;p1;0
+;345;warehouse_s;notSpecified;1;0;0;0;p2;0
 
 UPDATE Product;code[unique=true];$catalogVersion;stockLevels(productCode,warehouse(code));vendors(code)
+;p1;;p1:warehouse_s;
+;p2;;p2:warehouse_s;

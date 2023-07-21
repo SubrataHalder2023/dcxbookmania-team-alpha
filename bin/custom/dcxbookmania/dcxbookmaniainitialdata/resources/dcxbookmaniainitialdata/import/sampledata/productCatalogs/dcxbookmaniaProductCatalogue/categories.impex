@@ -4,13 +4,14 @@
 # ImpEx for Importing Categories into Electronics Store
 
 # Macros / Replacement Parameter definitions
-$productCatalog=electronicsProductCatalog
-$productCatalogName=Electronics Product Catalog
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 $supercategories=source(code, $catalogVersion)[unique=true]
 $categories=target(code, $catalogVersion)[unique=true]
 
+$lang=en
 
-INSERT_UPDATE Category;code[unique=true];name[lang=$lang];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
-;SH01;SHRESTH SAH
-;SH02;SHRESTH SAH
+INSERT_UPDATE Category;code[unique=true];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
+;c1
+;c2

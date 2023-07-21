@@ -6,7 +6,7 @@
 #
 
 $productCatalog=dcxbookmaniaProductCatalog
-$classificationCatalog=dcxbookmaniaClassification
+$classificationCatalog=DcxbookmaniaClassification
 $currencies=JPY,USD
 $net=false
 $storeUid=dcxbookmania

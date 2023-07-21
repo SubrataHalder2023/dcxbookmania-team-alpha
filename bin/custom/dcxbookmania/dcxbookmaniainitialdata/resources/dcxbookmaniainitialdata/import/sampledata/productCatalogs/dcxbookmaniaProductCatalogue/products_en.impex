@@ -4,8 +4,8 @@
 # ImpEx for Importing Product Localisations
  
 # Macros / Replacement Parameter definitions
-$productCatalog=__PRODUCT_CATALOG_NAME__
-$productCatalogName=__PRODUCT_CATALOG_FULL_NAME__
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
 
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 
@@ -14,3 +14,5 @@ $lang=en
 
 # Update allProducts with localisations
 UPDATE Product;code[unique=true];$catalogVersion;name[lang=$lang];summary[lang=$lang];description[lang=$lang]
+;p1;;Book1;Book1 Summary;Book1 Description
+;p2;;Book2;Book2 Summary;Book2 Description
