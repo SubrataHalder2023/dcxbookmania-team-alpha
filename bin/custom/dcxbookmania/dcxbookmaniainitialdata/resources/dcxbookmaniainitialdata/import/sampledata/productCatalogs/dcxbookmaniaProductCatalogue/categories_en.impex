@@ -18,9 +18,6 @@ $lang=en
 UPDATE Category;code[unique=true];$catalogVersion;name[lang=$lang]
 ;c1;;Fiction;
 ;c2;;Horror;
-;c1;;SelfHelp;
-;c1;;Mystery;
-;c1;;Biography;
-
-
-
+;c3;;SelfHelp;
+;c4;;Mystery;
+;c5;;Biography;
