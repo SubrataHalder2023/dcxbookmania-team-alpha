@@ -20,4 +20,11 @@ UPDATE Category;code[unique=true];$catalogVersion;name[lang=$lang]
 ;c2;;Horror;
 ;c3;;SelfHelp;
 ;c4;;Mystery;
+<<<<<<< Updated upstream
 ;c5;;Biography;
+=======
+;c5;;Biography;
+
+
+
+>>>>>>> Stashed changes

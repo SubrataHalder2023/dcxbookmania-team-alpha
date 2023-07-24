@@ -17,3 +17,18 @@ INSERT_UPDATE Product;code[unique=true];$supercategories;manufacturerName;manufa
 ;p8;c2;Stephen King;TA008;pieces
 ;p9;c2;William Peter Blatty;TA009;pieces
 ;p10;c2;Shirley Jackson;TA010;pieces
+;p11;c3;James Clear;TA011;pieces
+;p12;c3;Stephen R. Covey;TA012;pieces
+;p13;c3;Daniel Kahneman;TA013;pieces
+;p14;c3;Mark Manson;TA014;pieces
+;p15;c3;Jordan Peterson;TA015;pieces
+;p16;c4;Gillian Flynn;TA016;pieces
+;p17;c4;Stieg Larsson;TA017;pieces
+;p18;c4;Paula Hawkins;TA018;pieces
+;p19;c4;Agatha Christie:TA019;pieces
+;p20;c4;James M. Cain;TA020;pieces
+;p21;c5;APJ Abdul Kalam;TA021;pieces
+;p22;c5;David Goggins;TA022;pieces
+;p23;c5;Steve Jobs;TA023;pieces
+;p24;c5;Trevor Noah;TA024;pieces
+;p25;c5;Anne Frank;TA025
