@@ -4,7 +4,7 @@
 # 
 # Create the Responsive Dcxbookmania BaseStore
 #
-$productCatalog=electronicsProductCatalog
+$productCatalog=dcxbookmaniaProductCatalog
 $classificationCatalog=DcxbookmaniaClassification
 $currencies=JPY,USD
 $net=false
