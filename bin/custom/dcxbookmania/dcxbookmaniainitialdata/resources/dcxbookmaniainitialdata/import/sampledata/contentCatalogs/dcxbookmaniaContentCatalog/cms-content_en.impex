@@ -4,9 +4,21 @@
 ##******************************This file is generated - please do not edit it. It will be regenerated after every build.********************************#
 
 $contentCatalog=dcxbookmaniaContentCatalog
+$contentCatalogName=Dcxbookmania Content Catalog
 $contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
+$productCV=catalogVersion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 $picture=media(code, $contentCV);
-$siteResource=jar:de.hybris.platform.dcxbookmaniastore.constants.dcxbookmaniastoreConstants&/dcxbookmaniastore/import/sampledata/contentCatalogs/$contentCatalog
+$image=image(code, $contentCV);
+$media=media(code, $contentCV);
+$page=page(uid, $contentCV);
+$contentPage=contentPage(uid, $contentCV);
+$product=product(code, $productCV)
+$category=category(code, $productCV)
+$siteResource=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&/dcxbookmaniainitialdata/import/sampledata/contentCatalogs/$contentCatalog
+$productResource=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&/dcxbookmaniainitialdata/import/sampledata/productCatalogs/$productCatalog
+$jarResourceCms=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&/dcxbookmaniainitialdata/import/sampledata/cockpits/cmscockpit
 
 # Language
 $lang=en
@@ -37,10 +49,10 @@ UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=$
 ;;CamerasCategoryLink;"Cameras"
 ;;CamerasFlashesCategoryLink;"Camera Flashes"
 ;;CanonBrandCategoryLink;"Canon"
-;;CloseAccountLink;"Close Account"
+#;;CloseAccountLink;"Close Account"
 ;;ColourFilmsCategoryLink;"Color Films"
 ;;ComponentsCategoryLink;"Components"
-;;ConsentManagementLink;"Consent Management"
+#;;ConsentManagementLink;"Consent Management"
 ;;ContactUsLink;"Contact Us"
 ;;DigitalCamerasCategoryLink;"Digital Cameras"
 ;;DigitalCompactsCategoryLink;"Compact Cameras"

@@ -26,7 +26,7 @@ $returnProcessCode=return-process
 $checkoutFlowGroup=responsiveCheckoutGroup
 
 INSERT_UPDATE PromotionGroup;Identifier[unique=true];
-;electronicsPromoGrp;
+;dcxbookmaniaPromoGrp;
 
 # Base Store
 INSERT_UPDATE BaseStore;uid[unique=true];catalogs(id);currencies(isocode);net;taxGroup(code);storelocatorDistanceUnit(code);defaultCurrency(isocode);languages(isocode);defaultLanguage(isocode);deliveryCountries(isocode);billingCountries(isocode);submitOrderProcessCode;pickupInStoreMode(code);customerAllowedToIgnoreSuggestions;paymentProvider;expressCheckoutEnabled;maxRadiusForPoSSearch;checkoutFlowGroup;createReturnProcessCode;
