@@ -6,24 +6,41 @@
 # Macros / Replacement Parameter definitions
 $productCatalog=dcxbookmaniaProductCatalog
 $productCatalogName=Dcxbookmania Product Catalog
-$vendor=__VENDOR_NAME__
-
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 
 
-INSERT_UPDATE Vendor;code[unique=true]
-#;$vendor
 
 INSERT_UPDATE Warehouse;code[unique=true];vendor(code);default[default=true]
 ;warehouse_s;Warehouse South;Warehouse South
-;warehouse_e;Warehouse East;Warehouse East
-;warehouse_w;Warehouse West;Warehouse West
-;warehouse_n;Warehouse North;Warehouse North
+
 
 INSERT_UPDATE StockLevel;available;warehouse(code)[unique=true];inStockStatus(code);maxPreOrder;maxStockLevelHistoryCount;overSelling;preOrder;productCode[unique=true];reserved
-;157;warehouse_s;notSpecified;1;0;0;0;p1;0
-;345;warehouse_s;notSpecified;1;0;0;0;p2;0
+;10;warehouse_s;forceInStock;0;0;0;0;p1;1
+;10;warehouse_s;forceInStock;0;0;0;0;p2;1
+;10;warehouse_s;forceInStock;0;0;0;0;p3;1
+;10;warehouse_s;forceInStock;0;0;0;0;p4;1
+;10;warehouse_s;forceInStock;0;0;0;0;p5;1
+;10;warehouse_s;forceInStock;0;0;0;0;p6;1
+;10;warehouse_s;forceInStock;0;0;0;0;p7;1
+;10;warehouse_s;forceInStock;0;0;0;0;p8;1
+;10;warehouse_s;forceInStock;0;0;0;0;p9;1
+;10;warehouse_s;forceInStock;0;0;0;0;p10;1
+;10;warehouse_s;forceInStock;0;0;0;0;p11;1
+;10;warehouse_s;forceInStock;0;0;0;0;p12;1
+;10;warehouse_s;forceInStock;0;0;0;0;p13;1
+;10;warehouse_s;forceInStock;0;0;0;0;p14;1
+;10;warehouse_s;forceInStock;0;0;0;0;p15;1
+;10;warehouse_s;forceInStock;0;0;0;0;p16;1
+;10;warehouse_s;forceInStock;0;0;0;0;p17;1
+;10;warehouse_s;forceInStock;0;0;0;0;p18;1
+;10;warehouse_s;forceInStock;0;0;0;0;p19;1
+;10;warehouse_s;forceInStock;0;0;0;0;p20;1
+;10;warehouse_s;forceInStock;0;0;0;0;p21;1
+;10;warehouse_s;forceInStock;0;0;0;0;p22;1
+;10;warehouse_s;forceInStock;0;0;0;0;p23;1
+;10;warehouse_s;forceInStock;0;0;0;0;p24;1
+;10;warehouse_s;forceInStock;0;0;0;0;p25;1
+
 
 UPDATE Product;code[unique=true];$catalogVersion;stockLevels(productCode,warehouse(code));vendors(code)
 ;p1;;p1:warehouse_s;
-;p2;;p2:warehouse_s;
