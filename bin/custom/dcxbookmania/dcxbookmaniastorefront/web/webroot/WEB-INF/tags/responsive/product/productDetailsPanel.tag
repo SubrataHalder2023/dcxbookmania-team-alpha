@@ -4,9 +4,9 @@
 <%@ taglib prefix="ycommerce" uri="http://hybris.com/tld/ycommercetags"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
-<div class="product-details page-title" style="color:grey ; background-color: black; font-family: Times New Roman; ">
+<div class="product-details page-title" style="color:grey ; font-family: Times New Roman; ">
 	<ycommerce:testId code="productDetails_productNamePrice_label_${product.code}">
-		<div class="name" style="color:red">${fn:escapeXml(product.name)}<span class="sku"style="color:yellow">ID</span><span class="code"style="color:green">${fn:escapeXml(product.code)}</span></div>
+		<div class="name" style="color:red">${fn:escapeXml(product.name)}<span class="sku"style="color:orange">Product_Id - </span><span class="code"style="color:green">${fn:escapeXml(product.code)}</span></div>
 	</ycommerce:testId>
 	<product:productReviewSummary product="${product}" showLinks="true"/>
 </div>
@@ -24,7 +24,7 @@
 						<ycommerce:testId code="productDetails_productNamePrice_label_${product.code}">
 							<product:productPricePanel product="${product}" />
 						</ycommerce:testId>
-						<div class="description"  style="color:purple ; font-style: italic ;font-family: Arial; font-size: 2rem;;">${ycommerce:sanitizeHTML(product.summary)}</div>
+						<div class="description" style="color:black">${ycommerce:sanitizeHTML(product.summary)}</div>
 					</div>
 				</div>
 

@@ -6,8 +6,8 @@
 
     <collectiontypes>
         <collectiontype code="GenderList" elementtype="Gender" autocreate="true" generate="true" type="list"/>
-        <collectiontype code="SwatchColorSet" elementtype="SwatchColorEnum" autocreate="true" generate="true"
-                        type="set"/>
+        <collectiontype code="SwatchColorSet" elementtype="SwatchColorEnum" autocreate="true" generate="true" type="set"/>
+        <collectiontype code="EditionSet" elementtype="EditionEnum" autocreate="true" generate="true" type="set"/>
     </collectiontypes>
 
     <enumtypes>
@@ -24,6 +24,18 @@
             <value code="SILVER"/>
             <value code="WHITE"/>
             <value code="YELLOW"/>
+        </enumtype>
+        <enumtype generate="true" code="EditionEnum" autocreate="true" dynamic="true">
+            <value code="HARDCOVER"/>
+            <value code="PAPERBACK"/>
+            <value code="EBOOK"/>
+            <value code="AUDIOBOOK"/>
+            <value code="LIMITED"/>
+            <value code="REVISED"/>
+        </enumtype>
+        <enumtype generate="true" code="LanguageEnum" autocreate="true" dynamic="true">
+            <value code="ENGLISH"/>
+            <value code="SPANISH"/>
         </enumtype>
     </enumtypes>
 
@@ -103,6 +115,49 @@
                 </attributes>
             </itemtype>
         </typegroup>
-
+        
+        <typegroup name="Dcxbookmania">
+            <itemtype code="DcxbookmaniaProduct" extends="Product"
+                      autocreate="true" generate="true"
+                      jaloclass="com.dcx.bookmania.core.jalo.DcxbookmaniaProduct">
+                <attributes>
+                    <attribute qualifier="author" type="java.lang.String">
+                        <modifiers read="true" write="true" search="true"/>
+                        <persistence type="property"/>
+                    </attribute>
+                    <attribute qualifier="isbn" type="java.lang.String">
+                        <modifiers read="true" write="true" search="true"/>
+                        <persistence type="property"/>
+                    </attribute>
+                    <attribute qualifier="publisher" type="java.lang.String">
+                        <modifiers read="true" write="true" search="true"/>
+                        <persistence type="property"/>
+                    </attribute>
+                    <attribute qualifier="publicationDate" type="java.util.Date">
+                        <modifiers read="true" write="true" search="true"/>
+                        <persistence type="property"/>
+                    </attribute>
+                    <attribute qualifier="language" type="LanguageEnum">
+                        <modifiers read="true" write="true" search="true"/>
+                        <persistence type="property"/>
+                    </attribute>
+                    <attribute qualifier="numberOfPages" type="java.lang.Integer">
+                        <modifiers read="true" write="true" search="true"/>
+                        <persistence type="property"/>
+                    </attribute>
+                </attributes>
+            </itemtype>
+            <itemtype code="DcxbookmaniaEditionVariantProduct" extends="VariantProduct"
+                      autocreate="true" generate="true"
+                      jaloclass="com.dcx.bookmania.core.jalo.DcxbookmaniaEditionVariantProduct">
+                <attributes>
+                    <attribute qualifier="edition" type="EditionSet">
+                        <modifiers read="true" write="true" search="true"/>
+                        <persistence type="property"/>
+                    </attribute>
+                </attributes>
+            </itemtype>
+        </typegroup>
+  
     </itemtypes>
 </items>
