@@ -1,0 +1,46 @@
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
+
+$supercategories=supercategories(code, $catalogVersion)
+$baseProduct=baseProduct(code,$catalogVersion)
+$approved=approvalstatus(code)[default='check']
+
+
+$sourceVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$targetVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Online'])[unique=true,default=$productCatalog:Online]
+
+
+import de.hybris.platform.cmsfacades.data.SyncRequestData
+
+syncFacade = spring.getBean('synchronizationFacade')
+
+request = new SyncRequestData()
+request.catalogId = 'dcxbookmaniaProductCatalog'
+request.sourceVersionId = 'Staged'
+request.targetVersionId = 'Online'
+
+syncFacade.createCatalogSynchronization(request)
+
+
+INSERT_UPDATE ScriptingJob; code[unique = true]; scriptURI;
+; synchronization-script-job ; model://synchronization-script
+
+INSERT_UPDATE CronJob; code[unique = true]; job(code) ; singleExecutable; sessionLanguage(isocode); nodeGroup[default = integration];sessionUser(uid)[default=admin]
+; synchronization-script-cronjob ; synchronization-script-job ; false ; en
+
+INSERT_UPDATE Trigger; cronJob(code)[unique = true]; cronExpression;
+; synchronization-script-cronjob ; 0 0 0 * * ?
+
+#--------------------------------------------------------------------------
+
+$productCatalog=dcxbookmaniaProductCatalog
+
+INSERT_UPDATE CatalogVersionSyncJob; code[unique = true] ; $sourceVersion ; $targetVersion ; createNewItems; removeMissingItems; rootTypes(code) ; syncLanguages(isocode); nodeGroup[default = 'integration']
+; mySyncJob ; $productCatalog:Online ; $productCatalog:Staged ; TRUE ; FALSE ; DcxbookmaniaProduct,Category,Media,MediaContainer ; nl,en ;
+
+INSERT_UPDATE Trigger; cronJob(code)[unique = true]; cronExpression;
+; mySyncJob ; 0 0 0 * * ?
+
+INSERT_UPDATE JobSearchRestriction; code[unique = true] ; job(code) ; query ; type(code)
+; mySyncJob-restriction ; mySyncJob ; {approvalStatus} IN ({{ SELECT {pk} FROM {ArticleApprovalStatus} WHERE {code}= 'approved'}}) ; DcxbookmaniaProduct
+

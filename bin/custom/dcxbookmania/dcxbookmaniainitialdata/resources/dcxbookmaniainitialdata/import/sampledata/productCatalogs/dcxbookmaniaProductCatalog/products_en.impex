@@ -37,9 +37,13 @@ UPDATE Product;code[unique=true];$catalogVersion;name[lang=$lang];summary[lang=$
 ;p21;;Wings of Fire;Wings of Fire, is the autobiography of the Missile Man of India and President of India, Dr. A. P. J. Abdul Kalam. It was written by him and Arun Tiwari.;APJ Abdul Kalam
 ;p22;;Cant Hurt Me;For David Goggins, childhood was a nightmare -- poverty, prejudice, and physical abuse colored his days and haunted his nights. But through self-discipline, mental toughness, and hard work, Goggins transformed himself from a depressed, overweight young man with no future into a U.S. Armed Forces icon and one of the world's top endurance athletes.;David Goggins
 ;p23;;Steve Jobs;Steve Jobs is the authorized self-titled biography of American business magnate and Apple co-founder Steve Jobs. The book was written at the request of Jobs by Walter Isaacson, a former executive at CNN and TIME who had previously written best-selling biographies of Benjamin Franklin and Albert Einstein;Steve Jobs
-;p24;;Born a Crime;Born a Crime: Stories from a South African Childhood is an autobiographical comedy book written by South African comedian Trevor Noah, published in 2016. The book focuses on Noah's childhood growing up in South Africa after he was born of an illegal interracial relationship during the apartheid era;Trevor Noah
+;p24;;Born a Crime;Born a Crime: Stories from a South African Childhood is an autobiographical comedy book written by South African comedian Trevor Noah, published in 2016. The book focuses on Noahs childhood growing up in South Africa after he was born of an illegal interracial relationship during the apartheid era;Trevor Noah
 ;p25;;The Diary Of a young Girl;The Diary of a Young Girl, often referred to as The Diary of Anne Frank, is a book of the writings from the Dutch-language diary kept by Anne Frank while she was in hiding for two years with her family during the Nazi occupation of the Netherlands.;Anne Frank
 
+
+#'Dcxbookmania product en
+UPDATE DcxbookmaniaProduct;code[unique=true];$catalogVersion;name[lang=$lang];summary[lang=$lang];description[lang=$lang];author;isbn;publisher;publicationDate;language;numberOfpages
+;dp1;;Book Name;Book Book Description;Book Author;Book Isbn;Book Publisher;;;999
 
 
 # Update allProducts with localisations

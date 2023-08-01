@@ -10,6 +10,63 @@
 	</ycommerce:testId>
 	<product:productReviewSummary product="${product}" showLinks="true"/>
 </div>
+
+<!-- <style>
+	body {
+  font-family: sans-serif;
+}
+
+p	{
+  margin: 0;
+  position:relative;
+  top:-350px;
+  text-align: center;
+  font-size: 100px;
+  text-shadow: 80px 80px 1px #fff;
+}
+
+ul {
+ padding-left: 0;
+ margin-left: 0;
+}
+
+li {
+ margin: 0;
+ display: block;
+ color: #fff;
+ background: #333;
+ padding: 0.5em;
+ text-shadow: 2px 2px 1px #000;
+}
+
+li:nth-of-type(7n-6) {
+  background: red;
+}
+
+li:nth-of-type(7n-5) {
+  background: orange;
+}
+
+li:nth-of-type(7n-4) {
+  background: yellow;
+}
+
+li:nth-of-type(7n-3) {
+  background: green;
+}
+
+li:nth-of-type(7n-2) {
+  background: blue;
+}
+
+li:nth-of-type(7n-1) {
+  background: indigo;
+}
+
+li:nth-of-type(7n-0) {
+  background: violet;
+}
+</style> -->
 <div class="row">
 	<div class="col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-0 col-lg-4">
 		<product:productImagePanel galleryImages="${galleryImages}" />
@@ -25,6 +82,15 @@
 							<product:productPricePanel product="${product}" />
 						</ycommerce:testId>
 						<div class="description" style="color:black">${ycommerce:sanitizeHTML(product.summary)}</div>
+                       <%--  <h5>Languages:${product.languages}</h5> --%>
+                        
+                        <ul>
+							<li>Author:${product.author}</li>
+							<li>ISBN:${product.isbn}</li>
+							<li>No Of Pages:${product.numberOfPages}</li>
+							<li>Publisher:${product.publisher}</li>
+						  <li>Publication Date:${product.publicationDate}</li>
+						</ul>
 					</div>
 				</div>
 

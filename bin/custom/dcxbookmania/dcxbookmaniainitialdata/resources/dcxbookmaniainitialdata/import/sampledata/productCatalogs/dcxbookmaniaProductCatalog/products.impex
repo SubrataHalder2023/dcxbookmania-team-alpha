@@ -33,7 +33,10 @@ INSERT_UPDATE Product;code[unique=true];$supercategories;manufacturerName;manufa
 ;p24;c5;Trevor Noah;TA024;pieces
 ;p25;c5;Anne Frank;TA025
 
+# Custom DCX products
 
+INSERT_UPDATE DcxbookmaniaProduct;code[unique=true];$supercategories;manufacturerName;manufacturerAID;unit(code);ean;variantType(code);$catalogVersion;$approved
+;dp1;c1;Dcxbookmania manufacturer 1;DCXM001;pieces
 
 # Insert Products
 INSERT_UPDATE Product;code[unique=true];$supercategories;manufacturerName;manufacturerAID;unit(code);ean;variantType(code);$catalogVersion;$approved

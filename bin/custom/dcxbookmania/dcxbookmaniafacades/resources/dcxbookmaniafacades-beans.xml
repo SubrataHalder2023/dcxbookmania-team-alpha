@@ -6,6 +6,12 @@
 
 	<bean class="de.hybris.platform.commercefacades.product.data.ProductData">
 		<property name="genders" type="java.util.List&lt;com.dcx.bookmania.facades.product.data.GenderData>"/>
+		<property name="author" type="java.lang.String"/>
+		<property name="isbn" type="java.lang.String"/>
+		<property name="publisher" type="java.lang.String"/>
+		<property name="publicationDate" type="java.util.Date"/>
+		<property name="language" type="java.lang.String"/>
+		<property name="numberOfPages" type="java.lang.Integer"/>
 	</bean>
 
 	<bean class="com.dcx.bookmania.facades.product.data.GenderData">

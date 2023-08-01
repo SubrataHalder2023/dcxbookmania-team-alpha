@@ -2209,6 +2209,20 @@ INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=d
 ;30Wx30H;/30Wx30H/932577-4639.jpg;$siteResource/images/30Wx30H/932577-4639.jpg;;;images
 ;30Wx30H;/30Wx30H/932643-3964.jpg;$siteResource/images/30Wx30H/932643-3964.jpg;;;images
 
+#custom
+;1200Wx1200H;/1200Wx1200H/a_man_called_ove.jpg;$siteResource/images/1200Wx1200H/a_man_called_ove.jpg;;;images
+;1200Wx1200H;/1200Wx1200H/the_silent_patient.jpg;$siteResource/images/1200Wx1200H/the_silent_patient.jpg;;;images
+;515Wx515H;/515Wx515H/a_man_called_ove.jpg;$siteResource/images/515Wx515H/a_man_called_ove.jpg;;;images
+;515Wx515H;/515Wx515H/the_silent_patient.jpg;$siteResource/images/515Wx515H/the_silent_patient.jpg;;;images
+;300Wx300H;/300Wx300H/a_man_called_ove.jpg;$siteResource/images/300Wx300H/a_man_called_ove.jpg;;;images
+;300Wx300H;/300Wx300H/the_silent_patient.jpg;$siteResource/images/300Wx300H/the_silent_patient.jpg;;;images
+;96Wx96H;/96Wx96H/a_man_called_ove.jpg;$siteResource/images/96Wx96H/a_man_called_ove.jpg;;;images
+;96Wx96H;/96Wx96H/the_silent_patient.jpg;$siteResource/images/96Wx96H/the_silent_patient.jpg;;;images
+;65Wx65H;/65Wx65H/a_man_called_ove.jpg;$siteResource/images/65Wx65H/a_man_called_ove.jpg;;;images
+;65Wx65H;/65Wx65H/the_silent_patient.jpg;$siteResource/images/65Wx65H/the_silent_patient.jpg;;;images
+;30Wx30H;/65Wx65H/a_man_called_ove.jpg;$siteResource/images/30Wx30H/a_man_called_ove.jpg;;;images
+;30Wx30H;/65Wx65H/the_silent_patient.jpg;$siteResource/images/30Wx30H/the_silent_patient.jpg;;;images
+
 INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
 ;897853_8772;/1200Wx1200H/897853_8772.jpg,/515Wx515H/897853_8772.jpg,/300Wx300H/897853_8772.jpg,/96Wx96H/897853_8772.jpg,/65Wx65H/897853_8772.jpg,/30Wx30H/897853_8772.jpg;
 ;553637-934;/515Wx515H/553637-934.jpg,/300Wx300H/553637-934.jpg,/96Wx96H/553637-934.jpg,/65Wx65H/553637-934.jpg,/30Wx30H/553637-934.jpg;
@@ -2614,6 +2628,9 @@ INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
 ;1776947_6197;/1200Wx1200H/1776947_6197.jpg,/515Wx515H/1776947_6197.jpg,/300Wx300H/1776947_6197.jpg,/96Wx96H/1776947_6197.jpg,/65Wx65H/1776947_6197.jpg,/30Wx30H/1776947_6197.jpg;
 ;1366053_628;/1200Wx1200H/1366053_628.jpg,/515Wx515H/1366053_628.jpg,/300Wx300H/1366053_628.jpg,/96Wx96H/1366053_628.jpg,/65Wx65H/1366053_628.jpg,/30Wx30H/1366053_628.jpg;
 
+#custom
+;the_silent_patient;/1200Wx1200H/the_silent_patient.jpg,/515Wx515H/the_silent_patient.jpg,/300Wx300H/the_silent_patient.jpg,/96Wx96H/the_silent_patient.jpg,/65Wx65H/the_silent_patient.jpg,/30Wx30H/the_silent_patient.jpg;
+;a_man_called_ove;/1200Wx1200H/a_man_called_ove.jpg,/515Wx515H/a_man_called_ove.jpg,/300Wx300H/a_man_called_ove.jpg,/96Wx96H/a_man_called_ove.jpg,/65Wx65H/a_man_called_ove.jpg,/30Wx30H/a_man_called_ove.jpg;
 
 UPDATE Product;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
 ;23210;/300Wx300H/23210.jpg;/96Wx96H/23210.jpg;;/515Wx515H/23210.jpg,/515Wx515H/23213.jpg,/515Wx515H/23231.jpg,/515Wx515H/65652.jpg,/65Wx65H/23210.jpg,/65Wx65H/23213.jpg,/65Wx65H/23231.jpg,/65Wx65H/65652.jpg,/30Wx30H/23210.jpg,/30Wx30H/23213.jpg,/30Wx30H/23231.jpg,/30Wx30H/65652.jpg;/300Wx300H/23210.jpg,/300Wx300H/23213.jpg,/300Wx300H/23231.jpg,/300Wx300H/65652.jpg;/96Wx96H/23210.jpg,/96Wx96H/23213.jpg,/96Wx96H/23231.jpg,/96Wx96H/65652.jpg;23210,23213,23231,65652;
@@ -2854,3 +2871,7 @@ UPDATE Product;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$th
 ;592506;/300Wx300H/592506-8141.jpg;/96Wx96H/592506-8141.jpg;;/515Wx515H/592506-8141.jpg,/65Wx65H/592506-8141.jpg,/30Wx30H/592506-8141.jpg;/300Wx300H/592506-8141.jpg;/96Wx96H/592506-8141.jpg;592506-8141;
 ;137220;/300Wx300H/137220-3987.jpg;/96Wx96H/137220-3987.jpg;;/515Wx515H/137220-3987.jpg,/65Wx65H/137220-3987.jpg,/30Wx30H/137220-3987.jpg;/300Wx300H/137220-3987.jpg;/96Wx96H/137220-3987.jpg;137220-3987;
 ;2336004;/300Wx300H/2336004_1841.jpg;/96Wx96H/2336004_1841.jpg;/1200Wx1200H/2336004_1841.jpg,/1200Wx1200H/2336004_4687.jpg;/515Wx515H/2336004_1841.jpg,/515Wx515H/2336004_4687.jpg,/65Wx65H/2336004_1841.jpg,/65Wx65H/2336004_4687.jpg,/30Wx30H/2336004_1841.jpg,/30Wx30H/2336004_4687.jpg;/300Wx300H/2336004_1841.jpg,/300Wx300H/2336004_4687.jpg;/96Wx96H/2336004_1841.jpg,/96Wx96H/2336004_4687.jpg;2336004_1841,2336004_4687;
+
+#custom
+;p1;/300Wx300H/a_man_called_ove.jpg;/96Wx96H/a_man_called_ove.jpg;;/515Wx515H/a_man_called_ove.jpg,/65Wx65H/a_man_called_ove.jpg,/30Wx30H/a_man_called_ove.jpg;/300Wx300H/a_man_called_ove.jpg;/96Wx96H/a_man_called_ove.jpg;a_man_called_ove;
+;p2;/300Wx300H/the_silent_patient.jpg;/96Wx96H/the_silent_patient.jpg;;/515Wx515H/the_silent_patient.jpg,/65Wx65H/the_silent_patient.jpg,/30Wx30H/the_silent_patient.jpg;/300Wx300H/the_silent_patient.jpg;/96Wx96H/the_silent_patient.jpg;the_silent_patient;
