@@ -13,11 +13,33 @@ $categories=target(code, $catalogVersion)[unique=true]
 $lang=en
 
 INSERT_UPDATE Category;code[unique=true];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
-;c1
-;c2
-;c3
-;c4
-;c5
+;C1
+;C2
+;C3
+;C4
+;C5
+;C01
+;C02
+;C03
+;C04
+;C05
+;C06
+;C07
+;C08
+;C09
+;C10
+
+INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
+;C01;C1
+;C02;C1
+;C03;C2
+;C04;C2
+;C05;C3
+;C06;C3
+;C07;C4
+;C08;C4
+;C09;C5
+;C10;C5
 
 
 

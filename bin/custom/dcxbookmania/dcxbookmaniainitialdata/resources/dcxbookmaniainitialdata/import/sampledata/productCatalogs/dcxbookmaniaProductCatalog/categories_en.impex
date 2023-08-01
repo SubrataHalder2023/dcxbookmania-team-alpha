@@ -16,12 +16,21 @@ $lang=en
 
 # Create Categories
 UPDATE Category;code[unique=true];$catalogVersion;name[lang=$lang]
-;c1;;Fiction;
-;c2;;Horror;
-;c3;;SelfHelp;
-;c4;;Mystery;
-;c5;;Biography;
-
+;C1;;FICTION;
+;C2;;THRILLER;
+;C3;;MYSTERY;
+;C4;;NON FICTION;
+;C5;;ROMANCE;
+;C01;;FANTASY
+;C02;;REALISTIC
+;C03;;PSYCHOLOGICAL
+;C04;;HORROR
+;C05;;CRIME
+;C06;;DETECTIVE
+;C07;;SELF HELP
+;C08;;BUSSINESS
+;C09;;HISTORICAL
+;C10;;COMEDY
 
 
 # Create Categories
