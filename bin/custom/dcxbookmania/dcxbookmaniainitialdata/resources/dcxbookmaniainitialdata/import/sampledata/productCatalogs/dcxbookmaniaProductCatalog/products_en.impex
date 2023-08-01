@@ -13,32 +13,106 @@ $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[defa
 $lang=en
 
 # Update allProducts with localisations
-UPDATE Product;code[unique=true];$catalogVersion;name[lang=$lang];summary[lang=$lang];description[lang=$lang]
-;p1;;The Silent Patient;Alicia Berenson’s life is seemingly perfect. A famous painter married to an in-demand fashion photographer, she lives in a grand house with big windows overlooking a park in one of London’s most desirable areas. One evening her husband Gabriel returns home late from a fashion shoot, and Alicia shoots him five times in the face, and then never speaks another word.;Alex Michaelides
-;p2;;A MAN CALLED OVE ;A Man Called Ove is a novel by Swedish writer Fredrik Backman published in Swedish by Forum in 2012. The novel was published in English in 2013 and reached the New York Times Best Seller list 18 months after its publication and stayed on the list for 42 weeks.;Fredrik Backman
-;p3;;The Alchemist;Paulo Coelho's masterpiece tells the mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure. His quest will lead him to riches far different—and far more satisfying—than he ever imagined. Santiago's journey teaches us about the essential wisdom of listening to our hearts, recognizing opportunity and learning to read the omens strewn along life's path, and, most importantly, following our dreams.;Paulo 
-;p4;;Nineteen Eighty-Four;Nineteen Eighty-Four is a dystopian social science fiction novel and cautionary tale by English writer George Orwell. It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final book completed in his lifetime.;George Orwell
-;p5;;The Great Gatsby;Jay Gatsby is the man who has everything. But one thing will always be out of his reach. Everybody who is anybody is seen at his glittering parties. Day and night his Long Island mansion buzzes with bright young things drinking, dancing, and debating his mysterious character. For Gatsby---young, handsome, and fabulously rich---always seems alone in the crowd, watching and waiting, though no one knows what for. Beneath the shimmering surface of his life he is hiding a secret: a silent longing that can never be fulfilled. And soon this destructive obsession will force his world to unravel.;F. Scott Fitzgerald
-;p6;;Frankestein;Famously written on a dare by the author's famous friend, poet Lord Byron, this bloodcurdling Gothic horror novel is one of the most haunting stories of all time. It recounts the tragic events in the life of young doctor Frankenstein and the dreadful consequences of his attempt at creating artificial life. More than 100 years after its publication, it remains a brilliant and essential reflection on scientific ethics, as well a literary masterpiece.;Mary Shelley
-;p7;;Dracula;Dracula is a novel by Bram Stoker, published in 1897. An epistolary novel, the narrative is related through letters, diary entries, and newspaper articles. It has no single protagonist, but opens with solicitor Jonathan Harker taking a business trip to stay at the castle of a Transylvanian nobleman, Count Dracula.;Bram Stoker
-;p8;;The Shining;The Shining is a 1977 horror novel by American author Stephen King. It is King's third published novel and first hardback bestseller; its success firmly established King as a preeminent author in the horror genre;Stephen King
-;p9;;The Exorcist;The Exorcist is a 1971 horror novel written by American William Peter Blatty and published by Harper & Row. The book details the demonic possession of eleven-year-old Regan MacNeil, the daughter of a famous actress, and the two priests who attempt to exorcise the demon.;William Peter Blatty
-;p10;;The Haunting Of The Hill House;The Haunting of Hill House is a 1959 gothic horror novel by American author Shirley Jackson. A finalist for the National Book Award and considered one of the best literary ghost stories published during the 20th century, it has been made into two feature films and a play, and is the basis of a Netflix series;Shelley Jackson
-;p11;;Atomic Habbits;James Clear is a writer and speaker focused on habits, decision making, and continuous improvement. He is the author of the #1 New York Times bestseller, Atomic Habits. The book has sold over 5 million copies worldwide and has been translated into more than 50 languages. Clear is a regular speaker at Fortune 500 companies and his work has been featured in places like Time magazine, the New York Times, the Wall Street Journal and on CBS This Morning. His popular "3-2-1" email newsletter is sent out each week to more than 1 million subscribers.;James Clear
-;p12;;The 7 Habits Of Highly Effective People;The 7 Habits Of Highly Effective People teaches you both personal and professional effectiveness by changing your view of how the world works and giving you 7 habits, which, if adopted well, will lead you to immense success.;Stephen R. Covey
-;p13;;Thinking Fast And Slow;Thinking Fast and Slow shows you how two systems in your brain are constantly fighting over control of your behavior and actions, and teaches you the many ways in which this leads to errors in memory, judgment and decisions, and what you can do about it;Daniel Kahneman
-;p14;;The Subtle Art Of Not Giving a F*ck;The Subtle Art Of Not Giving A F*ck does away with the positive psychology craze to instead give you a Stoic, no bullshit approach to living a life that might not always be happy, but meaningful and centered only around what’s important to you.;Mark Manson
-;p15;;12 Rules For Life;12 Rules For Life is a stern, story-based, and entertaining self-help manual for young people that lays out a set of simple principles that can help us become more disciplined, behave better, act with integrity, and balance our lives while enjoying them as much as we can.;Jordan Peterson
-;p16;;Gone Girl;Gone Girl is a 2012 crime thriller novel by American writer Gillian Flynn. It was published by Crown Publishing Group in June 2012. The novel was popular and made the New York Times Best Seller list. The sense of suspense in the novel comes from whether Nick Dunne is responsible for the disappearance of his wife Amy;Gillian Flynn
-;p17;;The Girl with the Dragon Tattoo;The Girl with the Dragon Tattoo is a psychological thriller novel by Swedish author and journalist Stieg Larsson. It was published posthumously in 2005, translated into English in 2008, and became an international bestseller. The Girl with the Dragon Tattoo is the first book of the Millennium series.;Stieg Larsson
-;p18;;The Girl on the Train;The Girl on the Train is a 2015 psychological thriller novel by British author Paula Hawkins that gives narratives from three different women about relationship troubles and, for the main protagonist, alcoholism.;Paula Hawkins
-;p19;;And Then There Were None;The story follows ten people who are brought together, for various reasons, to an empty mansion on an island. The mysterious hosts of this strange party are not present, but left instructions for two of the ten to tend the house as the housekeeper and cook. As the days unfold in accordance with the lyrics of a nursery rhyme, each invitee is forced to face the music (literally) and bear the consequences of their troubling pasts, as death will come for them one by one;Agatha Christie
-;p20;;The Postman Always Rings Twice;The Postman Always Rings Twice is often lauded the most important crime book of the 20th century, and it's not hard to see why. Short, racy, and full of surprises, it will leave you no time to catch your breath. In fact, the language used by Cain was so unprecedentedly explicit, the book was banned in Boston for a while.;James M. Cain
-;p21;;Wings of Fire;Wings of Fire, is the autobiography of the Missile Man of India and President of India, Dr. A. P. J. Abdul Kalam. It was written by him and Arun Tiwari.;APJ Abdul Kalam
-;p22;;Cant Hurt Me;For David Goggins, childhood was a nightmare -- poverty, prejudice, and physical abuse colored his days and haunted his nights. But through self-discipline, mental toughness, and hard work, Goggins transformed himself from a depressed, overweight young man with no future into a U.S. Armed Forces icon and one of the world's top endurance athletes.;David Goggins
-;p23;;Steve Jobs;Steve Jobs is the authorized self-titled biography of American business magnate and Apple co-founder Steve Jobs. The book was written at the request of Jobs by Walter Isaacson, a former executive at CNN and TIME who had previously written best-selling biographies of Benjamin Franklin and Albert Einstein;Steve Jobs
-;p24;;Born a Crime;Born a Crime: Stories from a South African Childhood is an autobiographical comedy book written by South African comedian Trevor Noah, published in 2016. The book focuses on Noahs childhood growing up in South Africa after he was born of an illegal interracial relationship during the apartheid era;Trevor Noah
-;p25;;The Diary Of a young Girl;The Diary of a Young Girl, often referred to as The Diary of Anne Frank, is a book of the writings from the Dutch-language diary kept by Anne Frank while she was in hiding for two years with her family during the Nazi occupation of the Netherlands.;Anne Frank
+UPDATE DcxbookmaniaProduct;code[unique=true];$catalogVersion;name[lang=$lang];summary[lang=$lang];description[lang=$lang]
+;p1;;The Lord Of The Rings;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;J.R.R Tolkien
+;p2;;Harry Potter;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;J.K. Rowling
+;p3;;A Game Of Thrones;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;George R.R. Martin
+;p4;;The Name Of The Wind;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Patrick Rothfuss
+;p5;;American Gods;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Neil Gaiman
+;p6;;The Fifth Season;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;N.K. Jemisin
+;p7;;The GunSlinger;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Stephen King
+;p8;;The Eye Of The World;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Robert Jordan
+;p9;;Good Omens;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.; Terry Pratchett Neil Gaiman
+;p10;;Under Heaven;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Guy Gavriel Kay
+;p11;;The Fault in Our Stars;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;John Green
+;p12;;A Man Called Ove;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Fredrik Backman
+;p13;;The Alchemist;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Paulo Coelho 
+;p14;;The Sun is Also A Star;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Nicola Yoon 
+;p15;;To Kill A Mockingbird;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Harper Lee
+;p16;;Voices;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Ursula K. Le Guin 
+;p17;;The Binding;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Bridget Collins 
+;p18;;Time Out of Joint;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Philip K. Dick 
+;p19;;The Dragonbone Chair;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Tad Williams
+;p20;;The Magicians;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Lev Grossman 
+;p21;;The Silent Patient;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Alex Michaelides 
+;p22;;Sharp Objects;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Gillian Flynn 
+;p23;;My Lovely Wife;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Samantha Downing 
+;p24;;The Girl on the Train;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Paula Hawkins 
+;p25;;Home Before Dark;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Riley Sager 
+;p26;;A Flicker in the Dark;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Stacy Willingham 
+;p27;;Big Little Lies;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Liane Moriarty 
+;p28;;The Housemaid;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Frieda McFadden 
+;p29;;In a Dark, Dark Wood;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Ruth Ware 
+;p30;;Shutter Island;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Dennis Lehane 
+;p31;;Harvest Home;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Thomas Tryon 
+;p32;;The Other Black Girl;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Zakiya Dalila Harris 
+;p33;;The Auctioneer;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Joan Samson 
+;p34;;Dark Valley;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Piers Brendon
+;p35;;The Hunger;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Whitley Strieber 
+;p36;;House of Leaves;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Mark Z. Danielewski 
+;p37;;The Shining;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Stephen King
+;p38;;Dracula;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Bram Stoker 
+;p39;;The Only Good Indians;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Stephen Graham Jones
+;p40;;A Head Full of Ghosts;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Paul Gaetan Tremblay 
+;p41;;Gone Girl;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Gillian Flynn 
+;p42;;In Cold Blood;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Truman Capote 
+;p43;;And Then There Were None;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Agatha Christie 
+;p44;;Rebecca;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Rebecca
+;p45;;The Big Sleep;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Raymond Chandler 
+;p46;;The Lovely Bones;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Alice Sebold 
+;p47;;The Postman Always Rings Twice;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Alice Sebold 
+;p48;;Woman in White;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Wilkie Collins 
+;p49;;Anatomy of a Murder;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Robert Traver  
+;p51;;Angel Of Death;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Adrian Ferrer
+;p52;;A Study in Scarlet;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Arthur Conan Doyle
+;p53;;The Moonstone;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Wilkie Collins
+;p54;;Murder on the Orient Express;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Agatha Christie
+;p55;;The Hound of the Baskervilles;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Sir Arthur Conan Doyle
+;p56;;The Name of the Rose;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Umberto Eco
+;p57;;The Girl with the Dragon Tattoo;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Stieg Larsson
+;p58;;Still Life;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Sarah Winman
+;p59;;Motherless Brooklyn;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Jonathan Lethem
+;p60;;Killing Floor;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Lee Child
+;p61;;The 48 Laws of Power;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Robert Greene
+;p62;;Atomic Habbits;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;James Clear
+;p63;;The Subtle Art of not Giving a F*ck ;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Mark Manson
+;p64;;Ikigai;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Francesc Miralles
+;p65;;Eat That Frog;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Brain Tracy
+;p66;;The Power of Now;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Eckhart Tolle
+;p67;;You are a BadAss;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Jen Sincero
+;p68;;Miracle Morning;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Hal Elrod
+;p69;;Think Like a Monk;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Jay Shetty
+;p70;;Adiyogi;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Sadhguru
+;p71;;Psycology Of Money;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Morgan Housel
+;p72;;The Personal MBA;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Josh Kaufman
+;p73;;Rich Dad Poor Dad;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Robert Kiyosaki & Sharon L. lechter
+;p74;;Zero to One;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Peter Thiel & Blake Masters
+;p75;;The Four Hour Work Week;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Tim ferriss
+;p76;;Generating Product Ideas;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Artiom Dashinsky
+;p77;;Think and Grow Rich;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Napoleon Hill
+;p78;;The Richest Man in Babylyon;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;George S. Clason
+;p79;;Doglapan;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Ashneer Grover
+;p80;;Good To Great;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Jim C. Collins
+;p81;;Outlander;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Diana Gabaldon
+;p82;;Romancing the Duke;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Tessa dare
+;p83;;The Duchess Deal;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Tessa dare
+;p84;;An Unseen Attraction;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;KJ Charles
+;p85;;Devil in Winter;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Lisa Kleypas
+;p86;;Gone with the Wind;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Margaret Mitchell
+;p87;;Any Duchess Will Do;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Tessa dare
+;p88;;Something Like Love;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Beverly Jenkins
+;p89;;Almost Heaven;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Judith McNaught
+;p90;;A Passion Most Pure;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Julie Lessman
+;p91;;Red, White & Royal Blue;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Casey McQuiston
+;p92;;he Unhoneymooners;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Christina Lauren
+;p93;;Beach Read;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Emily Henry
+;p94;;Can You Keep a Secret?;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Sophie Kinsella
+;p95;;Playing For Keeps;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;R.L. Mathewson
+;p96;;To Sir, with Love;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Edward Ricardo Braithwaite
+;p97;;Book Lovers;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Emily Henry
+;p98;;I've Got Your Number;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Sophie Kinsella
+;p99;;The Flatshare;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Beth O'Leary
+;p100;;In a New York Minute;The Lord of the Rings is the saga of a group of sometimes reluctant heroes who set forth to save their world from consummate evil.;Kate Spencer
 
 
 #'Dcxbookmania product en

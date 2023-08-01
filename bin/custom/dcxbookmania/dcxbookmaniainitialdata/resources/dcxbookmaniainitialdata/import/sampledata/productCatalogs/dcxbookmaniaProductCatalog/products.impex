@@ -6,32 +6,106 @@ $baseProduct=baseProduct(code,$catalogVersion)
 $approved=approvalstatus(code)[default='check']
 
 # Insert Products
-INSERT_UPDATE Product;code[unique=true];$supercategories;manufacturerName;manufacturerAID;unit(code);ean;variantType(code);$catalogVersion;$approved
-;p1;c1;Alex Michaelides;TA001;pieces
-;p2;c1;Fredrik Backman;TA002;pieces
-;p3;c1;Paulo Coelho;TA003;pieces
-;p4;c1;George Orwell;TA004;pieces
-;p5;c1;F.Scott Fitzgerald;TA005;pieces
-;p6;c2;Mary Shelley;TA006;pieces
-;p7;c2;Bram Stoker;TA007;pieces
-;p8;c2;Stephen King;TA008;pieces
-;p9;c2;William Peter Blatty;TA009;pieces
-;p10;c2;Shirley Jackson;TA010;pieces
-;p11;c3;James Clear;TA011;pieces
-;p12;c3;Stephen R. Covey;TA012;pieces
-;p13;c3;Daniel Kahneman;TA013;pieces
-;p14;c3;Mark Manson;TA014;pieces
-;p15;c3;Jordan Peterson;TA015;pieces
-;p16;c4;Gillian Flynn;TA016;pieces
-;p17;c4;Stieg Larsson;TA017;pieces
-;p18;c4;Paula Hawkins;TA018;pieces
-;p19;c4;Agatha Christie:TA019;pieces
-;p20;c4;James M. Cain;TA020;pieces
-;p21;c5;APJ Abdul Kalam;TA021;pieces
-;p22;c5;David Goggins;TA022;pieces
-;p23;c5;Steve Jobs;TA023;pieces
-;p24;c5;Trevor Noah;TA024;pieces
-;p25;c5;Anne Frank;TA025
+INSERT_UPDATE DcxbookmaniaProduct;code[unique=true];$supercategories;manufacturerName;manufacturerAID;unit(code);ean;variantType(code);$catalogVersion;$approved
+;p1;C01;J.R.R Tolkien;TA001;pieces
+;p2;C01;J.K. Rowling;TA002;pieces
+;p3;C01;George R.R. Martin;TA003;pieces
+;p4;C01;Patrick Rothfuss;TA004;pieces
+;p5;C01;Neil Gaiman;TA005;pieces
+;p6;C01;N.K. Jemisin;TA006;pieces
+;p7;C01;Stephen King;TA007;pieces
+;p8;C01;Robert Jordan;TA008;pieces
+;p9;C01; Terry Pratchett Neil Gaiman;TA009;pieces
+;p10;C01;Guy Gavriel Kay;TA010;pieces
+;p11;C02;John Green;TA011;pieces
+;p12;C02;Fredrik Backman;TA012;pieces
+;p13;C02;Paulo Coelho;TA013;pieces
+;p14;C02;Nicola Yoon;TA014;pieces
+;p15;C02;Harper Lee;TA015;pieces
+;p16;C02;Ursula K. Le Guin;TA016;pieces
+;p17;C02;Bridget Collins;TA017;pieces
+;p18;C02;Philip K. Dick;TA018;pieces
+;p19;C02;Tad Williams;TA019;pieces
+;p20;C02;Lev Grossman;TA020;pieces
+;p21;C03;Alex Michaelides;TA021;pieces
+;p22;C03;Gillian Flynn;TA022;pieces
+;p23;C03;Samantha Downing;TA023;pieces
+;p24;C03;Paula Hawkins;TA024;pieces
+;p25;C03;Riley Sager;TA025;pieces
+;p26;C03;Stacy Willingham;TA026;pieces
+;p27;C03;Liane Moriarty;TA027;pieces
+;p28;C03;Frieda McFadden;TA028;pieces
+;p29;C03;Ruth Ware;TA029;pieces
+;p30;C03;Dennis Lehane;TA030;pieces
+;p31;C04;Thomas Tryon;TA031;pieces
+;p32;C04;Zakiya Dalila Harris;TA032;pieces
+;p33;C04;Joan Samson;TA033;pieces
+;p34;C04;Piers Brendon;TA034;pieces
+;p35;C04;Whitley Strieber;TA035;pieces
+;p36;C04;Mark Z. Danielewski;TA036;pieces
+;p37;C04;Stephen King;TA037;pieces
+;p38;C04;Bram Stoker;TA038;pieces
+;p39;C04;Stephen Graham Jones;TA039;pieces
+;p40;C04;Paul Gaetan Tremblay;TA040;pieces
+;p41;C05;Gillian Flynn;TA041;pieces
+;p42;C05;Truman Capote;TA042;pieces
+;p43;C05;Agatha Christie;TA043;pieces
+;p44;C05;Rebecca;TA044;pieces
+;p45;C05;Raymond Chandler;TA045;pieces
+;p46;C05;Alice Sebold;TA046;pieces
+;p47;C05;Alice Sebold;TA047;pieces
+;p48;C05;Wilkie Collins;TA048;pieces
+;p49;C05;Robert Traver;TA049;pieces
+;p51;C06;Adriapiecesn Ferrer;TA051;pieces;
+;p52;C06; Arthur Conan Doyle;TA052;pieces;
+;p53;C06;Wilkie Collins;TA053;pieces;
+;p54;C06;Agatha Christie;TA054;pieces;
+;p55;C06;Sir Arthur Conan Doyle;TA055;pieces;
+;p56;C06;Umberto Eco;TA056;pieces;
+;p57;C06;Stieg Larsson;TA057;pieces;
+;p58;C06;Sarah Winman;TA058;pieces;
+;p59;C06;Jonathan Lethem;TA059;pieces;
+;p60;C06;Lee Child;TA060;pieces;
+;p61;C07;Robert Greene;TA061;pieces;
+;p62;C07;James Clear ;TA062;pieces;
+;p63;C07;Mark Manson;TA063;pieces;
+;p64;C07;Francesc Miralles ;TA064;pieces;
+;p65;C07;Brain Tracy;TA065;pieces;
+;p66;C07;Eckhart Tolle;TA066;pieces;
+;p67;C07;Jen Sincero;TA067;pieces;
+;p68;C07;Hal Elrod;TA068;pieces;
+;p69;C07;Jay Shetty;TA069;pieces;
+;p70;C07;Sadhguru;TA0670;pieces;
+;p71;C08;Morgan Housel;TA0671;pieces;
+;p72;C08;Josh Kaufman;TA0672;pieces;
+;p73;C08;Robert Kiyosaki & Sharon L. lechter;TA0673;pieces;
+;p74;C08;Peter Thiel & Blake Masters;TA0674;pieces;
+;p75;C08;Tim ferriss;TA0675;pieces;
+;p76;C08;Artiom Dashinsky;TA0676;pieces;
+;p77;C08;Napoleon Hill;TA0677;pieces;
+;p78;C08;George S. Clason;TA0678;pieces;
+;p79;C08;Ashneer Grover;TA0679;pieces;
+;p80;C08;Jim C. Collins;TA0680;pieces;
+;p81;C09;Diana Gabaldon;TA0681;pieces;
+;p82;C09;Tessa dare;TA0682;pieces;
+;p83;C09;Tessa dare;TA0683;pieces;
+;p84;C09;KJ Charles;TA0684;pieces;
+;p85;C09;Lisa Kleypas;TA0685;pieces;
+;p86;C09;Margaret Mitchell;TA0686;pieces;
+;p87;C09;Tessa dare;TA0687;pieces;
+;p88;C09;Beverly Jenkins;TA0688;pieces;
+;p89;C09;Judith McNaught;TA0689;pieces;
+;p90;C09;Julie Lessman;TA0690;pieces;
+;p91;C10;Casey McQuiston;TA0691;pieces;
+;p92;C10;Christina Lauren;TA0692;pieces;
+;p93;C10;Emily Henry;TA0693;pieces;
+;p94;C10;Sophie Kinsella;TA0694;pieces;
+;p95;C10;R.L. Mathewson;TA0695;pieces;
+;p96;C10;Edward Ricardo Braithwaite;TA0696;pieces;
+;p97;C10;Emily Henry;TA0697;pieces;
+;p98;C10;Sophie Kinsella;TA0698;pieces;
+;p99;C10;Beth O'Leary;TA0699;pieces;
+;p100;C10;Kate Spencer;TA06100;pieces;
 
 # Custom DCX products
 
@@ -310,41 +384,3 @@ INSERT_UPDATE ElectronicsColorVariantProduct;code[unique=true];$baseProduct;ean;
 ;1978440_green;1978440;4905524593235;pieces;Green;
 ;1978440_blue;1978440;4905524593235;pieces;Blue;
 
-INSERT_UPDATE Entitlement; id[unique = true]
-"#%beforeEach:
-import de.hybris.platform.core.Registry;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import de.hybris.platform.util.Config;
-
-Logger LOG = LoggerFactory.getLogger(""ImpExImportReader"");
-extensionNames = Registry.getCurrentTenant().getTenantSpecificExtensionNames();
-extensionName = ""entitlementservices"";
-    if(!extensionNames.contains(extensionName))
-    {
-        LOG.info(""Sample data for entitlementservices was skipped because the extension entitlementservices is not included in the setup"");
-        line.clear();
-    }
-"
-                         ; cloud_storage
-                         ; additional_filter
-
-INSERT_UPDATE ProductEntitlement; id[unique = true]         ; entitlement(id)   ; subscriptionProduct(code, $catalogVersion); quantity; timeUnit(code); timeUnitStart; timeUnitDuration; $catalogVersion
-"#%beforeEach:
-import de.hybris.platform.core.Registry;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import de.hybris.platform.util.Config;
-
-Logger LOG = LoggerFactory.getLogger(""ImpExImportReader"");
-extensionNames = Registry.getCurrentTenant().getTenantSpecificExtensionNames();
-extensionName = ""entitlementservices"";
-    if(!extensionNames.contains(extensionName))
-    {
-        LOG.info(""Sample data for entitlementservices was skipped because the extension entitlementservices is not included in the setup"");
-        line.clear();
-    }
-"
-                                ; cloud_storage_3470545     ; cloud_storage     ; 3470545                                   ;         ; month         ; 1            ; 12              ;
-                                ; additional_filter_1391319 ; additional_filter ; 1391319                                   ; 3
-                                ; cloud_storage_2278102     ; cloud_storage     ; 2278102                                   ;         ; month         ; 1            ; 12              ;
