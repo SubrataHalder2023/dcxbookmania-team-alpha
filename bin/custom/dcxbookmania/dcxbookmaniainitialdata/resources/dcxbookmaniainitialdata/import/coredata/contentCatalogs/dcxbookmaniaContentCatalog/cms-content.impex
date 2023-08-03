@@ -2,7 +2,7 @@
 # Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
 # -----------------------------------------------------------------------
 #
-# Import the CMS content for the Cremecastle site
+# Import the CMS content for the Electronics site
 #
 $contentCatalog=dcxbookmaniaContentCatalog
 $contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
@@ -19,7 +19,7 @@ INSERT_UPDATE PageTemplate;$contentCV[unique=true];uid[unique=true];name;fronten
 ;;ProductDetailsPageTemplate;Product Details Page Template;product/productLayout2Page;ProductPage
 ;;ProductListPageTemplate;Product List Page Template;category/productListPage;CategoryPage
 ;;ProductGridPageTemplate;Product Grid Page Template;category/productGridPage;CategoryPage
-#;;SearchResultsListPageTemplatele;Search Results List Page Template;search/searchListPage;ContentPage
+;;SearchResultsListPageTemplate;Search Results List Page Template;search/searchListPage;ContentPage
 ;;SearchResultsGridPageTemplate;Search Results Grid Page Template;search/searchGridPage;ContentPage
 ;;SearchResultsEmptyPageTemplate;Search Results Empty Page Template;search/searchEmptyPage;ContentPage
 ;;CategoryPageTemplate;Category Page Template;category/categoryPage;CategoryPage
@@ -55,8 +55,8 @@ UPDATE PageTemplate;$contentCV[unique=true];uid[unique=true];velocityTemplate[tr
 ;;LandingPage5Template      ;$jarResourceCms/structure-view/structure_landingPage5Template.vm
 ;;LandingPage6Template      ;$jarResourceCms/structure-view/structure_landingPage6Template.vm
 ;;ContentPage1Template      ;$jarResourceCms/structure-view/structure_contentPage1Template.vm
-#;;SearchResultsListPageTemplate ;$jarResourceCms/structure-view/structure_searchResultsListPageTemplate.vm
-#;;SearchResultsGridPageTemplate ;$jarResourceCms/structure-view/structure_searchResultsGridPageTemplate.vm
+;;SearchResultsListPageTemplate ;$jarResourceCms/structure-view/structure_searchResultsListPageTemplate.vm
+;;SearchResultsGridPageTemplate ;$jarResourceCms/structure-view/structure_searchResultsGridPageTemplate.vm
 ;;CartPageTemplate 		    ;$jarResourceCms/structure-view/structure_cartPageTemplate.vm
 ;;AccountPageTemplate 		;$jarResourceCms/structure-view/structure_accountPageTemplate.vm
 ;;StoreFinderPageTemplate	;$jarResourceCms/structure-view/structure_storefinderSearchTemplate.vm
@@ -147,18 +147,18 @@ INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=
 # Search Empty is displayed when no results are found
 
 # Search Results List Page Template
-#INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='SearchResultsListPageTemplate'];validComponentTypes(code);compTypeGroup(code)
-#;SiteLogo;;;logo
-#;HeaderLinks;;;headerlinks
-#;SearchBox;;;searchbox
-#;MiniCart;;;minicart
-#;NavigationBar;;;navigation
-#;ProductLeftRefinements;;;narrow
-#;SearchResultsListSlot;;;wide
-#;Footer;;;footer
-#;TopHeaderSlot;;;wide
-#;BottomHeaderSlot;;;wide
-#;PlaceholderContentSlot;;;
+INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='SearchResultsListPageTemplate'];validComponentTypes(code);compTypeGroup(code)
+;SiteLogo;;;logo
+;HeaderLinks;;;headerlinks
+;SearchBox;;;searchbox
+;MiniCart;;;minicart
+;NavigationBar;;;navigation
+;ProductLeftRefinements;;;narrow
+;SearchResultsListSlot;;;wide
+;Footer;;;footer
+;TopHeaderSlot;;;wide
+;BottomHeaderSlot;;;wide
+;PlaceholderContentSlot;;;
 
 
 # Search Results Grid Page Template
@@ -508,19 +508,19 @@ INSERT_UPDATE ContentSlotForTemplate;$contentCV[unique=true];uid[unique=true];po
 ;;BottomHeaderSlot-ProductDetails;BottomHeaderSlot;;BottomHeaderSlot;true
 ;;PlaceholderContentSlot-ProductDetails;PlaceholderContentSlot;;PlaceholderContentSlot;true
 
-#INSERT_UPDATE ContentSlotForTemplate;$contentCV[unique=true];uid[unique=true];position[unique=true];pageTemplate(uid,$contentCV)[unique=true][default='SearchResultsListPageTemplate'];contentSlot(uid,$contentCV)[unique=true];allowOverwrite
-#;;SiteLogo-SearchResultsList;SiteLogo;;SiteLogoSlot;true
-#;;HomepageLink-SearchResultsList;HomepageNavLink;;HomepageNavLinkSlot;true
-#;;MiniCart-SearchResultsList;MiniCart;;MiniCartSlot;true
-#;;NavigationBar-SearchResultsList;NavigationBar;;NavigationBarSlot;true
-#;;Footer-SearchResultsList;Footer;;FooterSlot;true
-#;;HeaderLinks-SearchResultsList;HeaderLinks;;HeaderLinksSlot;true
-#;;SearchBox-SearchResultsList;SearchBox;;SearchBoxSlot;true
-#;;TopHeaderSlot-SearchResultsList;TopHeaderSlot;;TopHeaderSlot;true
-#;;BottomHeaderSlot-SearchResultsList;BottomHeaderSlot;;BottomHeaderSlot;true
-#;;ProductLeftRefinements-SearchResultsList;ProductLeftRefinements;;ProductLeftRefinements;true
-#;;SearchResultsListSlot-SearchResultsList;SearchResultsListSlot;;SearchResultsListSlot;true
-#;;PlaceholderContentSlot-SearchResultsList;PlaceholderContentSlot;;PlaceholderContentSlot;true
+INSERT_UPDATE ContentSlotForTemplate;$contentCV[unique=true];uid[unique=true];position[unique=true];pageTemplate(uid,$contentCV)[unique=true][default='SearchResultsListPageTemplate'];contentSlot(uid,$contentCV)[unique=true];allowOverwrite
+;;SiteLogo-SearchResultsList;SiteLogo;;SiteLogoSlot;true
+;;HomepageLink-SearchResultsList;HomepageNavLink;;HomepageNavLinkSlot;true
+;;MiniCart-SearchResultsList;MiniCart;;MiniCartSlot;true
+;;NavigationBar-SearchResultsList;NavigationBar;;NavigationBarSlot;true
+;;Footer-SearchResultsList;Footer;;FooterSlot;true
+;;HeaderLinks-SearchResultsList;HeaderLinks;;HeaderLinksSlot;true
+;;SearchBox-SearchResultsList;SearchBox;;SearchBoxSlot;true
+;;TopHeaderSlot-SearchResultsList;TopHeaderSlot;;TopHeaderSlot;true
+;;BottomHeaderSlot-SearchResultsList;BottomHeaderSlot;;BottomHeaderSlot;true
+;;ProductLeftRefinements-SearchResultsList;ProductLeftRefinements;;ProductLeftRefinements;true
+;;SearchResultsListSlot-SearchResultsList;SearchResultsListSlot;;SearchResultsListSlot;true
+;;PlaceholderContentSlot-SearchResultsList;PlaceholderContentSlot;;PlaceholderContentSlot;true
 
 
 INSERT_UPDATE ContentSlotForTemplate;$contentCV[unique=true];uid[unique=true];position[unique=true];pageTemplate(uid,$contentCV)[unique=true][default='SearchResultsGridPageTemplate'];contentSlot(uid,$contentCV)[unique=true];allowOverwrite
@@ -814,7 +814,7 @@ INSERT_UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];name;masterTe
 ;;multiStepCheckoutSummaryPage;Multi Checkout Summary Page;MultiStepCheckoutSummaryPageTemplate;multiStepCheckoutSummary
 ;;orderConfirmationPage;Order Confirmation Page;OrderConfirmationPageTemplate;orderConfirmation
 ;;cartPage;Cart Page;CartPageTemplate;cart
-#;;search;Search Results Page;SearchResultsListPageTemplate;search
+;;search;Search Results Page;SearchResultsListPageTemplate;search
 ;;account;Account Page;AccountPageTemplate;account
 ;;profile;Profile Page;AccountPageTemplate;profile
 ;;address-book;Address Book Page;AccountPageTemplate;address-book
@@ -851,8 +851,3 @@ INSERT_UPDATE CategoryPage;$contentCV[unique=true];uid[unique=true];name;masterT
 ;;productGrid;Product Grid;ProductGridPageTemplate;false;
 ;;category;Default Category Page;CategoryPageTemplate;false;
 
-
-# custom code churi
-
-INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='LandingPage2Template'];validComponentTypes(code);compTypeGroup(code)
-;SiteLogo;;;logo

@@ -2,7 +2,7 @@
 # Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
 # -----------------------------------------------------------------------
 #
-# Import CMS content for the Cremecastle site
+# Import CMS content for the Electronics site
 #
 
 $contentCatalog=dcxbookmaniaContentCatalog
@@ -10,6 +10,8 @@ $contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCata
 
 # Language
 $lang=en
+
+
     
 # Content Pages
 UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
@@ -29,13 +31,14 @@ UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
  ;;orders;"Order History"
  ;;payment-details;"Payment Details"
  ;;profile;"Profile"
-#;;search;"Search Results Page"
+ ;;search;"Search Results Page"
  ;;searchEmpty;"No Results"
  ;;storefinderPage;"StoreFinder"
  ;;termsAndConditions;"Terms and Conditions"
  ;;update-email;"Update Email"
  ;;update-profile;"Update Profile"
  ;;updatePassword;"Update Forgotten Password"
+
         
 # Category Pages
 UPDATE CategoryPage;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
@@ -48,3 +51,4 @@ UPDATE CategoryPage;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
 UPDATE ProductPage;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
  ;;productDetails;"Product Details"
 
+    
