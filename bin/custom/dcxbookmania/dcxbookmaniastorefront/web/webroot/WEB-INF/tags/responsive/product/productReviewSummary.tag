@@ -11,10 +11,10 @@
 <%@ attribute name="product" required="true"
 	type="de.hybris.platform.commercefacades.product.data.ProductData"%>
 
-<h1>Product review summary</h1>
+<h1 style="font-family: sans-serif">Product review summary</h1>
 <div class="rating">
 	<c:set var="ratingJson">${ycommerce:encodeJSON(product.averageRating)}</c:set>
-	<div class="rating-stars pull-left js-ratingCalc ${fn:escapeXml(starsClass)}" data-rating='{"rating":"${fn:escapeXml(ratingJson)}","total":5}' >
+	<div class="rating-stars pull-center js-ratingCalc ${fn:escapeXml(starsClass)}" data-rating='{"rating":"${fn:escapeXml(ratingJson)}","total":5}' >
 		<div class="greyStars">
 			<c:forEach  begin="1" end="5">
 				<span class="glyphicon glyphicon-star"></span>
@@ -37,7 +37,7 @@
 			<c:if test="${not empty product.reviews}">
 				<a href="#tabreview" class="js-openTab"><spring:theme code="review.see.reviews" /></a>
 			</c:if>
-			<a href="#tabreview" class="js-writeReviewTab"><spring:theme code="review.write.title" /></a>
+			<a href="#tabreview" class="js-writeReviewTab" style="color:black;font-size:16px"><spring:theme code="review.write.title" /></a>
 		</c:when>
 		<c:otherwise>
 			<spring:theme code="review.reviews" />

@@ -15,7 +15,8 @@
 
 <product:addToCartTitle/>
 
-<form:form method="post" id="configureForm" class="configure_form" action="${configureProductUrl}">
+
+<form:form method="post" id="configureForm" class="configure_form" action="${configureProductUrl}" style="color:black">
 <c:if test="${product.purchasable}">
 	<input type="hidden" maxlength="3" size="1" id="qty" name="qty" class="qty js-qty-selector-input" value="1">
 </c:if>
@@ -45,7 +46,7 @@
 	</c:choose>
 </c:if>
 </form:form>
-<form:form method="post" id="addToCartForm" class="add_to_cart_form" action="${addToCartUrl}">
+<form:form method="post" id="addToCartForm" class="add_to_cart_form" action="${addToCartUrl}" >
 <c:if test="${product.purchasable}">
 	<input type="hidden" maxlength="3" size="1" id="qty" name="qty" class="qty js-qty-selector-input" value="1">
 </c:if>
@@ -64,7 +65,7 @@
 		</c:when>
 		<c:otherwise>
 			<ycommerce:testId code="addToCartButton">
-				<button id="addToCartButton" type="${buttonType}" class="btn btn-primary btn-block js-add-to-cart js-enable-btn btn-icon glyphicon-shopping-cart" disabled="disabled">
+				<button id="addToCartButton" type="${buttonType}" class="btn btn-primary btn-block js-add-to-cart js-enable-btn btn-icon glyphicon-shopping-cart" disabled="disabled" style="background-color:black;border:black;border: 2px solid black;">
 					<spring:theme code="basket.add.to.basket"/>
 				</button>
 			</ycommerce:testId>

@@ -4,9 +4,15 @@
 <%@ taglib prefix="ycommerce" uri="http://hybris.com/tld/ycommercetags"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
-<div class="product-details page-title" style="color:grey ; font-family: Times New Roman; ">
+<div class="product-details page-title" style="color:grey ; font-family: Times New Roman;
+  margin: 0;
+  position:relative;
+  text-align: center;
+  font-size: 10px;
+  text-shadow: 80px 80px 1px #fff;
+ ">
 	<ycommerce:testId code="productDetails_productNamePrice_label_${product.code}">
-		<div class="name" style="color:red">${fn:escapeXml(product.name)}<span class="sku"style="color:orange">Product_Id - </span><span class="code"style="color:green">${fn:escapeXml(product.code)}</span></div>
+		<div class="name" style="color:black;font-size:40px">${fn:escapeXml(product.name)}<span class="sku"style="color:black;font-weight: bold;font-family:Open Sans;font-size:20px ">Product_Id - </span><span class="code"style="color:grey;font-size:20px">${fn:escapeXml(product.code)}</span></div>
 	</ycommerce:testId>
 	<product:productReviewSummary product="${product}" showLinks="true"/>
 </div>
@@ -76,30 +82,30 @@ li:nth-of-type(7n-0) {
 		<div class="product-main-info">
 			<div class="row">
 				<div class="col-lg-6">
-					<div class="product-details" style="color:red">
+					<div class="product-details" style="color:black">
 						<product:productPromotionSection product="${product}"/>
 						<ycommerce:testId code="productDetails_productNamePrice_label_${product.code}">
 							<product:productPricePanel product="${product}" />
 						</ycommerce:testId>
-						<div class="description" style="color:black">${ycommerce:sanitizeHTML(product.summary)}</div>
+						<div class="description" style="color:black; font-weight:bold; font-size:24px">${ycommerce:sanitizeHTML(product.summary)}</div>
                        <%--  <h5>Languages:${product.languages}</h5> --%>
                         
                         <ul>
-							<li>Author:${product.author}</li>
+							<li style="color:black;font-weight:bold">Author:${product.author}</li>
 							<li>ISBN:${product.isbn}</li>
-							<li>No Of Pages:${product.numberOfPages}</li>
+							<li style="color:black;font-weight:bold" >No Of Pages:${product.numberOfPages}</li>
 							<li>Publisher:${product.publisher}</li>
-						  <li>Publication Date:${product.publicationDate}</li>
+						  <li style="color:black;font-weight:bold">Publication Date:${product.publicationDate}</li>
 						</ul>
 					</div>
 				</div>
 
 				<div class="col-sm-12 col-md-9 col-lg-6">
 					<cms:pageSlot position="VariantSelector" var="component" element="div" class="page-details-variants-select">
-						<cms:component component="${component}" element="div" class="yComponentWrapper page-details-variants-select-component"/>
+						<cms:component component="${component}" element="div" class="yComponentWrapper page-details-variants-select-component" style="color:red"/>
 					</cms:pageSlot>
 					<cms:pageSlot position="AddToCart" var="component" element="div" class="page-details-variants-select">
-						<cms:component component="${component}" element="div" class="yComponentWrapper page-details-add-to-cart-component" style="color:violet"/>
+						<cms:component component="${component}" element="div" class="yComponentWrapper page-details-add-to-cart-component" style="color:grey; font-weight:bold"/>
 					</cms:pageSlot>
 				</div>
 			</div>
