@@ -44,6 +44,7 @@
 
 		<c:if test="${not empty product.summary}">
 			<div class="product__listing--description">${ycommerce:sanitizeHTML(product.summary)}</div>
+			<h5>Author : <span  style="color:${product.author}; font-weight:800">${product.author}</span> </h5>
 		</c:if>
 
 

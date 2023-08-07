@@ -194,4 +194,11 @@
 		</property>
 	</bean>
 	<bean id="dcxbookmaniaPopulator" class="com.dcx.bookmania.facades.populators.DcxbookmaniaPopulator"></bean>
+	
+	<!-- custom solr -->
+	<alias name="dcxbookmaniaSearchResultVariantProductPopulator" alias="commerceSearchResultProductPopulator"/>
+    <bean id="dcxbookmaniaSearchResultVariantProductPopulator"
+          class="com.dcx.bookmania.facades.populators.DcxbookmaniaSearchResultVariantProductPopulator"
+          parent="variantCommerceSearchResultProductPopulator">
+    </bean>
 </beans>
