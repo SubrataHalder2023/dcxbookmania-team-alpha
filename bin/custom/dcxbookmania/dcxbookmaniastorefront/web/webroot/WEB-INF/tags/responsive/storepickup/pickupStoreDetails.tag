@@ -60,7 +60,7 @@
 		</div>
 		<div class="action">
 
-			<form:form  data-id="add_to_cart_storepickup_form" data-class="add_to_cart_storepickup_form" action="${addToCartToPickupInStoreUrl}" method="post">
+			<form:form  data-id="add_to_cart_storepickup_form" data-class="add_to_cart_storepickup_form" action="${addToCartToPickupInStoreUrl}" method="post"  style="color:black">
 			<input type="hidden"  class="js-store-id" >
 			<input type="hidden" class="js-store-productcode" name="productCodePost" value=""/>
 
@@ -70,7 +70,7 @@
 			<div class="qty-selector js-qty-selector"> 
 				<div class="input-group">
 					<span class="input-group-btn">
-						<button class="btn btn-primary js-qty-selector-minus" type="button"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+						<button class="btn btn-primary js-qty-selector-minus" type="button"><span class="glyphicon glyphicon-minus" aria-hidden="true" ></span></button>
 					</span>
 					<input type="text" class="form-control js-qty-selector-input" value="1" name="hiddenPickupQty">
 					<span class="input-group-btn">
