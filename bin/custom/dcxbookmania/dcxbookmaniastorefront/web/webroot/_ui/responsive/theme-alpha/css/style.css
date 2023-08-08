@@ -1077,7 +1077,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #19212b;
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 input,
 button,
@@ -8333,7 +8333,7 @@ output {
 }
 footer {
   margin-top: 30px;
-  background: #0f7384;
+  background: #000000;
   color: #ffffff;
   font-weight: 300;
 }
@@ -8400,7 +8400,7 @@ footer {
 }
 .footer__right .footer__dropdown .form-control {
   cursor: pointer;
-  background-color: #0f7384;
+  background-color: #000000;
   color: #ffffff;
   padding: 7px 10px;
   height: 26px;
@@ -8408,13 +8408,13 @@ footer {
   font-size: 14px;
 }
 .footer__right .footer__dropdown .form-control option {
-  background-color: #0f7384;
+  background-color: #000000;
 }
 .footer__right .footer__dropdown .form-control:focus::-ms-value {
-  background-color: #0f7384;
+  background-color: #000000;
 }
 .footer__copyright {
-  background: #005361;
+  background: #4c4c4c;
   padding: 25px 0;
   color: #ffffff;
   text-align: center;
@@ -8578,7 +8578,7 @@ ul.nav__links::after {
 }
 #accNavComponentDesktopOne ul.nav__links li:hover,
 #accNavComponentDesktopTwo ul.nav__links li:hover {
-  background-color: #0f7384;
+  background-color: #000000;
 }
 #accNavComponentDesktopOne ul.nav__links li a,
 #accNavComponentDesktopTwo ul.nav__links li a {
@@ -9153,7 +9153,7 @@ ul.nav__links::after {
     border-bottom: 1px solid #317f8c;
   }
   .navigation--bottom .nav__links--products li.liUserSign:hover {
-    background-color: #0f7384;
+    background-color: #000000;
   }
 }
 @media (max-width: 1023px) {
@@ -9425,7 +9425,7 @@ ul.nav__links::after {
   }
   .navigation--bottom .nav__links--mobile li {
     overflow: hidden;
-    background-color: #0f7384;
+    background-color: #000000;
     border: none;
   }
   .navigation--bottom .nav__links--mobile li a {
@@ -10223,7 +10223,7 @@ fieldset[disabled] .btn-primary.active {
     padding-right: 20px;
   }
 }
-.breadcrumb-section color:black .breadcrumb {
+.breadcrumb-section .breadcrumb {
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
