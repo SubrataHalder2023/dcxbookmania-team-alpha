@@ -12,6 +12,23 @@
 		<property name="publicationDate" type="java.util.Date"/>
 		<property name="language" type="java.lang.String"/>
 		<property name="numberOfPages" type="java.lang.Integer"/>
+		<property name="height" type="java.lang.String"/>
+		<property name="weight" type="java.lang.String"/>
+		<property name="width" type="java.lang.String"/>
+		<property name="type" type="java.lang.String"/>
+		<property name="rating" type="java.lang.Double"/>
+		<property name="genre" type="java.lang.String"/>
+		<property name="style" type="java.lang.String"/>
+		<property name="awards" type="java.lang.String"/>
+		<property name="coverDesign" type="java.lang.String"/>
+		<property name="chapterNos" type="java.lang.Integer"/>
+		<property name="authorsBio" type="java.lang.String"/>
+		<property name="sales" type="java.lang.String"/>
+		<property name="fonts" type="java.lang.String"/>
+		<property name="subPlot" type="java.lang.String"/>
+		<property name="ageGroup" type="java.lang.String"/>
+		<property name="bestSeller" type="java.lang.String"/>
+		<property name="country" type="java.lang.String"/>
 	</bean>
 
 	<bean class="com.dcx.bookmania.facades.product.data.GenderData">
