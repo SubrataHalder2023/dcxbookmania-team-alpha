@@ -1,0 +1,13 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+# ImpEx for Importing Product Localisations
+ 
+# Macros / Replacement Parameter definitions
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
+
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$catalogVersion;name[lang=en];author[lang=en];isbn[lang=en];publisher[lang=en];publicationDate[lang=en];language[lang=en];numberOfpages;description[lang=en];height[lang=en];weight[lang=en];width[lang=en];type[lang=en];rating;genre[lang=en];style[lang=en];awards[lang=en];chapterNos;coverDesign[lang=en];sales[lang=en];authorsBio[lang=en];fonts[lang=en];subPlot[lang=en];bestSeller[lang=en];ageGroup[lang=en];country[lang=en]
+;p25;;Home Before Dark;Riley Sager;152935823X;Hodder Paperbacks;29-Jul-21;English;400;Maggie Holt is used to such questions. Twenty-five years ago, she and her parents, Ewan and Jess, moved into Baneberry Hall;18cm;2000gm;11cm;Hardcover;3.9;Horror fiction;"Thriller";ITW Thriller Award;22;Dark;3 million;Riley Sager is the New York Times bestselling author of seven novels, most recently THE HOUSE ACROSS THE LAKE and SURVIVE THE NIGHT;Ringbearer;The novel is told via a split narrative. Maggie Holt narrates events as they happen during current day,;No;Adult;USA

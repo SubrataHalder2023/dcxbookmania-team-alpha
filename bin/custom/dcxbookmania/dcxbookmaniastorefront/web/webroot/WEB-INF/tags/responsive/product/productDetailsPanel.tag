@@ -5,13 +5,14 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
 <style>
-	.listItems {
+	/*.listItems {
 	  display: block;
 	  margin-left: 10px;
+	  padding: 2rem;
 	}
 	
 	.listItems li {
-	  display: block;
+	  display: flex;
 	  position: relative;
 	}
 	
@@ -29,6 +30,26 @@
 	  height: 12px;
 	  width: 12px;
 	  border-radius: 50%;
+	}*/
+	
+	.listItems {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		border: 1px sold #ccc;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.listItems li {
+		flex: 0 0 25%;
+		padding: 8px;
+		border-bottom: 1px solid #eee;
+		box-sizing: border-box;
+	}
+	
+	.listItems li:nth-child(even) {
+		background-color: #f5f5f5;
 	}
 </style>
 
@@ -65,18 +86,35 @@
 								  padding: 1rem;
 								  margin-top: 2rem;
 								  margin-bottom: 2rem;
-								  width: 11rem;
+								  width: 10rem;
 								  height: 6rem;">
 							<ycommerce:testId code="productDetails_productNamePrice_label_${product.code}">
 								<product:productPricePanel product="${product}" />
 							</ycommerce:testId>
 						</div>
                         <ul class="listItems">
-							<li style="color:black;font-weight:bold">Author:${product.author}</li>
-							<li>ISBN:${product.isbn}</li>
-							<li style="color:black;font-weight:bold" >No Of Pages:${product.numberOfPages}</li>
-							<li>Publisher:${product.publisher}</li>
-						  	<li style="color:black;font-weight:bold">Publication Date:${product.publicationDate}</li>
+							<li>Author: ${product.author}</li>
+							<li>ISBN: ${product.isbn}</li>
+							<li>No Of Pages: ${product.numberOfPages}</li>
+							<li>Publisher: ${product.publisher}</li>
+						  	<li>Publication Date: ${product.publicationDate}</li>
+						  	<li>Language :${product.language}</li>
+						  	<li>Height: ${product.height}</li>
+							<li>Weight: ${product.weight}</li>
+							<li>Width: ${product.width}</li>
+							<li>Type: ${product.type}</li>
+							<li>Rating: ${product.rating}</li>
+							<li>Genre: ${product.genre}</li>
+							<li>Style: ${product.style}</li>
+							<li>Awards: ${product.awards}</li>
+							<li>Cover Design :${product.coverDesign}</li>
+							<li>Chapter Nos: ${product.chapterNos}</li>
+							<li>Authors Bio: ${product.authorsBio}</li>
+							<li>Fonts: ${product.fonts}</li>
+							<li>Subplot: ${product.subPlot}</li>
+							<li>Best Seller: ${product.bestSeller}</li>
+							<li>Minimum Age: ${product.ageGroup}</li>
+							<li>Country: ${product.country}</li>
 						</ul>
 					</div>
 				</div>
