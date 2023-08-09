@@ -97,46 +97,6 @@ table td {
 		<div class="product-main-info">
 			<div class="row">
 				<div class="col-lg-6">
-<<<<<<< Updated upstream
-					<div class="product-details" style="color:black">
-						<product:productPromotionSection product="${product}"/>
-						<div class="description" style="color:black;">${ycommerce:sanitizeHTML(product.summary)}</div> 
-						<div style="border-radius: 25px;
-								  background: #E0E0FF;
-								  padding: 1rem;
-								  margin-top: 2rem;
-								  margin-bottom: 2rem;
-								  width: 10rem;
-								  height: 6rem;">
-							<ycommerce:testId code="productDetails_productNamePrice_label_${product.code}">
-								<product:productPricePanel product="${product}" />
-							</ycommerce:testId>
-						</div>
-                        <ul class="listItems">
-							<li>Author: ${product.author}</li>
-							<li>ISBN: ${product.isbn}</li>
-							<li>No Of Pages: ${product.numberOfPages}</li>
-							<li>Publisher: ${product.publisher}</li>
-						  	<li>Publication Date: ${product.publicationDate}</li>
-						  	<li>Language :${product.language}</li>
-						  	<li>Height: ${product.height}</li>
-							<li>Weight: ${product.weight}</li>
-							<li>Width: ${product.width}</li>
-							<li>Type: ${product.type}</li>
-							<li>Rating: ${product.rating}</li>
-							<li>Genre: ${product.genre}</li>
-							<li>Style: ${product.style}</li>
-							<li>Awards: ${product.awards}</li>
-							<li>Cover Design :${product.coverDesign}</li>
-							<li>Chapter Nos: ${product.chapterNos}</li>
-							<li>Authors Bio: ${product.authorsBio}</li>
-							<li>Fonts: ${product.fonts}</li>
-							<li>Subplot: ${product.subPlot}</li>
-							<li>Best Seller: ${product.bestSeller}</li>
-							<li>Minimum Age: ${product.ageGroup}</li>
-							<li>Country: ${product.country}</li>
-						</ul>
-=======
 					<div class="product-details" style="color: black">
 						<product:productPromotionSection product="${product}" />
 						<ycommerce:testId
@@ -199,7 +159,6 @@ table td {
 							</tr>
 
 						</table>
->>>>>>> Stashed changes
 					</div>
 				</div>
 
