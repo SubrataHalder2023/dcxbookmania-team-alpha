@@ -8038,7 +8038,7 @@ General
 *****************************************************************/
 a,
 button {
-  color: #0068b3;
+  color: orangered;
   text-decoration: none;
 }
 a:hover {
@@ -8333,7 +8333,7 @@ output {
 }
 footer {
   margin-top: 30px;
-  background: #142939;
+  background: #89C35C;
   color: #ffffff;
   font-weight: 300;
 }
@@ -8416,7 +8416,7 @@ footer {
 .footer__copyright {
   background: #ffffff;
   padding: 25px 0;
-  color: #3c3c3c;
+  color: black;
   text-align: center;
 }
 ul.nav__links::after {
@@ -8781,7 +8781,7 @@ ul.nav__links::after {
 .navigation--middle .nav__right ul.nav__links--shop_info .nav-location span {
   font-size: 30px;
   top: 27%;
-  color: #0068b3;
+  color: white;
 }
 @media (min-width: 640px) {
   .navigation--middle .nav__right ul.nav__links--shop_info .nav-location {
@@ -8818,7 +8818,7 @@ ul.nav__links::after {
 .navigation--middle .nav-location:focus,
 .navigation--middle .nav-cart:focus,
 .navigation--middle .btn:focus {
-  background-color: #e5e5e5;
+  background-color: blue;
   box-shadow: none;
 }
 .navigation--middle .nav-cart {
@@ -8850,7 +8850,7 @@ ul.nav__links::after {
   }
 }
 .navigation--middle .nav-cart .mini-cart-link {
-  color: #0068b3;
+  color: white;
 }
 @media (min-width: 640px) {
   .navigation--middle .nav-cart .mini-cart-link {
@@ -8863,7 +8863,7 @@ ul.nav__links::after {
     display: block;
   }
   .navigation--middle .nav-cart .mini-cart-link .mini-cart-icon {
-    color: #0068b3;
+    color: white;
     left: -7px;
     top: 10px;
   }
@@ -9745,6 +9745,12 @@ ul.nav__links::after {
 .search-results-highlight {
   font-weight: bold;
 }
+li.nav__links--primary:hover {
+  background-color: seagreen;
+}
+li.yCmsComponent .content {
+  padding-top: 11px;
+}
 header {
   background: #f4f4f4;
   margin-bottom: 20px;
@@ -10228,6 +10234,7 @@ fieldset[disabled] .btn-primary.active {
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;
+  color: #000000;
 }
 .image-gallery__image {
   cursor: pointer;
@@ -10638,7 +10645,7 @@ fieldset[disabled] .btn-primary.active {
   z-index: 10000;
 }
 .addtocart-component {
-  margin-top: 10px;
+  margin-top: 104px;
 }
 .addtocart-component .stock-wrapper {
   font-size: 13px;

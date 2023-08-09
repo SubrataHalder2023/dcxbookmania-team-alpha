@@ -16,7 +16,7 @@
 </cms:pageSlot>
 
 <header class="js-mainHeader">
-	<nav class="navigation navigation--top hidden-xs hidden-sm">
+	<nav class="navigation navigation--top hidden-xs hidden-sm" style="background-color:white">
 		<div class="row">
 			<div class="col-sm-12 col-md-4">
 				<div class="nav__left js-site-logo">
@@ -27,7 +27,7 @@
 			</div>
 			<div class="col-sm-12 col-md-8">
 				<div class="nav__right">
-					<ul class="nav__links nav__links--account">
+					<ul class="nav__links nav__links--account" style="color:white">
 						<c:if test="${empty hideHeaderLinks}">
 							<c:if test="${uiExperienceOverride}">
 								<li class="backToMobileLink">
@@ -59,7 +59,7 @@
 							 </cms:pageSlot>
 
 							<sec:authorize access="hasAnyRole('ROLE_ANONYMOUS')" >
-								<li class="liOffcanvas">
+								<li class="liOffcanvas" style="color:black">
 									<ycommerce:testId code="header_Login_link">
 										<c:url value="/login" var="loginUrl" />
 										<a href="${fn:escapeXml(loginUrl)}">
@@ -140,7 +140,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row desktop__nav">
+			<div class="row desktop__nav" style="background-color:#1589FF">
 				<div class="nav__left col-xs-12 col-sm-6">
 					<div class="row">
 						<div class="col-sm-2 hidden-xs visible-sm mobile-menu">
@@ -162,7 +162,7 @@
 						<li>
 							<c:if test="${empty hideHeaderLinks}">
 								<ycommerce:testId code="header_StoreFinder_link">
-									<div class="nav-location hidden-xs">
+									<div class="nav-location hidden-xs" style="color:white">
 										<c:url value="/store-finder" var="storeFinderUrl"/>
 										<a href="${fn:escapeXml(storeFinderUrl)}" class="btn">
 											<span class="glyphicon glyphicon-map-marker"></span>

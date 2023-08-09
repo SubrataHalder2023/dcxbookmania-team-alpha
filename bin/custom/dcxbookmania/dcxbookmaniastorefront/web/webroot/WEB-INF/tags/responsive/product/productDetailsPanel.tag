@@ -51,6 +51,23 @@
 	.listItems li:nth-child(even) {
 		background-color: #f5f5f5;
 	}
+.product-details {
+	font-family: "Dosis", "Courier New", monospace;
+	color: green;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+table td {
+	padding: 8px 6px;
+	vertical-align: top;
+}
 </style>
 
 <div class="product-details page-title" style="color:grey ; font-family: Times New Roman;
@@ -61,6 +78,8 @@
   text-shadow: 80px 80px 1px #fff;
   padding: 1rem;
  ">
+ 
+ 	
 	<ycommerce:testId code="productDetails_productNamePrice_label_${product.code}">
 		<div class="name" style="color:black;font-size:40px">${fn:escapeXml(product.name)}<span class="code" style="color:grey;font-size:20px; padding:1rem;">(${fn:escapeXml(product.code)})</span></div>
 	</ycommerce:testId>
@@ -78,6 +97,7 @@
 		<div class="product-main-info">
 			<div class="row">
 				<div class="col-lg-6">
+<<<<<<< Updated upstream
 					<div class="product-details" style="color:black">
 						<product:productPromotionSection product="${product}"/>
 						<div class="description" style="color:black;">${ycommerce:sanitizeHTML(product.summary)}</div> 
@@ -116,6 +136,70 @@
 							<li>Minimum Age: ${product.ageGroup}</li>
 							<li>Country: ${product.country}</li>
 						</ul>
+=======
+					<div class="product-details" style="color: black">
+						<product:productPromotionSection product="${product}" />
+						<ycommerce:testId
+							code="productDetails_productNamePrice_label_${product.code}">
+							<product:productPricePanel product="${product}" />
+						</ycommerce:testId>
+						<div class="description"
+							style="color: black; font-weight: bold; font-size: 24px">${ycommerce:sanitizeHTML(product.summary)}</div>
+							
+						<%--  <h5>Languages:${product.languages}</h5> --%>
+
+						<!--<ul>
+							<li style="color:black;font-weight:bold">Author:${product.author}</li>
+							<li>ISBN:${product.isbn}</li>
+							<li style="color:black;font-weight:bold" >No Of Pages:${product.numberOfPages}</li>
+							<li>Publisher:${product.publisher}</li>
+						  <li style="color:black;font-weight:bold">Publication Date:${product.publicationDate}</li>
+						</ul>-->
+
+						<table>
+
+							<tr>
+
+								<td>Author:</td>
+
+								<td>${product.author}</td>
+
+							</tr>
+
+							<tr>
+
+								<td>ISBN:</td>
+
+								<td>${product.isbn}</td>
+
+							</tr>
+
+							<tr>
+
+								<td>ANo Of Pages:</td>
+
+								<td>${product.numberOfPages}</td>
+
+							</tr>
+
+							<tr>
+
+								<td>Publisher:</td>
+
+								<td>${product.publisher}</td>
+
+							</tr>
+
+							<tr>
+
+								<td>Publication Date:</td>
+
+								<td>${product.publicationDate}</td>
+
+							</tr>
+
+						</table>
+>>>>>>> Stashed changes
 					</div>
 				</div>
 
