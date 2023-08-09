@@ -51,6 +51,23 @@
 	.listItems li:nth-child(even) {
 		background-color: #f5f5f5;
 	}
+.product-details {
+	font-family: "Dosis", "Courier New", monospace;
+	color: green;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+table td {
+	padding: 8px 6px;
+	vertical-align: top;
+}
 </style>
 
 <div class="product-details page-title" style="color:grey ; font-family: Times New Roman;
@@ -61,6 +78,8 @@
   text-shadow: 80px 80px 1px #fff;
   padding: 1rem;
  ">
+ 
+ 	
 	<ycommerce:testId code="productDetails_productNamePrice_label_${product.code}">
 		<div class="name" style="color:black;font-size:40px">${fn:escapeXml(product.name)}<span class="code" style="color:grey;font-size:20px; padding:1rem;">(${fn:escapeXml(product.code)})</span></div>
 	</ycommerce:testId>
@@ -78,44 +97,68 @@
 		<div class="product-main-info">
 			<div class="row">
 				<div class="col-lg-6">
-					<div class="product-details" style="color:black">
-						<product:productPromotionSection product="${product}"/>
-						<div class="description" style="color:black;">${ycommerce:sanitizeHTML(product.summary)}</div> 
-						<div style="border-radius: 25px;
-								  background: #E0E0FF;
-								  padding: 1rem;
-								  margin-top: 2rem;
-								  margin-bottom: 2rem;
-								  width: 10rem;
-								  height: 6rem;">
-							<ycommerce:testId code="productDetails_productNamePrice_label_${product.code}">
-								<product:productPricePanel product="${product}" />
-							</ycommerce:testId>
-						</div>
-                        <ul class="listItems">
-							<li>Author: ${product.author}</li>
-							<li>ISBN: ${product.isbn}</li>
-							<li>No Of Pages: ${product.numberOfPages}</li>
-							<li>Publisher: ${product.publisher}</li>
-						  	<li>Publication Date: ${product.publicationDate}</li>
-						  	<li>Language :${product.language}</li>
-						  	<li>Height: ${product.height}</li>
-							<li>Weight: ${product.weight}</li>
-							<li>Width: ${product.width}</li>
-							<li>Type: ${product.type}</li>
-							<li>Rating: ${product.rating}</li>
-							<li>Genre: ${product.genre}</li>
-							<li>Style: ${product.style}</li>
-							<li>Awards: ${product.awards}</li>
-							<li>Cover Design :${product.coverDesign}</li>
-							<li>Chapter Nos: ${product.chapterNos}</li>
-							<li>Authors Bio: ${product.authorsBio}</li>
-							<li>Fonts: ${product.fonts}</li>
-							<li>Subplot: ${product.subPlot}</li>
-							<li>Best Seller: ${product.bestSeller}</li>
-							<li>Minimum Age: ${product.ageGroup}</li>
-							<li>Country: ${product.country}</li>
-						</ul>
+					<div class="product-details" style="color: black">
+						<product:productPromotionSection product="${product}" />
+						<ycommerce:testId
+							code="productDetails_productNamePrice_label_${product.code}">
+							<product:productPricePanel product="${product}" />
+						</ycommerce:testId>
+						<div class="description"
+							style="color: black; font-weight: bold; font-size: 24px">${ycommerce:sanitizeHTML(product.summary)}</div>
+							
+						<%--  <h5>Languages:${product.languages}</h5> --%>
+
+						<!--<ul>
+							<li style="color:black;font-weight:bold">Author:${product.author}</li>
+							<li>ISBN:${product.isbn}</li>
+							<li style="color:black;font-weight:bold" >No Of Pages:${product.numberOfPages}</li>
+							<li>Publisher:${product.publisher}</li>
+						  <li style="color:black;font-weight:bold">Publication Date:${product.publicationDate}</li>
+						</ul>-->
+
+						<table>
+
+							<tr>
+
+								<td>Author:</td>
+
+								<td>${product.author}</td>
+
+							</tr>
+
+							<tr>
+
+								<td>ISBN:</td>
+
+								<td>${product.isbn}</td>
+
+							</tr>
+
+							<tr>
+
+								<td>ANo Of Pages:</td>
+
+								<td>${product.numberOfPages}</td>
+
+							</tr>
+
+							<tr>
+
+								<td>Publisher:</td>
+
+								<td>${product.publisher}</td>
+
+							</tr>
+
+							<tr>
+
+								<td>Publication Date:</td>
+
+								<td>${product.publicationDate}</td>
+
+							</tr>
+
+						</table>
 					</div>
 				</div>
 

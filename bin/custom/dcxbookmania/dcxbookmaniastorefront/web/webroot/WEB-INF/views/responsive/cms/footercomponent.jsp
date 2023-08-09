@@ -50,7 +50,7 @@
 </div>
 
 <div class="footer__bottom">
-    <div class="footer__copyright">
+    <div class="footer__copyright" style="background-color:honeydew;">
         <div class="container">${fn:escapeXml(notice)}</div>
     </div>
 </div>
