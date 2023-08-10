@@ -54,7 +54,7 @@ UPDATE DcxbookmaniaProduct;code[unique=true];$catalogVersion;type[$lang=en];rati
 ;p47;;Hardcover;4.2;Mystery;Investigation;Goodreads Choice Awards
 ;p48;;Hardcover;4.5;Psychological Thriller;Mystery;Peoples Choice Awards
 ;p49;;Paperback;4.6;True crime;Murder;Goodreads Choice Awards
-;p50;;Hardcover;4.3;Mystery;Murder;ITW Thriller Award
+#;p50;;Hardcover;4.3;Mystery;Murder;ITW Thriller Award
 ;p51;;Hardcover;4.2;Psychological fiction;Murder;goodreads choice awards
 ;p52;;Paperback;4.7;True crime;Murder;New York Times Best Seller
 ;p53;;Hardcover;4.7;Crime Thriller;Murder;Corine International Award
