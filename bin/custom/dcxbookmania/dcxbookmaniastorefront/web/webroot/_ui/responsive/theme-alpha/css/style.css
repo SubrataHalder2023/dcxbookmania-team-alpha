@@ -8333,11 +8333,7 @@ output {
 }
 footer {
   margin-top: 30px;
-<<<<<<< Updated upstream
-  background: #000000;
-=======
   background: #89C35C;
->>>>>>> Stashed changes
   color: #ffffff;
   font-weight: 300;
 }
@@ -8404,7 +8400,7 @@ footer {
 }
 .footer__right .footer__dropdown .form-control {
   cursor: pointer;
-  background-color: #000000;
+  background-color: #0f7384;
   color: #ffffff;
   padding: 7px 10px;
   height: 26px;
@@ -8412,13 +8408,13 @@ footer {
   font-size: 14px;
 }
 .footer__right .footer__dropdown .form-control option {
-  background-color: #000000;
+  background-color: #0f7384;
 }
 .footer__right .footer__dropdown .form-control:focus::-ms-value {
-  background-color: #000000;
+  background-color: #0f7384;
 }
 .footer__copyright {
-  background: #4c4c4c;
+  background: #005361;
   padding: 25px 0;
   color: black;
   text-align: center;
@@ -8582,7 +8578,7 @@ ul.nav__links::after {
 }
 #accNavComponentDesktopOne ul.nav__links li:hover,
 #accNavComponentDesktopTwo ul.nav__links li:hover {
-  background-color: #000000;
+  background-color: #0f7384;
 }
 #accNavComponentDesktopOne ul.nav__links li a,
 #accNavComponentDesktopTwo ul.nav__links li a {
@@ -9157,7 +9153,7 @@ ul.nav__links::after {
     border-bottom: 1px solid #317f8c;
   }
   .navigation--bottom .nav__links--products li.liUserSign:hover {
-    background-color: #000000;
+    background-color: #0f7384;
   }
 }
 @media (max-width: 1023px) {
@@ -9429,7 +9425,7 @@ ul.nav__links::after {
   }
   .navigation--bottom .nav__links--mobile li {
     overflow: hidden;
-    background-color: #000000;
+    background-color: #0f7384;
     border: none;
   }
   .navigation--bottom .nav__links--mobile li a {
