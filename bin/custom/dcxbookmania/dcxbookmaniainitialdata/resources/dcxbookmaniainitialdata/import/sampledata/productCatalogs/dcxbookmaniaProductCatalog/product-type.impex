@@ -1,0 +1,107 @@
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
+
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$catalogVersion;type[$lang=en];rating;genre[$lang=en];style[$lang=en];awards[$lang=en]
+;p1;;Hardcover;4.6;heroic,Adventure;High Fantasy;International Fantasy Award
+;p2;;Hardcover;4.7;Action, Fantasy,Mystery;High Fantasy;Nestlé Smarties Book Prize
+;p3;;Hardcover;4.5;Action,Adventure;Fantasy;the International Booker Prize
+;p4;;Hardcover;4.8;Action,Adventure;High Fantasy;the Costa Book Awards.
+;p5;;Paperback;4.6;mysterious;Fantasy;Locus Award for Best Fantasy Novel
+;p6;;Hardcover;4.6;Novel, Science fiction, Fantasy Fiction;High Fantasy;Hugo Award for Best Novel
+;p7;;Paperback;4.5;Action, Fantasy, Mystery;High Fantasy;Locus Award for Best Fantasy Novel
+;p8;;Hardcover;4.3;fantasy fiction;High Fantasy;the International Booker Prize
+;p9;;Hardcover;4.5;Humor, Fantasy fiction;fantasy;The most anticipated book
+;p10;;Paperback;4.5;fantasy fiction, Historical;Historical Fantasy;the Costa Book Awards.
+;p11;;Paperback;4.2;Romance, Tragedy;Romantic;goodreads choice awards
+;p12;;Paperback;4.4;Inspiration;Inspirational;New York Times Best Seller
+;p13;;Paperback;4.5;Inspiration, Quest;Drama;Corine International Award
+;p14;;Paperback;4.6;Deportation, Trajedy;Trajedy;The most anticipated book
+;p15;;Paperback;4.7;Courtroom Drama;Tragedy;Pulitzer Prize
+;p16;;Hardcover;4.2;Fantasy,Fiction;fantasy;New York Times Best Seller
+;p17;;Hardcover;4.3;Traumatic, Romace;Tragedy;goodreads choice awards
+;p18;;Hardcover;4.8;Science, Psycological;Tragedy;The most anticipated book
+;p19;;Hardcover;4.7;Fantasy,Fiction;Science Fiction;New York Times Best Seller
+;p20;;Paperback;4.6;Contemporary, Fiction;Memory;the Costa Book Awards.
+;p21;;Paperback;4.4;Mystery ,thriller;Suspense;Thriller;the International Booker Prize 
+;p22;;Paperback;4.5;Southern Gothic, Psychological;Mystery;goodreads choice awards
+;p23;;Hardcover;4.3;Psychological Fiction;Thriller;Ian Fleming Steel Dagger Award
+;p24;;Hardcover;4.7;Thriller;Thriller;Prix des Lectrices award
+;p25;;Hardcover;4.3;Horror fiction;Thriller;Thriller;People's Choice Award
+;p26;;Hardcover;4.7;Thriller, Mystery;Thriller;New York Times Best Seller
+;p27;;Paperback;4.1;Psychological Thriller;Suspense;Darwitt Award
+;p28;;Paperback;4.4;Thriller, Mystery;Suspense;New York Times Best Seller
+;p29;;Paperback;4.5;Suspense Psychological;Thriller;goodreads choice awards
+;p30;;Hardcover;4.3;Psycological, Murder;Mystery;People's Choice Award
+;p31;;Hardcover;4.3;Horror, Psycological;Thriller;ITW Thriller Award
+;p32;;Paperback;4.2;Psycological, Thriller;Horror;New York Times Best Seller
+;p33;;Hardcover;4.8;Horror, Psycological;Suspense;goodreads choice awards
+;p34;;Paperback;3.8;Psycological, Thriller;Thriller;Darwitt Award
+;p35;;Paperback;4.6;Fantasy,Horror;Horror;People's Choice Award
+;p36;;Paperback;4.6;Fantasy,Horror;Fantasy;Goodreads Choice Awards
+;p37;;Hardcover;4.9;Psycological, Thriller;Thriller;Peoples Choice Awards
+;p38;;Paperback;4.1;Fantasy,Horror;Horror;New York Times Bestseller
+;p39;;Hardcover;4.4;Horror, Psycological;Gothic;Peoples Choice Awards
+;p40;;Hardcover;4.5;Psycological, Thriller;Gothic;New York Times Bestseller
+;p41;;Hardcover;4.6;Psychological fiction;Thriller;ITW Thriller Award
+;p42;;Paperback;4.2;True crime;Non-fiction;New York Times Bestseller
+;p43;;Paperback;4.8;Crime Thriller;Thriller;Goodreads Choice Awards
+;p44;;Paperback;4.3;Mystery;Thriller;Darwitt Award
+;p45;;Hardcover;4.4;Psychological Thriller;Crime;Peoples Choice Awards
+;p46;;Hardcover;4.1;True crime;Crime;New York Times Bestseller
+;p47;;Hardcover;4.2;Mystery;Investigation;Goodreads Choice Awards
+;p48;;Hardcover;4.5;Psychological Thriller;Mystery;Peoples Choice Awards
+;p49;;Paperback;4.6;True crime;Murder;Goodreads Choice Awards
+;p50;;Hardcover;4.3;Mystery;Murder;ITW Thriller Award
+;p51;;Hardcover;4.2;Psychological fiction;Murder;goodreads choice awards
+;p52;;Paperback;4.7;True crime;Murder;New York Times Best Seller
+;p53;;Hardcover;4.7;Crime Thriller;Murder;Corine International Award
+;p54;;Hardcover;4.3;Mystery;Murder;The most anticipated book
+;p55;;Hardcover;4.5;Psychological Thriller;Murder;Pulitzer Prize
+;p56;;Paperback;4.4;True crime;True Crime;New York Times Best Seller
+;p57;;Paperback;4.3;Mystery;True Crime;goodreads choice awards
+;p58;;Hardcover;4.8;Psychological Thriller;True Crime;Goodreads Choice Awards
+;p59;;Paperback;4.5;Mystery;True Crime;The Costa book awards
+;p60;;Paperback;4.8;True Crime;True Crime;the International Booker Prize 
+;p61;;Hardcover;4.7;Inspiration, Motivation;Non-fiction;Peoples Choice Awards
+;p62;;Paperback;4.2;Motivation;Non-fiction;the Costa Book awards
+;p63;;Hardcover;4.5;Guiding, Motivation;Non-fiction;New York Times Bestseller
+;p64;;Paperback;4.1;Self-Help;Non-fiction;Goodreads Choice Awards
+;p65;;Paperback;4.3;Motivation;Non-fiction;Darwitt Award
+;p66;;Hardcover;4.2;Inspirational;Non-fiction;Peoples Choice Awards
+;p67;;Hardcover;4.7;Motivation;Non-fiction;Peoples Choice Awards
+;p68;;Paperback;4.7;Inspirational;Non-fiction;Goodreads Choice Awards
+;p69;;Hardcover;4.4;Motivation;Non-fiction;Peoples Choice Awards
+;p70;;Paperback;4.6;Self-Help;Non-fiction;New York Times Bestseller
+;p71;;Hardcover;4.3;Self-Help;Guide,Non Fiction;Goodreads choice award
+;p72;;Hardcover;4.2;Business;Guide,Non Fiction;Ian Fleming Steel Dagger Award
+;p73;;Paperback;4.1;Motivation;Guide,Non Fiction;Prix des Lectrices award
+;p74;;Paperback;3.8;Inspirational;Guide,Non Fiction;People's Choice Award
+;p75;;Hardcover;3.6;Self-Help;Guide,Non Fiction;ITW Thriller Award
+;p76;;Paperback;4.3;Guiding, Motivation;Guide,Non Fiction;New York Times Best Seller
+;p77;;Hardcover;4.5;Business;Guide,Non Fiction;Darwitt Award
+;p78;;Paperback;4.6;MotivationGuide,Non Fiction;New York Times Best Seller
+;p79;;Paperback;4.7;Inspiration, Motivation;Guide,Non Fiction;Goodreads Choice Awards
+;p80;;Hardcover;4.3;Guiding, Motivation;Guide,Non Fiction;Peoples Choice Awards
+;p81;;Paperback;4.2;Romance, History;Historical,Drama;goodreads choice awards
+;p82;;Paperback;4.5;Romance, History;Historical, Romance;New York Times Best Seller
+;p83;;Hardcover;4.6;Historical;Emotional;Corine International Award
+;p84;;Paperback;4.7;Romance, History;Emotional, Roamnce;New York Times Best Seller
+;p85;;Paperback;4.8;Romance, History;Historical,Drama;Peoples Choice Awards
+;p86;;Hardcover;4.2;Historical Fiction;Historical, Romance;Peoples Choice Awards
+;p87;;Hardcover;4.4;Romance;Emotional;Goodreads Choice Awards
+;p88;;Paperback;4.1;Romance, History;Emotional, Roamnce;the International Booker Prize 
+;p89;;Paperback;4.1;Historical Fiction;Emotional;the Costa Book awards
+;p90;;Hardcover;4.7;Historical;Historical,Drama;New York Times Best Seller
+;p91;;Hardcover;4.3;Romantic;Comedy,Drama;New York Times Best Seller
+;p92;;Paperback;4.5;Comredy;Romance;goodreads choice awards
+;p93;;Hardcover;3.6;Comredy;Comedy;Corine International Award
+;p94;;Hardcover;3.4;Romantic;Comedy;The most anticipated book
+;p95;;Paperback;4.7;Comredy;Comedy;Pulitzer Prize
+;p96;;Hardcover;4.6;Sattire;Comedy;New York Times Best Seller
+;p97;;Paperback;4.2;Sattire;Roamnce;goodreads choice awards
+;p98;;Hardcover;4.1;sarcasm;Roamnce;The most anticipated book
+;p99;;Hardcover;4.5;Romantic;Roamnce;New York Times Best Seller
+;p100;;Paperback;4.6;Comredy;Roamnce;the Costa Book awards
