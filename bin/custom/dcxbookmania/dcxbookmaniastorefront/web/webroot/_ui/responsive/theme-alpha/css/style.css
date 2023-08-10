@@ -8038,7 +8038,7 @@ General
 *****************************************************************/
 a,
 button {
-  color: #ec7205;
+  color: orangered;
   text-decoration: none;
 }
 a:hover {
@@ -8333,7 +8333,11 @@ output {
 }
 footer {
   margin-top: 30px;
+<<<<<<< Updated upstream
   background: #000000;
+=======
+  background: #89C35C;
+>>>>>>> Stashed changes
   color: #ffffff;
   font-weight: 300;
 }
@@ -8416,7 +8420,7 @@ footer {
 .footer__copyright {
   background: #4c4c4c;
   padding: 25px 0;
-  color: #ffffff;
+  color: black;
   text-align: center;
 }
 ul.nav__links::after {
@@ -8781,7 +8785,7 @@ ul.nav__links::after {
 .navigation--middle .nav__right ul.nav__links--shop_info .nav-location span {
   font-size: 30px;
   top: 27%;
-  color: #000000;
+  color: white;
 }
 @media (min-width: 640px) {
   .navigation--middle .nav__right ul.nav__links--shop_info .nav-location {
@@ -8818,7 +8822,7 @@ ul.nav__links::after {
 .navigation--middle .nav-location:focus,
 .navigation--middle .nav-cart:focus,
 .navigation--middle .btn:focus {
-  background-color: #f2f2f2;
+  background-color: blue;
   box-shadow: none;
 }
 .navigation--middle .nav-cart {
@@ -8850,7 +8854,7 @@ ul.nav__links::after {
   }
 }
 .navigation--middle .nav-cart .mini-cart-link {
-  color: #000000;
+  color: white;
 }
 @media (min-width: 640px) {
   .navigation--middle .nav-cart .mini-cart-link {
@@ -8863,7 +8867,7 @@ ul.nav__links::after {
     display: block;
   }
   .navigation--middle .nav-cart .mini-cart-link .mini-cart-icon {
-    color: #000000;
+    color: white;
     left: -7px;
     top: 10px;
   }
@@ -8956,7 +8960,7 @@ ul.nav__links::after {
     position: relative;
     cursor: pointer;
     margin: 0 auto;
-    color: #000000;
+    color: #89c35c;
     font-size: 29px;
     top: 2px;
   }
@@ -9009,7 +9013,7 @@ ul.nav__links::after {
     text-decoration: none;
   }
   .navigation--middle .mobile__nav__row--btn span.glyphicon {
-    color: #000000;
+    color: #89c35c;
   }
 }
 .navigation--middle .mobile-menu {
@@ -9027,13 +9031,13 @@ ul.nav__links::after {
   position: relative;
   cursor: pointer;
   margin: 0 auto;
-  color: #000000;
+  color: #89c35c;
   font-size: 29px;
   top: 2px;
 }
 .navigation--bottom {
-  background-color: #000000;
-  border-bottom: 1px solid #000000;
+  background-color: #89c35c;
+  border-bottom: 1px solid #89c35c;
 }
 @media (max-width: 1023px) {
   .navigation--bottom {
@@ -9078,7 +9082,7 @@ ul.nav__links::after {
   }
 }
 .navigation--bottom.js-enquire-offcanvas-navigation .close-nav button span {
-  color: #000000;
+  color: #89c35c;
   font-size: 25px;
 }
 .navigation--bottom:before,
@@ -9470,7 +9474,7 @@ ul.nav__links::after {
     background-color: #ffffff;
     padding: 5px 12px 5px 20px;
     cursor: pointer;
-    color: #000000;
+    color: #89c35c;
     display: inline-block;
     width: 80%;
     float: left;
@@ -9482,7 +9486,7 @@ ul.nav__links::after {
 @media (max-width: 1023px) {
   .navigation--bottom .userGroup a {
     border: none;
-    color: #000000;
+    color: #89c35c;
   }
   .navigation--bottom .userGroup a:hover {
     background-color: transparent !important;
@@ -9589,7 +9593,7 @@ ul.nav__links::after {
     text-align: left;
     width: 80%;
     display: inline-block;
-    color: #000000;
+    color: #89c35c;
     padding: 20px 30% 20px 50px;
   }
 }
@@ -9631,7 +9635,7 @@ ul.nav__links::after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e032";
-  color: #000000;
+  color: #89c35c;
   font-size: 30px;
 }
 @media (max-width: 639px) {
@@ -9744,6 +9748,12 @@ ul.nav__links::after {
 }
 .search-results-highlight {
   font-weight: bold;
+}
+li.nav__links--primary:hover {
+  background-color: seagreen;
+}
+li.yCmsComponent .content {
+  padding-top: 11px;
 }
 header {
   background: #f8f8f8;
@@ -10228,6 +10238,7 @@ fieldset[disabled] .btn-primary.active {
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;
+  color: #000000;
 }
 .image-gallery__image {
   cursor: pointer;
@@ -10638,7 +10649,7 @@ fieldset[disabled] .btn-primary.active {
   z-index: 10000;
 }
 .addtocart-component {
-  margin-top: 10px;
+  margin-top: 104px;
 }
 .addtocart-component .stock-wrapper {
   font-size: 13px;
@@ -13302,7 +13313,7 @@ a.product__listing .product__listing--promo:focus {
 }
 .cart__quote__edit .quote__head {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #89c35c;
   padding: 20px 0;
   padding-left: 30px;
   padding-right: 30px;
@@ -13389,7 +13400,7 @@ textarea.quote__comments--textarea {
 .quote__comments--toggle:focus,
 .quote__form--toggle:focus {
   border: none;
-  outline: #000000;
+  outline: #89c35c;
 }
 .quote__form--toggle {
   color: #ffffff;

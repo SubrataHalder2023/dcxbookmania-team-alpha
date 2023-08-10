@@ -66,7 +66,7 @@
 			<button class="btn btn-default btn-block js-pickup-in-store-button glyphicon-map-marker btn-icon" disabled="disabled" id="product_${fn:escapeXml(product.code)}${fn:escapeXml(entryNumber)}" type="submit" data-productavailable="${fn:escapeXml(product.availableForPickup)}"
 				data-productcart='${fn:escapeXml(product.price.formattedValue)}'
 				data-productcart-variants='${fn:escapeXml(variantsJSON)}'
-				data-img-html="${fn:escapeXml(productPrimaryImageHtml)}" data-productname-html="${fn:escapeXml(ycommerce:sanitizeHTML(product.name))}" data-cartpage="false" data-entryNumber="0" data-actionurl="${fn:escapeXml(pickUpInStoreFormAction)}" data-value="1" style="background-color:black; border-color:black">
+				data-img-html="${fn:escapeXml(productPrimaryImageHtml)}" data-productname-html="${fn:escapeXml(ycommerce:sanitizeHTML(product.name))}" data-cartpage="false" data-entryNumber="0" data-actionurl="${fn:escapeXml(pickUpInStoreFormAction)}" data-value="1" style="background-color:#FF5F1F; border-color:#FF5F1F;border-radius:25px!important;width:67%">
 				<spring:theme code="pickup.in.store"/>
 			</button>
 		</c:otherwise>

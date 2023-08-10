@@ -12,7 +12,8 @@
 	type="de.hybris.platform.commercefacades.product.data.ProductData"%>
 
 <h1 style="font-family: sans-serif">Product review summary</h1>
-<div class="rating">
+<div class="rating"style="margin: 0 133px 0 389px;
+    float: right; font-size:20px">
 	<c:set var="ratingJson">${ycommerce:encodeJSON(product.averageRating)}</c:set>
 	<div class="rating-stars pull-center js-ratingCalc ${fn:escapeXml(starsClass)}" data-rating='{"rating":"${fn:escapeXml(ratingJson)}","total":5}' >
 		<div class="greyStars">
@@ -37,7 +38,7 @@
 			<c:if test="${not empty product.reviews}">
 				<a href="#tabreview" class="js-openTab"><spring:theme code="review.see.reviews" /></a>
 			</c:if>
-			<a href="#tabreview" class="js-writeReviewTab" style="color:black;font-size:16px"><spring:theme code="review.write.title" /></a>
+			<a href="#tabreview" class="js-writeReviewTab" style="color:black;font-size:20px;font-family:ui-serif"><spring:theme code="review.write.title" /></a>
 		</c:when>
 		<c:otherwise>
 			<spring:theme code="review.reviews" />
