@@ -1,0 +1,108 @@
+$productCatalog=dcxbookmaniaProductCatalog
+
+$productCatalogName=Dcxbookmania Product Catalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+
+# Language
+$lang=en
+
+UPDATE DcxbookmaniaProduct;code[unique=true];$catalogVersion;author[$lang=en];Isbn[$lang=en];Publisher[$lang=en];PublicationDate[$lang=en]
+;p1;;J.R.R Tolkien;9788845292613;Allen & Unwin;
+;p2;;J.K. Rowling;9781408855652;Bloomsbury;
+;p3;;George R.R. Martin;9780007428540;Bantam Spectra(US);
+;p4;;Patrick Rothfuss;756404746;Gollancz;
+;p5;;Neil Gaiman;9780062101914;William Morrow, Headline;
+;p6;;N.K. Jemisin;9780356508191;Orbit;
+;p7;;Stephen King;1501182102;Grant;
+;p8;;Robert Jordan;9780765335418;Tor Books(US) and Orbit(UK);
+;p9;;Terry Pratchett Neil Gaiman;9780060853969;Gollancz(UK) and Workman(US);
+;p10;;Guy Gavriel Kay;9780451463890;Penguin Group;
+;p11;;John Green;9780141345659;Penguin books ltd;
+;p12;;Fredrik Backman;9781444775815;Forum(Swedish) Atria books(En);
+;p13;;Paulo Coelho;9788172234980;Harper Torch(English);
+;p14;;Nicola Yoon;9780552574242;Delacorte Books;
+;p15;;Harper Lee;9780099549482;J.B. Lippincott & Co.;
+;p16;;Ursula K. Le Guin;9789353380335;Harcourt;
+;p17;;Bridget Collins;9780008272142;Harper Collins;
+;p18;;Philip K. Dick;9780575074583;J.B. Lippincott & Co.;
+;p19;;Tad Williams;9780886773847;DAW Books;
+;p20;;Lev Grossman;9780552562539;Viking Penguin Books;
+;p21;;Alex Michaelides;9781409181637;Celadon Books;
+;p22;;Gillian Flynn;978075382210;Shaye Areheart Books;
+;p23;;Samantha Downing;9783954718436;Michael Joseph;
+;p24;;Paula Hawkins;978055277977;Black Swan;
+;p25;;Riley Sager;152935823X;Hodder Paperbacks;
+;p26;;Stacy Willingham;9780008454470;HarperCollins;
+;p27;;Liane Moriarty;9780399160765;Pengiun Publishing;
+;p28;;Frieda McFadden;978014346115x;Pengiun;
+;p29;;Ruth Ware;978009959824;Vintage;
+;p30;;Dennis Lehane;9780553820249;Bantam;
+;p31;;Thomas Tryon;1504056191;Alfred A. Knopf;
+;p32;;Zakiya Dalila Harris;1982160136;Simon & Schuster;
+;p33;;Joan Samson;9780340212684;Simon and Schuster;
+;p34;;Piers Brendon;375708081;Vintage;
+;p35;;Whitley Strieber;375703768;William Morrow;
+;p36;;Mark Z. Danielewski;375703764;Pantheon, Random House;
+;p37;;Stephen King;307743659;Doubleday;
+;p38;;Bram Stoker;9354994709;Archibald Constable and Company (UK);
+;p39;;Stephen Graham Jones;1982136456;Saga Press and Titan Books;
+;p40;;Paul Gaetan Tremblay;62363247;HarperCollins;
+;p41;;Gillian Flynn;B01KAGF6XY;Crown Publishing Group;
+;p42;;Truman Capote;679745580;Random House;
+;p43;;Agatha Christie;9780008123208;Collins Crime Club;
+;p44;;Rebecca;9781844080380;Victor Gollancz Ltd;
+;p45;;Raymond Chandler;394758285;Alfred A. Knopf;
+;p46;;Alice Sebold;0330485385;Little, Brown;
+;p47;;Alice Sebold;0593311914;Alfred A. Knopf;
+;p48;;Wilkie Collins;9356844534;All the Year Round;
+;p49;;Robert Traver;0312033567;St. Martin's;
+;p51;;Sidney Sheldon;197533566X;Paperback;
+;p52;;Arthur Conan Doyle;8175994312;Ward Lock;
+;p53;;Wilkie Collins;819605937X;Tinsley Brothers;
+;p54;;Agatha Christie;0062081535;Collins Crime Club;
+;p55;;Sir Arthur Conan Doyle;9388810945;Fingerprint Publishing;
+;p56;;Umberto Eco;1946501158;Bompiani (Italy) Harcourt (US);
+;p57;;Stieg Larsson;9391142729;Norstedts Förlag;
+;p58;;Sarah Winman;0008505802;Fourth Estate;
+;p59;;Jonathan Lethem;345803396;Faber & Faber
+;p60;;Lee Child;999846302;Bantam Books;
+;p61;;Robert Greene;9388144341;Viking Press;
+;p62;;James Clear;939008525X;Random House Business Books;
+;p63;;Mark Manson;0063016656;HarperOne;
+;p64;;FRAsc Miralles;178633089X;Hutchinson;
+;p65;;Brain Tracy;97816333536852;Mango Media;
+;p66;;Eckhart Tolle;97815777311522;Namaste Publishing;
+;p67;;Jen Sincero;9798640554557;Independently Published;
+;p68;;Hal Elrod;1473632153;Quercus;
+;p69;;Jay Shetty;9780008355579;HarperCollins;
+;p70;;Sadhguru;9352643933;HarperCollins;
+;p71;;Morgan Housel;9781387623174;LULU Press;
+;p72;;Josh Kaufman;9780670919536;Portfolio;
+;p73;;Robert Kiyosaki & Sharon L. lechter;446677450;Warner Books;
+;p74;;Peter Thiel & Blake Masters;9780804139298;Crown Business;
+;p75;;Tim ferriss;9780307353139;Crown Publishing group;
+;p76;;Artiom Dashinsky;979866179381;Independenty Published;
+;p77;;Napoleon Hill;9781788441025;The Ralston Society;
+;p78;;George S. Clason;9780451205360;Penguin Books;
+;p79;;Ashneer Grover;9780143460695;penguin business;
+;p80;;Jim C. Collins;9780066620992;Hardcover;
+;p81;;Diana Gabaldon;9780385671088;delacorte Press;
+;p82;;Tessa dare;9780062240163;Harper Collins;
+;p83;;Tessa dare;9780062349071;Harper Collins;
+;p84;;KJ Charles;97803995939963;Random House publishing group;
+;p85;;Lisa Kleypas;9780061793516;Harper Collins;
+;p86;;Margaret Mitchell;9780446365383;Macmillan Publishers;
+;p87;;Tessa dare;9780062240132;Harper Collins;
+;p88;;Beverly Jenkins;9780060575328;Harper Collins;
+;p89;;Judith McNaught;9780671011338;Pocket Books;
+;p90;;Julie Lessman;9780671011338;Baker Books;
+;p91;;Casey McQuiston;9781250316776;St Martins Griffin;
+;p92;;Christina Lauren;9781501128035;Simon & schuster;
+;p93;;Emily Henry;1984806734;Berkley Books;
+;p94;;Sophie Kinsella;9780552150828;Black Swan;
+;p95;;R.L. Mathewson;9780983212546;New york times;
+;p96;;Edward Ricardo Braithwaite;9780139230370;RHUK;
+;p97;;Emily Henry;9780241995341;Penguin;
+;p98;;Sophie Kinsella;9780552774413;Black Swan;
+;p99;;Beth O'Leary;9781787474413;Quercus;
+;p100;;Kate Spencer;9781668608616;Pan

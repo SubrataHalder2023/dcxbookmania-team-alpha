@@ -1,0 +1,109 @@
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
+
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+
+# Language
+$lang=en
+
+# Update allProducts with localisations
+UPDATE DcxbookmaniaProduct;code[unique=true];$catalogVersion;chapterNos;coverDesign;sales;authorsBio;fonts
+;p1;;12;Historic Fantasy;10 million;From 1925 to 1945, Tolkien was the Rawlinson and Bosworth Professor of Anglo-Saxon and a Fellow of Pembroke College, both at the University of Oxford.;Ringbearer
+;p2;;7;Historic Fantasy;20million;J.K. Rowling, in full Joanne Kathleen Rowling, pen name of Joanne Rowling, (born July 31, 1965, Yate, near Bristol, England), British author, creator of the popular and critically acclaimed Harry Potter series, about a young sorcerer in training.;Times New Roman.
+;p3;;9;Historic Fantasy;15million;George Raymond Richard Martin, also known as GRRM, is an American novelist, screenwriter, television producer and short story writer.;Times New Roman.
+;p4;;6;Historic Fantasy;8million;Patrick Rothfuss is the bestselling author of The Kingkiller Chronicle. His first novel, The Name of the Wind, won the Quill Award and was a Publishers Weekly Best Book of the Year. ;Garamond
+;p5;;5;Retro;6million;Neil Richard MacKinnon Gaiman is an English author of short fiction, novels, comic books, graphic novels, audio theatre, and a screenwriter.;Garamond
+;p6;;4;Retro;10million;Nora Keita Jemisin is an American science fiction and fantasy writer. Her fiction includes a wide range of themes, notably cultural conflict and oppression.;Ringbearer
+;p7;;7;Historic Fantasy;4million;Stephen Edwin King was born on September 21, 1947, at the Maine General Hospital in Portland. His parents were Nellie Ruth (Pillsbury), who worked as a caregiver at a mental institute, and Donald Edwin King, a merchant seaman.;Times New Roman.
+;p8;;3;Historic Fantasy;6million;Robert Jordan was born in 1948 in Charleston. He was a graduate of the Citadel, the Military College of South Carolina, with a degree in physics, and served two tours in Vietnam.;Baskerville
+#;p9;;8;Modern;8million;Neil Richard MacKinnon Gaiman is an English author of short fiction, novels, comic books, graphic novels, audio theatre, and a screenwriter. Gaiman created and wrote for the Good Omens series based on his and Pratchetts 1990 novel of the same name. In addition, Gaiman also serves as showrunner for the series.;Times New Roman
+#;p10;;13;Historic Fantasy;5million;Guy Gavriel Kay is a Canadian writer of fantasy fiction. The majority of his novels take place in fictional settings that resemble real places during real historical periods, such as Constantinople during the reign of Justinian I or Spain during the time of El Cid;Amasis
+;p11;;9;Modern;23million;His books have more than 50 million copies in print worldwide, including The Fault in Our Stars, which is one of the best-selling books of all time.;Calibri;;
+;p12;;14;Modern;30million;Fredrik Backman (born 2 June 1981) is a Swedish author, blogger, and columnist. He wrote A Man Called Ove (2012), ;Times New Roman;;
+;p13;;7;Plain;50million;With his unique style and story-telling abilities, Paulo Coelho has become one of the most celebrated literary figures.;Calibri;;
+;p14;;16;Modern;7million;Nicola Yoon is a Jamaican-American author. She is best known for writing the 2015 young adult novel Everything,;Times New Roman;;
+;p15;;14;Gothic;75million;Nelle Harper Lee was an American novelist who wrote the 1960 novel To Kill a Mockingbird that won the 1961 Pulitzer Prize;Times New Roman;;
+;p16;;15;Western;6million;Ursula Kroeber Le Guin was an American author best known for her works of speculative fiction, including science fiction works set in her Hainish universe, and the Earthsea fantasy series;Arial;;
+;p17;;13;Gothic;8million;A supernaturally tinged tale of forbidden love, buried secrets and unspeakable betrayal, Bridget Collins' ;Calibri;;
+;p18;;18;Dystopian;15million;Philip Kindred Dick, often referred to by his initials PKD, was an American science fiction writer. ;Garamond;;
+;p19;;16;Modern;5million;"Robert Paul ""Tad"" Williams is an American fantasy and science fiction writer.";Times New Roman;;
+;p20;;22;Modern;8million;Lev Grossman is an American novelist and journalist who wrote The Magicians Trilogy:;Times New Roman;;
+;p21;;10;Modern;12 million;Alex Michaelides is a bestselling British Cypriot author and screenwriter. His debut novel, the psychological thriller The Silent Patient,;Aerial;;
+;p22;;3;darkness;6 million;Gillian Flynn is an American author and television critic for Entertainment Weekly. She has so far written three novels,;Bold;;
+;p23;;4;Dark;2 millon;Samantha Downing is the author of the bestselling My Lovely Wife, nominated for the Edgar, ITW,;Baskerville;;
+;p24;;4;Historic Fantasy;8 million;The story is a first-person narrative told from the point of view of three women: Rachel Watson, Anna Boyd/Watson, and Megan Hipwell.;Garamond;;
+;p25;;22;Dark;3 million;Riley Sager is the New York Times bestselling author of seven novels, most recently THE HOUSE ACROSS THE LAKE and SURVIVE THE NIGHT;Ringbearer;;
+;p26;;12;Thriller;12 million;Stacy Willingham worked as a copywriter and brand strategist for various marketing agencies before deciding to write fiction;Bold;;
+;p27;;12;Dark;1 million;Liane Moriarty is an Australian author. She has written nine novels, including the New York Times best sellers Big Little Lies and Nine Perfect Strangers;Times New Roman;;
+;p28;;31;Modern;2.5 million;Bestselling author Freida McFadden is a practicing physician specializing in brain injury who has penned multiple Kindle bestselling psychological thrillers and medical humor novels.;Baskerville;;
+;p29;;8;Gothic;4.8 million ;Ruth Ware, alias for Ruth Warburton, is a British psychological thriller author.;Times New Roman;;
+;p30;;18;Gothic;7.1 million;Dennis Lehane was born on 4 August 1965 in Dorchester, Massachusetts, USA. He is a producer and writer, known for Mystic River;Bold;;
+;p31;;18;Dark;5 million;Thomas Lester Tryon was an American actor and novelist. As an actor, he was billed as Tom Tryon and is best known for playing the title role in the film The Cardinal, featured roles in the war films;Times New Roman;;
+;p32;;15;Modern;12million;Zakiya Dalila Harris is an American author known for her bestselling debut novel The Other Black Girl.;Bold;;
+;p33;;8;Modern;7.1 million;Joan Samson was a US writer. Her only published novel was The Auctioneer, published briefly before she died of brain cancer;Times New Roman;;
+;p34;;31;Gothic;1 million;Piers Brendon FRSL is a British historian and writer, known for historical and biographical works.;Baskerville;;
+;p35;;15;Dark;15million;Strieber began his career as a novelist with the horror novels The Wolfen (1978) and The Hunger (1981), ;Times New Roman;;
+;p36;;15;Thriller;12 million;Mark Z. Danielewski is an American fiction author. He is most widely known for his debut novel House of Leaves, which won the New York Public Library's Young Lions Fiction Award.;Aerial;;
+;p37;;12;Gothic;15million;Stephen Edwin King is an American author of horror, supernatural fiction, suspense, crime, science-fiction, and fantasy novels.;Aerial;;
+;p38;;17;Gothic;150million;Abraham Stoker was an Irish author who wrote the 1897 Gothic horror novel Dracula.;Aerial;;
+;p39;;15;Modern;15million;Stephen Graham Jones is a Blackfoot Native American author of experimental fiction, horror fiction, crime fiction, and science fiction. ;Bold;;
+;p40;;22;Dark;7.1 million;Paul Gaetan Tremblay is an American author and editor of horror, dark fantasy, and science fiction.;Times New Roman;;
+#;p41;;9;Suspenseful;20 million;"Gillian Flynn is an acclaimed American author known for her captivating storytelling and skillful portrayal of complex characters. Before becoming a bestselling novelist, she worked as a television critic for Entertainment Weekly. Flynn's other notable works include ""Sharp Objects"" and ""Dark Places.""";Calibri;;
+;p42;;14;Investigative;7 million;"Truman Capote was an American author and playwright known for his unique writing style and groundbreaking works. He gained international fame for his novella ""Breakfast at Tiffany's"" and is considered a pioneer of the true crime genre.";Times New Roman;;
+;p43;;7;Investigative;3 million;From early childhood at the end of the 19th century, through two marriages and two World Wars, and her experiences both as a writer;Calibri;;
+;p44;;16;Investigative;12 million;A timid, naïve, middle-class woman in her early twenties, who enjoys sketching. Neither the narrator's first nor maiden name is revealed.;Times New Roman;;
+;p45;;14;Investigative;1 million;Na;Times New Roman;;
+;p46;;15;Murder;2.5 million;Na;Arial;;
+;p47;;13;Murder;4.8 million ;Na;Calibri;;
+;p48;;18;Murder;7.1 million;Na;Garamond;;
+;p49;;16;Murder;14million;Na;Times New Roman;;
+#;p50;;12;Murder Mystery;12 million;Na;Times New Roman;;
+;p51;;11;Murder Mystery;6 million;Na;Bold;;
+;p52;;12;Murder Mystery;2 millon;Na;Times New Roman;;
+;p53;;11;Murder Mystery;8 million;Na;Baskerville;;
+;p54;;12;Murder Mystery;3 million;Na;Times New Roman;;
+;p55;;23;Detective;12 million;Na;Aerial;;
+;p56;;23;Detective;1 million;Na;Aerial;;
+;p57;;12;Detective;2.5 million;Na;Aerial;;
+;p58;;14;Detective;4.8 million ;Na;Bold;;
+;p59;;12;Detective;7.1 million;Na;Times New Roman;;
+;p61;;48;Plain;23million;Best-selling author and public speaker, Robert Greene was born in Los Angeles. He attended U.C. California at Berkeley and the University of Wisconsin at Madison, where he received a degree in classical studies. ;Times New Roman;;
+;p62;;17;Modern;30million;James Clear is a writer and speaker. He is the author of the #1 New York Times bestseller Atomic Habits and the popular 3-2-1 newsletter.;Clibri;;
+;p63;;24;Stylish;50million;Mark Manson is an American self-help author and blogger. As of 2022 he has authored or co-authored four books,;Bold;;
+;p64;;13;Modern;7million;FRAsc Miralles Contijoch is a Catalan writer, essayist, translator, and musician;Times New Roman;;
+;p65;;14;Plain;75million;Brian Tracy is a Canadian-American motivational public speaker and self-development author. He is the author of over eighty books that have been translated into dozens of languages;Garamond;;
+;p66;;16;Stylish;6million;Eckhart Tolle is a German-born spiritual teacher and self-help author. His books include The Power of Now: A Guide to Spiritual Enlightenment,;Times New Roman;;
+;p67;;18;Plain;8million;Jen Sincero is an American writer, speaker and success coach.;Times New Roman;;
+;p68;;12;Stylish;15million;Hal Elrod is on a mission to elevate the consciousness of humanity, one reader at a time. As the author of the international bestseller The Miracle Morning;Clibri;;
+;p69;;17;Modern;5million;The Sunday Times Number One Bestseller Jay Shetty, social media superstar and host of the #1 podcas;Aerial;;
+;p70;;14;Modern;8million;Sadhguru is the founder and head of the Isha Foundation, based in Coimbatore, India.;Aerial;;
+;p71;;9;Plain;5 million;Morgan Housel is a partner at The Collaborative Fund and a former columnist at The Motley Fool and The Wall Street Journa;Times New Roman;;
+;p72;;14;Modern;12million;Josh Kaufman is the rogue professor of modern business education;Clibri;;
+;p73;;7;Stylish;7.1 million;Robert Toru Kiyosaki is an American entrepreneur, businessman and author. Kiyosaki is the founder of Rich Global LLC and the Rich Dad Company;Bold;;
+;p74;;16;Modern;1 million;Peter Andreas Thiel is a German-American billionaire entrepreneur, venture capitalist, and political activist. A co-founder of PayPal, Palantir Technologies, and Founders Fund, he was the first outside investor in Facebook.;Times New Roman;;
+;p75;;14;Plain;15million;Timothy Ferriss is an American entrepreneur, investor, author, podcaster, and lifestyle guru;Garamond;;
+;p76;;15;Stylish;12 million;More info about me and my work: https://dashinsky.com/ I'm a UX designer and product manager with 10+ years of experience working with startups and tech companies of any size and in various industries;Times New Roman;;
+;p77;;13;Plain;15million;Oliver Napoleon Hill was an American self-help author. He is best known for his book Think and Grow Rich, which is among the best-selling self-help books of all time;Times New Roman;;
+;p78;;18;Stylish;15million;George Samuel Clason was an American author. He is most often associated with his book The Richest Man in Babylon which was first published in 1926;Clibri;;
+;p79;;16;Modern;15million;Indian businessman Ashneer Grover is the former co-founder and managing director of the Indian fintech company BharatPe;Aerial;;
+;p80;;22;Modern;7.1 million;"James C. ""Jim"" Collins is an American researcher, author, speaker and consultant focused on the subject of business management and company sustainability and growth";Aerial;;
+;p81;;9;Historical;12 million;"Diana J. Gabaldon (/ˈɡæbəldoʊn/; born January 11, 1952) is an American author, known for the Outlander series of novels. Her books merge multiple genres, featuring elements of historical fiction, romance, mystery, adventure and science fiction/fantasy.";Calibri;;
+;p82;;14;Historical;6 million;Oliver Napoleon Hill was an American self-help author. He is best known for his book Think and Grow Rich, which is among the best-selling self-help books of all time;Times New Roman;;
+#;p83;;7;Historical;2 millon;Tessa Dare is the New York Times bestselling, award-winning author of more than a dozen historical romances. A librarian by training and a book-lover at heart, Tessa makes her home in Southern California, where she shares a cozy, cluttered bungalow with her husband, their two children, and a pair of cosmic kittens.;Calibri;;
+;p84;;16;Historical;8 million;An Unseen Attraction is the first book in the Sins of the Cities series. Lodging-house keeper Clem Talleyfer prefers a quiet life.;Times New Roman;;
+;p85;;14;Historical;3 million;LISA KLEYPAS is the RITA award-winning author of 21 novels. Her books are published in fourteen languages and are bestsellers all over the world. She lives in Washington State with her husband and two children.;Times New Roman;;
+#;p86;;15;Historical;12 million;Margaret Munnerlyn Mitchell was an American novelist and journalist. Mitchell wrote only one novel, published during her lifetime, the American Civil War-era novel Gone with the Wind, for which she won the National Book Award for Fiction for Most Distinguished Novel of 1936 and the Pulitzer Prize for Fiction in 1937.;Arial;;
+#;p87;;13;Historical;1 million;Tessa Dare is a New York Times and USA Today bestselling American historical romance novelist. She has authored fifteen novels and novellas and created four different series. In 2012, she won the prestigious Romance Writers of America RITA award for Best Regency Historical Romance for her book A Night to Surrender.;Calibri;;
+;p88;;18;Historical;2.5 million;Beverly Jenkins is an American author of historical and contemporary romance novels with a particular focus on 19th century African-American life;Garamond;;
+#;p89;;16;Historical;4.8 million ;Judith McNaught is the #1 New York Times bestselling author who first soared to stardom with her stunning bestseller Whitney, My Love, and went on to win the hearts of millions of readers with Once and Always, Something Wonderful, A Kingdom of Dreams, Almost Heaven, Paradise, Perfect,;Times New Roman;;
+#;p90;;22;Historical;7.1 million;"Julie Lessman is an award-winning author of The Daughters of Boston series, the Winds of Change series, and The Heart of San Francisco series. The recipient of seventeen Romance Writers of America awards, as well as many other accolades, Lessman was chosen as the #1 Romance Fiction Author of the Year in the ""Family Fiction"" magazine 2011 and 2012 Readers' Choice Awards. She resides in Missouri with her family.";Times New Roman;;
+#;p91;;10;Modern;22million;Casey McQuiston is an American author of romance novels in the new adult fiction genre, best known for their New York Times best-selling debut novel Red, White & Royal Blue, in which the son of America's first female president falls in love with a prince of England, and sophomore book One Last Stop.;Aerial;;
+;p92;;3;Modern;12million;Christina Lauren is the combined pen name of longtime writing partners and best friends Christina Hobbs and Lauren Billings, the New York Times, USA TODAY, and #1 internationally bestselling authors of the Beautiful and Wild Seasons series,;Bold;;
+;p93;;4;Modern;23million;Emily Henry is an American author who is best known for her New York Times bestselling romance novels Beach Read, People We Meet on Vacation, Book Lovers, and Happy Place. ;Baskerville;;
+#;p94;;4;Modern;30million;Madeleine Sophie Wickham, known by her pen name Sophie Kinsella, is an English author. The first two novels in her best-selling Shopaholic series, The Secret Dreamworld of a Shopaholic and Shopaholic Abroad, were adapted into the film Confessions of a Shopaholic. ;Garamond;;
+;p95;;22;Modern;50million;;Ringbearer;;
+;p96;;12;Modern;7million;Eustace Edward Ricardo Braithwaite, publishing as E. R. Braithwaite, was a Guyanese-born British-American novelist, writer, teacher and diplomat best known for his stories of social conditions and racial discrimination against black people.;Bold;;
+;p97;;12;Modern;75million;Emily Henry is an American author who is best known for her New York Times bestselling romance novels Beach Read, People We Meet on Vacation, Book Lovers, and Happy Place;Times New Roman;;
+;p98;;31;Modern;6million;Sophie Kinsella is a writer and former financial journalist. She is the number one bestselling author of Can You Keep a Secret?;Baskerville;;
+;p99;;8;Modern;8million;Beth O'Leary is a British author of uplifting fiction, best known for her bestselling novels The Flatshare and The Switch.;Times New Roman;;
+;p100;;18;Modern;15million;Kate Spencer is the co-host of the award-winning podcast Forever35 and author of the memoir The Dead Moms Club and novel In a New York Minute.;Bold;;
