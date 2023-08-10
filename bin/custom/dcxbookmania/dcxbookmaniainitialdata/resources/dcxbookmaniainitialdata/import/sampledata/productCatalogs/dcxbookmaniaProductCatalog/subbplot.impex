@@ -1,0 +1,115 @@
+$productCatalog=dcxbookmaniaProductCatalog
+$productCatalogName=Dcxbookmania Product Catalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$lang=en
+# Update allProducts with localisations
+UPDATE DcxbookmaniaProduct;code[unique=true];$catalogVersion;subPlot[$lang=en];ageGroup[$lang=en];bestSeller[$lang=en];country[$lang=en]
+#;p1;;THE LORD OF THE RINGS TRILOGY is an excellent example of subplots. The main storyline concerns Frodo's quest to return the ring. A secondary storyline is woven around the adventures of Aragon and Legolas' in their quest to protect the settlements and destroy the Orc armies.;Yes;TEEN;UK
+;p2;;NA;Yes;TEEN;UK
+;p3;;NA;Yes;Adult;US
+;p4;;One of the more touching scenes in the book is when she alone of all his friends comforts Kvothe the most when he's inconsolable.;Yes;TEEN;US
+;p5;;AmericanAmerican Gods is a novel, written by Neil Gaiman, about a surrealistic version of modern America that is secretly inhabited by the weakened and old spirits of every god of every religion that had ever been brought to the country’s shores;Yes;TEEN;UK
+#;p6;;The Fifth Season primarily follows Essun, a woman concealing orogenic powers to channel the earth’s energy. She lives in a small common within the Stillness, a geologically tumultuous continent prone to Fifth Seasons, long eras fraught with cataclysmic natural disasters.;Yes;Adult;US
+;p7;;The Gunslinger is the first novel in The Dark Tower, Stephen King’s classic, epic cross-genre series. It introduces the reader to the last gunslinger, Roland of Gilead, as he pursues The Man in Black across a vast land laid to waste.;NO;TEEN;US
+#;p8;;The Eye of the World is the first book of the fourteen book Wheel of Time series by Robert Jordan. This thrilling series begins in Emond’s Field, where we meet Rand al’Thor, Mat Cauthon, and Perrin Aybara. While preparing for Winternight, two travelers arrive to the village; a guard and a noble lady—or so it seems. The guard and noblewoman are, in fact a warder and Aes Sedai respectively. Following an attack on the village by a band of Trollocs, Rand, Mat, and Perrin must embark on a quest to find answers as to why their quiet village was attacked by beasts thought to only exist in legend.;Yes;TEEN;US
+#;p9;;The book is a comedy about the birth of the son of Satan and the coming of the End Times. There are attempts by the angel Aziraphale and the demon Crowley to sabotage the coming of the end times, having grown accustomed to their comfortable surroundings in England.;Yes;TEEN;US
+;p10;; Kay tells a story of honor and power, this time in a setting that evokes the dazzling Tang Dynasty of eighth-century China.;Yes;Child;CAN
+;p11;;NA;Yes;TEEN;US
+;p12;;NA;Yes;Adult;US
+#;p13;;The Alchemist is a classic novel in which a boy named Santiago embarks on a journey seeking treasure in the Egyptian pyramids after having a recurring dream about it and on the way meets mentors, falls in love, and most importantly, learns the true importance of who he is and how to improve himself;Yes;Child;PORT
+;p14;;Scout and her brother Jem try to understand and relate to their father, Atticus, who is a lawyer charged with defending a black man falsely accused of raping a white woman.;Yes;TEEN;US
+;p15;;A haunting and gripping coming-of-age story set against a backdrop of violence, intolerance, and magic, Voices is a novel that readers will not soon forget.;NO;TEEN;GRC
+;p16;;The binding is an unforgettable, magical novel: a boundary-defying love story and a unique literary event;Yes;Adult;FRA
+;p17;;Ragle Gumm is an ordinary man leading an ordinary life, except that he makes his living by entering a newspaper contest every day - and winning, every day.;Yes;TEEN;US
+;p18;;NA;NO;Adult;US
+;p19;;NA;YES;Child;US
+;p20;;NA;YES;Child;US
+;p21;;In The Silent Patient, Alicia Berenson is a well-known painter who murdered her husband six years ago and hasn't spoken a word since. He was found bound to a chair with gunshot wounds to his face, and she was convicted soon thereafter;Yes;Adult;USA;
+;p22;;Although the general plot is a straightforward murder mystery, the many subplots, including Camille’s budding romance with the out-of-town detective,;NO;TEEN;UK
+;p23;;Millicent set Tobias up for killing all the women they killed together, as well as other women he had gotten close to that she killed on her own;Yes;Adult;UK
+;p24;;Rachel Watson is a 33-year-old alcoholic, reeling from the end of her marriage to Tom, who left her for another woman;NO;TEEN;FRA
+;p25;;The novel is told via a split narrative. Maggie Holt narrates events as they happen during current day;NO;Adult;USA
+;p26;;NA;YES;Adult;USA
+;p27;;Written by Liane Moriarty, the cleverly told story focuses on three young mothers--Madeline, Celeste and Jane--who are living in a fairly upscale beach community in Australia.;YES;Adult;USA
+;p28;;NA;NO;Adult;USA
+;p29;;NA;YES;TEEN;UK
+;p30;;You'll notice a lot of similarities in the character that Leo plays in this film and in Inception, as to how he struggles with the memories of his dead wife;YES;Adult;USA
+;p31;; In some cases even by allowing their historic homes and buildings, such as the Simak Welcome Center, to be used for filming.;YES;TEEN;USA
+;p32;;NA;YES;TEEN;USA
+;p33;;NA;NO;Adult;UK
+;p34;;Piers Brendon's magisterial overview of the 1930s is the story of the dark, dishonest decade - child of one world war and parent of the next;NO;TEEN;USA
+;p35;;NA;YES;Teen;USA
+;p36;;Danielewski's "House of Leaves" is about a young man who finds a manuscript written by a recently deceased elderly man.;YES;Adult;USA
+;p37;; The Shining has something to scare almost everyone. It has layers of terror — some real, some imagined, some that occupy the gray area in between.;YES;Adult;UK
+;p38;;NA;YES;Adult;UK
+;p39;;Stephen Graham Jones comes a novel that is equal parts psychological horror and cutting social commentary on identity;
+;p40;;NA;YES;Adult;UK
+;p41;;The novel features a compelling subplot that adds depth and intricacy to the main narrative, further engaging the reader.;YES;TEEN;USA
+;p42;;In Cold Blood primarily focuses on the true crime story of the Clutter family murder. While there is no fictional subplot, Capote weaves various perspectives and character backgrounds to offer a comprehensive and captivating narrative.;YES;TEEN;USA
+;p43;;NA;NO;Adult;UK
+;p44;;NA;NO;TEEN;USA
+;p45;;NA;YES;TEEN;USA
+;p46;;NA;YES;Adult;USA
+;p47;;NA;YES;Adult;UK
+;p48;;NA;YES;Adult;UK
+;p49;;NA;YES;Adult;UK
+
+;p51;;A black-gloved hooded killer, a convoluted plot, beautiful cinematography, and violent death scenes all hearken to the glory days of the Euro-thriller;YES;Adult;USA
+#;p52;;A Study in Scarlet is an 1887 detective novel by British writer Arthur Conan Doyle. The story marks the first appearance of Sherlock Holmes and Dr. Watson, who would become the most famous detective duo in literature.;YES;Teen;USA
+#;p53;;A debased Englishman steals the moonstone, a sacred gem, from India. It brings bad luck to each of its English possessors. When the gem disappears from a young Englishwoman's room and three sinister Hindus menace her family, the careful, methodical Sergeant Cuff is assigned to the case.;YES;Teen;UK
+#;p54;;Murder on the Orient Express is a work of detective fiction by English writer Agatha Christie featuring the Belgian detective Hercule Poirot.;YES;Adult;USA
+#;p55;;Originally serialised in The Strand Magazine from August 1901 to April 1902, it is set in 1889 largely on Dartmoor in Devon in England's West Country and tells the story of an attempted murder inspired by the legend of a fearsome, diabolical hound of supernatural origin.;YES;Teen;USA
+#;p56;;When a string of strange deaths plagues a wealthy Italian abbey, Brother William of Baskerville is called to unravel the mystery. In this 14th-century thriller, every death exposes a new piece of an age-old conspiracy. Dangerous knowledge and the future of the Catholic Church hang in the balance.;YES;Teen;USA
+#;p57;;It's about Mikael Blomkvist, a crusading journalist recently at the wrong end of a libel case, hired to get to the bottom of Harriet's disappearance and about Lisbeth Salander, a twenty-four-year-old pierced and tattooed genius hacker possessed of the hard-earned wisdom of someone twice her age—and a terrifying experinece.;YES;Adult;UK
+;p58;;Still Life tells the story of two central characters Evelyn and Ulysses who meet briefly at the opening of the book.;YES;Adult;UK
+;p59;;NA;YES;Adult;UK
+;p60;;NA;YES;Adult;USA
+
+;p61;;Greene's book is a distillation of this accumulated wisdom and a veritable how-to guide on how to become more powerful.;YES;Teen;USA
+;p62;;Using a framework called the Four Laws of Behavior Change, Atomic Habits teaches readers a simple set of rules for creating good habits and breaking bad ones.;YES;Teen;USA
+;p63;;he Subtle Art of Not Giving a F*ck argues that individuals should seek to find meaning through what they find to be important and only engage in values that they can control.;YES;Teen;USA
+;p64;;The Ikigai book introduces you to various topics related to the art of living, such as the blue zones, longevity, logotherapy, flow, yoga, tai chi, and resilience.;YES;Teen;USA
+;p65;;A Summary of the Eat That Frog Productivity Method · Define your goals and write them down.Break those goals down into tasks.;YES;Teen;USA
+;p66;;The Power of Now shows you that every minute you spend worrying about the future or regretting the past is a minute lost, because the only place you can truly live in is the present;YES;Teen;AUS                  
+;p67;;ou Are A Badass helps you become self-aware, figure out what you want in life and then summon the guts to not worry about the how, kick others' opinions to the curb and focus your life on the thing that will make you happy.;YES;Teen;UK       
+;p68;;NA;YES;Teen;UK                   
+#;p69;;The aim of Think Like a Monk is to help individuals apply a monk mindset to their lives. Think Like a Monk shows you how to clear the roadblocks to your potential by overcoming negative thoughts, accessing stillness, and creating true purpose. It can be challenging to apply the lessons of monks to busy lives.;YES;Teen;UK                   
+#;p70;;Over 15,000 years ago, predating all religion, Adiyogi, the first yogi, transmitted the science of yoga to his seven disciples, the Saptarishis. He expounded 112 ways through which human beings can transcend their limitations and reach their ultimate potential.;YES;Teen;UK                   
+
+;p71;;In the Psychology of Money, Morgan Housel teaches you how to have a better relationship with money and to make smarter financial decisions.;YES;ADULT;UK                   
+;p72;;The personal MBA is a book that combines all of the business concepts you can expect from an MBA, for the price of a book.;YES;ADULT;USA
+;p73;;Focuses on the importance of financial literacy from an early age. Throughout the book, the author explains how a person can increase their wealth by investing in assets and by being smart with money.;YES;ADULT;USA
+;p74;; Zero to One's underlying thesis is that societal good and monetary value are created by ventures that go from "zero to one" rather than from "one to n.";YES;ADULT;USA
+;p75;; The 4-Hour Work Week is all about how to change the way readers look at how they live and work and why they should challenge old assumptions.;YES;ADULT;USA
+;p76;;NA;YES;ADULT;USA
+;p77;;NA;YES;ADULT;USA
+;p78;;NA;YES;ADULT;USA
+;p79;;NA;YES;ADULT;USA
+;p80;;NA;YES;ADULT;USA
+
+;p81;;Initially set around the time of the Second World War, it focuses on nurse Claire Beauchamp, who travels through time to 18th-century Scotland, where she finds adventure and romance with the dashing Jamie Fraser.;YES;TEEN;USA
+;p82;;The story is unique in a sense that it brings a new flavor to the Beauty and the Beast story. I love seeing the sparks between Ransom and Izzy.;YES;TEEN;USA
+;p83;;The Duchess Deal by Tessa Dare is a fairytale Regency that blends Beauty and the Beast and Cinderella and Batman.;NO;Adult;UK
+;p84;;A slow-burning romance and a chilling mystery bind two singular men in the suspenseful first book of a new Victorian series from K. J. Charles.;NO;Teen;USA
+;p85;;Desperate to escape her scheming relatives, Evangeline Jenner has sought the help of the most infamous scoundrel in London. A marriage of convenience is the only solution.;Yes;Teen;USA
+;p86;;NA;YES;Adult;USA
+;p87;;NA;YES;Adult;UK
+;p88;;NA;YES;Adult;UK
+;p89;;NA;YES;Adult;UK
+;p90;;NA;YES;Adult;UK
+
+;p91;;NA;YES;TEEN;US
+;p92;;NA;YES;Adult;US
+;p93;;NA;YES;Adult;PORT
+;p94;;NA;YES;Adult;US
+;p95;;NA;YES;Adult;US
+;p96;;To Sir, with Love was based on the novel of the same name by E.R. Braithwaite. With its sentimental story and Poitier's portrayal of the principled Thackeray,;YES;Adult;GRC
+#;p97;;A heartfelt and hilarious read about books, sisters, and writing your own love story. A cutthroat literary agent finds herself stuck in a small town with the grumpy editor she despises. Nora Stephens knows she isn't anything like the heroines in small-town love stories.;YES;Teen;FRA
+;p98;;I've Got Your Number is about a girl called Poppy, who finds a phone belonging to a total stranger called Sam, and from that moment becomes embroiled in his life. It's amazing what you can find out about somebody just from a few texts and messages.;YES;Teen;US
+#;p99;;iffy Moore needs a cheap flat, and fast. Leon Twomey works nights and needs cash. Their friends think they're crazy, but it's the perfect solution: Leon occupies the one-bed flat while Tiffy's at work in the day, and she has the run of the place the rest of the time.;YES;Teen;US
+;p100;;This is a romcom about a woman who has a viral meet cute with a stranger on the subway on one of the worst days of her life.;YES;Teen;US
+
+
+
+
+
