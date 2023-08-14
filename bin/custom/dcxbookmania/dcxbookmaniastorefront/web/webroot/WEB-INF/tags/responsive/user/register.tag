@@ -71,7 +71,11 @@
 	<div class="form_field-elements control-group js-recaptcha-captchaaddon"></div>
 	<div class="form-actions clearfix">
 		<ycommerce:testId code="register_Register_button">
-			<button type="submit" class="btn btn-default btn-block" disabled="disabled">
+			<button type="submit" class="btn btn-default btn-block" disabled="disabled"style="background-color: #89C35C;
+    border: black;
+    border: 2px solid #89C35C;
+    border-radius: 25px !important;
+    width: 67%;">
 				<spring:theme code='${actionNameKey}' />
 			</button>
 		</ycommerce:testId>
