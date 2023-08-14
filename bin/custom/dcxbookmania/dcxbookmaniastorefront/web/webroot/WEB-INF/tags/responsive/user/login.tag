@@ -41,7 +41,12 @@
 				</ycommerce:testId>
 			</div>
 		<ycommerce:testId code="loginAndCheckoutButton">
-			<button type="submit" class="btn btn-primary btn-block">
+			<button type="submit" class="btn btn-primary btn-block" style="
+    background-color: #FBB917;
+    border: black;
+    border: 2px solid #FBB917;
+    border-radius: 25px !important;
+    width: 67%;">
 				<spring:theme code="${actionNameKey}" />
 			</button>
 		</ycommerce:testId>

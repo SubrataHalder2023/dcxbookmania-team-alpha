@@ -28,7 +28,12 @@
                 </c:when>
                 <c:otherwise>
                     <button type="submit" class="btn btn-primary btn-block glyphicon glyphicon-shopping-cart js-enable-btn"
-                            disabled="disabled">
+                            disabled="disabled" style="
+    background-color: #FBB917;
+    border: black;
+    border: 2px solid #FBB917;
+    border-radius: 25px !important;
+    width: 67%";>
                     </button>
                 </c:otherwise>
             </c:choose>
