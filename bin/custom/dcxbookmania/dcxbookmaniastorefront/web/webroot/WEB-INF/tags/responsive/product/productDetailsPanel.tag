@@ -159,7 +159,11 @@ table td {
 							<li>Minimum Age: ${product.ageGroup}</li>
 
 							<li>Country: ${product.country}</li>
-
+							<hr/>
+							<li>Link: ${product.link}</li>
+							<li>ExpressDelivery: ${product.expressDelivery}</li>
+							<li>BookKeywords: ${product.bookKeywords}</li>
+							<%-- <li>Merchandise: ${product.merchandises}</li> --%>
 						</ul>
 						<ul><li style="margin:11px 0px 40px 1px;color:orangered;font-size:2rem">Authors Bio: ${product.authorsBio}</li></ul>
 						<ul><li style="margin:11px 0px 40px 1px;color:#00008B;font-size:2rem">Subplot: ${product.subPlot}</li></ul>

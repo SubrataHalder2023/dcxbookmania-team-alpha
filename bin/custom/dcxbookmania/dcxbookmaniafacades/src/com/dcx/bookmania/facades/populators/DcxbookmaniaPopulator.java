@@ -43,5 +43,8 @@ public class DcxbookmaniaPopulator implements Populator<DcxbookmaniaProductModel
 		target.setAgeGroup(source.getAgeGroup());
 		target.setBestSeller(source.getBestSeller());
 		target.setCountry(source.getCountry());
+		target.setLink(source.getLink());
+		target.setExpressDelivery(source.getExpressDelivery());
+		target.setBookKeywords(source.getBookKeywords());
 	}
 }

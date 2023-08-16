@@ -15,7 +15,7 @@ $lang=en
 UPDATE SolrIndexedProperty;solrIndexedType(identifier)[unique=true];name[unique=true];displayName[lang=$lang]
  ;$solrIndexedType;allPromotions;"Promotion"
  ;$solrIndexedType;availableInStores;"Stores"
- ;$solrIndexedType;brand;"Brand"
+ #;$solrIndexedType;brand;"Brand"
  ;$solrIndexedType;category;"Category"
  ;$solrIndexedType;code;"Code"
  ;$solrIndexedType;description;"Description"
@@ -23,6 +23,7 @@ UPDATE SolrIndexedProperty;solrIndexedType(identifier)[unique=true];name[unique=
  ;$solrIndexedType;name;"Name"
  ;$solrIndexedType;price;"Price"
  ;$solrIndexedType;summary;"Summary"
+ ;$solrIndexedType;rating;"Rating"
 
 # Define the available sorts
 UPDATE SolrSort;indexedType(identifier)[unique=true];code[unique=true];name[lang=$lang]
@@ -32,6 +33,8 @@ UPDATE SolrSort;indexedType(identifier)[unique=true];code[unique=true];name[lang
  ;$solrIndexedType;price-desc;"Price (highest first)"
  ;$solrIndexedType;relevance;"Relevance"
  ;$solrIndexedType;topRated;"Top Rated"
+ ;$solrIndexedType;rating-asc;"Rating asc"
+ ;$solrIndexedType;rating-desc;"Rating desc"
 
 # Solr Indexed Property
 UPDATE SolrIndexedProperty;solrIndexedType(identifier)[unique=true];name[unique=true];displayName[lang=$lang]

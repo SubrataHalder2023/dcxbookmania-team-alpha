@@ -61,18 +61,17 @@ li:hover {
 		<c:if test="${not empty product.summary}">
 			<div class="product__listing--description">${ycommerce:sanitizeHTML(product.summary)}</div>
 			<h5>
-				Author : <span style="color:${product.author}; font-weight:800">${product.author}</span>
+				Author : <span style="color:red; font-weight:800">${product.author}</span>
 			</h5>
+			<h5>Rating : <span  style="color:green; font-weight:800">${product.rating}</span> </h5>
 		</c:if>
-
 
 
 		<c:set var="product" value="${product}" scope="request" />
 		<c:set var="addToCartText" value="${addToCartText}" scope="request" />
 		<c:set var="addToCartUrl" value="${addToCartUrl}" scope="request" />
 		<div class="addtocart">
-			<div id="actions-container-for-${fn:escapeXml(component.uid)}"
-				class="row">
+			<div id="actions-container-for-${fn:escapeXml(component.uid)}" class="row">
 				<action:actions element="div" parentComponent="${component}" />
 			</div>
 		</div>

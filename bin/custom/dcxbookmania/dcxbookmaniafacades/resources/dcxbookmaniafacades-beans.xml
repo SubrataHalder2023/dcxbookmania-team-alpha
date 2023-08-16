@@ -29,10 +29,24 @@
 		<property name="ageGroup" type="java.lang.String"/>
 		<property name="bestSeller" type="java.lang.String"/>
 		<property name="country" type="java.lang.String"/>
+		<property name="link" type="com.dcx.bookmania.core.atomictypes.LinkAtomicType"/>
+		<property name="expressDelivery" type="java.util.Set&lt;com.dcx.bookmania.core.enums.ExpressDeliveryEnum>"/>
+		<property name="bookKeywords" type="java.util.Map&lt;java.lang.String,java.lang.Integer>"/>
 	</bean>
+	
+	<!-- <bean class="de.hybris.platform.commercefacades.product.data.ProductData">
+		<property name="mtype" type="java.lang.String"/>
+		<property name="mdesign" type="java.lang.String"/>
+		<property name="mmaterial" type="java.lang.String"/>
+		<property name="msize" type="java.lang.Integer"/>
+	</bean> -->
 
 	<bean class="com.dcx.bookmania.facades.product.data.GenderData">
 		<property name="code" type="String"/>
 		<property name="name" type="String"/>
+	</bean>
+	
+	<bean class="com.dcx.bookmania.core.atomictypes.LinkAtomicType">
+		<property name="link" type="String"/>
 	</bean>
 </beans>

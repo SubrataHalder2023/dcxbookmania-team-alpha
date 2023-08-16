@@ -4,28 +4,15 @@
 ##******************************This file is generated - please do not edit it. It will be regenerated after every build.********************************#
 
 $contentCatalog=dcxbookmaniaContentCatalog
-$contentCatalogName=Dcxbookmania Content Catalog
 $contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
-$productCatalog=dcxbookmaniaProductCatalog
-$productCatalogName=Dcxbookmania Product Catalog
-$productCV=catalogVersion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 $picture=media(code, $contentCV);
-$image=image(code, $contentCV);
-$media=media(code, $contentCV);
-$page=page(uid, $contentCV);
-$contentPage=contentPage(uid, $contentCV);
-$product=product(code, $productCV)
-$category=category(code, $productCV)
 $siteResource=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&/dcxbookmaniainitialdata/import/sampledata/contentCatalogs/$contentCatalog
-$productResource=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&/dcxbookmaniainitialdata/import/sampledata/productCatalogs/$productCatalog
-$jarResourceCms=jar:com.dcx.bookmania.initialdata.constants.DcxbookmaniaInitialDataConstants&/dcxbookmaniainitialdata/import/sampledata/cockpits/cmscockpit
-
 # Language
 $lang=en
 
 # Site Logo Component
 UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
-;;SiteLogoComponent;/images/theme/logo_bookmania.png
+#;;SiteLogoComponent;/images/theme/logo-hybris.png
 
 # CMS Link Components
 UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=$lang]
@@ -41,44 +28,22 @@ UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=$
 ;;AccountUpdatePasswordLink;"Change your password"
 ;;AccountViewOrderHistoryLink;"View order history"
 ;;AgileCommerceBlogLink;"Agile Commerce Blog"
-;;AllBrandsCategoryLink;"Brands"
-;;BlackAndWhiteFilmsCategoryLink;"Black & White Films"
-;;BlankVideotapesCategoryLink;"Blank Videotapes"
-;;CameraAccessoriesCategoryLink;"Camera Accessories & Supplies"
-;;CameraLensesCategoryLink;"Camera Lenses"
-;;CamerasCategoryLink;"Cameras"
-;;CamerasFlashesCategoryLink;"Camera Flashes"
-;;CanonBrandCategoryLink;"Canon"
 #;;CloseAccountLink;"Close Account"
-;;ColourFilmsCategoryLink;"Color Films"
 ;;ComponentsCategoryLink;"Components"
 #;;ConsentManagementLink;"Consent Management"
 ;;ContactUsLink;"Contact Us"
-;;DigitalCamerasCategoryLink;"Digital Cameras"
-;;DigitalCompactsCategoryLink;"Compact Cameras"
-;;DigitalSLRCategoryLink;"SLR Cameras"
 ;;DocumentationLink;"Documentation"
 ;;FAQLink;"FAQ"
 ;;FacebookLink;"Facebook"
-;;FilmCamerasCategoryLink;"Film Cameras"
-;;FlashMemoryCategoryLink;"Flash Memory"
-;;FujifilmBrandCategoryLink;"Fujifilm"
-;;HandheldCamcordersCategoryLink;"Hand Held Camcorders"
 ;;HomepageNavLink;"Home"
-;;IciduBrandCategoryLink;"Icidu"
-;;KingstonBrandCategoryLink;"Kingston"
-;;KodakBrandCategoryLink;"Kodak"
 ;;LinkedInLink;"Linked In"
-;;PowerSuppliesCategoryLink;"Power Supplies"
-;;SamsungBrandCategoryLink;"Samsung"
-;;SonyBrandCategoryLink;"Sony"
 ;;SpecialOffersLink;"Special Offers"
-;;SweexBrandCategoryLink;"Sweex"
-;;TDKBrandCategoryLink;"TDK"
-;;ToshibaBrandCategoryLink;"Toshiba"
-;;TripodsCategoryLink;"Tripods"
 ;;TwitterLink;"Twitter"
 ;;VisitSAPLink;"Visit SAP"
+
+
+
+#------------------------------------------------------------------------------------------- pass1
 
 # Lightbox Banner for Mini Cart (banner is not localizable so we must create a separate banner per language)
 INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];&imageRef;folder(qualifier)[default='images'];altText
@@ -118,26 +83,14 @@ UPDATE PurchasedCategorySuggestionComponent;$contentCV[unique=true];uid[unique=t
 UPDATE CartSuggestionComponent;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
 ;;CartSuggestions;"You may also like..."
 
-# Category Pages
-UPDATE CategoryPage;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
-;;Cameras;"Cameras"
-;;DigitalCameras;"Digital Cameras"
-
 # CMS Navigation Nodes
 UPDATE CMSNavigationNode;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
-;;AccessoriesNavNode;"Accessories"
-;;AccessoryBrandLinksNavNode;"Accessories"
 ;;AccountAddressBookNavNode;"Address Book"
 ;;AccountLeftNavNode;"My Account"
 ;;AccountOrderHistoryNavNode;"Order History"
 ;;AccountPaymentDetailsNavNode;"Payment Details"
 ;;AccountProfileNavNode;"Profile"
-;;BrandLinksNavNode;"Cameras"
-;;BrandsNavNode;"Brands"
-;;CameraAccessoriesNavNode;"Camera Accessories & Supplies"
-;;CamerasNavNode;"Cameras"
-;;DigitalCamerasNavNode;"Digital Cameras"
-;;dcxbookmaniaNavNode;"dcxbookmania Site"
+;;DcxbookmaniaNavNode;"Dcxbookmania Site"
 ;;FilmCamerasNavNode;"Film Cameras"
 ;;FlashMemoryNavNode;"Flash Memory"
 ;;FollowUsNavNode;"Follow Us"
@@ -191,17 +144,7 @@ UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[l
 ;;NextDayDeliveryBanner;Elec_948x60_HomeDeliveryBanner_EN_01.jpg
 
 UPDATE BannerComponent;$contentCV[unique=true];uid[unique=true];headline[lang=$lang];$picture[lang=$lang];content[lang=$lang]
-;;AccessoriesBannerComponent;Camera Accessories and Supplies;Elec_228x178_HomeCat_Accessories_EN_01.jpg;"Everything you need to accessorise your camera"
-;;CanonPowershotBannerComponent;Canon PowerShot A480;1934793_1719.jpg;"Affordable, intuitive and fun!"
-;;CarouselCamcorderBanner;New - Ignite your passion for film with the latest HD camcorder...;Elec_468x418_HomeCarouselCamcorder_EN_01.jpg;""
-;;CarouselCyberBanner;What colour are you? Sony Cybershot - a colour for any mood.;Elec_468x418_HomeCarouselCyber_EN_01.jpg;""
-;;CarouselFunBanner;Fun on the run  - Never miss a memory!;Elec_468x418_HomeCarouselFun_EN_01.jpg;""
-;;DigitalCompactCamerasBannerComponent;Digital Compact Cameras;Elec_228x178_HomeCat_DigiCom_EN_01.jpg;"Find the perfect camera to capture those special moments"
-;;DigitalSLRCamerasBannerComponent;Digital SLR Cameras;Elec_228x178_HomeCat_DigiSLR_EN_01.jpg;"See the latest DSLR technology from the leading brands"
-;;KodakEasyshareBannerComponent;Kodak EASYSHARE V1253;1320808-1767.jpg;"Seize the moment with 12 megapixel photos!"
-;;MemoryBannerComponent;Camera and Camcorder Memory;Elec_228x178_HomeCat_Memory_EN_01.jpg;"Exclusive discounts on our memory cards"
-;;SonyCybershotBannerComponent;Sony Cybershot DSC-S930;1992695-Sony-DSC-S930P-11441.jpg;"Compact, easy to use and amazingly affordable."
-;;SonyDSCBannerComponent;Sony DSC-H20;1978440-Sony-DSC-H20-114081.jpg;"Perfect for serious performance in a compact design."
+# removed
 
 UPDATE ProductCarouselComponent;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
 ;;dcxbookmaniaHomepageProductCarouselComponent;Our Bestselling Products
@@ -209,7 +152,7 @@ UPDATE ProductCarouselComponent;$contentCV[unique=true];uid[unique=true];title[l
 # dcxbookmania Camera Accessories and Supplies Category Landing Page
 
 UPDATE CategoryPage;$contentCV[unique=true];uid[unique=true];title[lang=$lang]
-;;CamerasAccessoriesAndSuppliesCategoryPage;Cameras Accessories & Supplies
+#;;CamerasAccessoriesAndSuppliesCategoryPage;Cameras Accessories & Supplies
 
 # Media Content
 INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];folder(qualifier)[default='images'];altText

@@ -3,6 +3,10 @@
 <items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="items.xsd">
 
+	<atomictypes>
+		<atomictype class="com.dcx.bookmania.core.atomictypes.LinkAtomicType" extends="java.lang.Object" autocreate="true" generate="false"/>
+	</atomictypes>
+
 	<collectiontypes>
 		<collectiontype code="GenderList" elementtype="Gender"
 			autocreate="true" generate="true" type="list" />
@@ -18,8 +22,11 @@
 		<collectiontype code="TypeSet"
 			elementtype="TypeEnum" autocreate="true" generate="true"
 			type="list" />
+		<collectiontype code="ExpressDeliverySet"
+			elementtype="ExpressDeliveryEnum" autocreate="true" generate="true"
+			type="set" />
 	</collectiontypes>
-
+	
 	<enumtypes>
 		<enumtype generate="true" code="SwatchColorEnum"
 			autocreate="true" dynamic="true">
@@ -60,19 +67,40 @@
 			<value code="PORT" />
 			<value code="GRC" />
 		</enumtype>
-		<enumtype generate="true"  code="TypeEnum" autocreate="true" dynamic="true">
-		<value code="HARDCOVER" />
-		<value code="PAPERBACK" />
+		<enumtype generate="true" code="TypeEnum" autocreate="true" dynamic="true">
+			<value code="HARDCOVER" />
+			<value code="PAPERBACK" />
 		</enumtype>
-		
+		<enumtype generate="true" code="ExpressDeliveryEnum" autocreate="true">
+			<value code="AVAILABLE" />
+			<value code="NOT_AVAILABLE" />
+		</enumtype>
 	</enumtypes>
 	
-
+	<maptypes>
+		<maptype code="KeywordMap"
+                 argumenttype="java.lang.String"
+                 returntype="java.lang.Integer"
+                 autocreate="true"
+                 generate="false"/>
+	</maptypes>
+	
+	<relations>
+		<relation code="Book2Merchandise" generate="true" localized="false" autocreate="true">
+			<deployment table="Book2Merchandise" typecode="11002"/>
+            <sourceElement qualifier="products" type="DcxbookmaniaProduct" cardinality="many" ordered="false">
+                <modifiers read="true" write="true" search="true" optional="true"/>
+            </sourceElement>
+            <targetElement qualifier="merchandises" type="DcxbookmaniaMerchandise" cardinality="many" collectiontype="list" ordered="true">
+                <modifiers read="true" write="true" search="true" optional="true"/>
+            </targetElement>  
+        </relation>
+	</relations>
+	
+	
 	<itemtypes>
 
 		<!-- Add your item definitions here -->
-
-
 		<!-- TypeGroups are for structure of this file only -->
 
 		<typegroup name="Apparel">
@@ -155,19 +183,18 @@
 				jaloclass="com.dcx.bookmania.core.jalo.DcxbookmaniaProduct">
 				<attributes>
 					<attribute qualifier="author" type="java.lang.String">
-						<modifiers read="true" write="true" search="true" />
+						<modifiers read="true" write="true" search="true"/>
 						<persistence type="property" />
 					</attribute>
 					<attribute qualifier="isbn" type="java.lang.String">
-						<modifiers read="true" write="true" search="true" />
+						<modifiers read="true" write="true" search="true"/>
 						<persistence type="property" />
 					</attribute>
 					<attribute qualifier="publisher" type="java.lang.String">
-						<modifiers read="true" write="true" search="true" />
+						<modifiers read="true" write="true" search="true"/>
 						<persistence type="property" />
 					</attribute>
-					<attribute qualifier="publicationDate"
-						type="java.util.Date">
+					<attribute qualifier="publicationDate" type="java.util.Date">
 						<modifiers read="true" write="true" search="true" />
 						<persistence type="property" />
 					</attribute>
@@ -175,8 +202,7 @@
 						<modifiers read="true" write="true" search="true" />
 						<persistence type="property" />
 					</attribute>
-					<attribute qualifier="numberOfPages"
-						type="java.lang.Integer">
+					<attribute qualifier="numberOfPages" type="java.lang.Integer">
 						<modifiers read="true" write="true" search="true" />
 						<persistence type="property" />
 					</attribute>
@@ -212,13 +238,11 @@
 						<modifiers read="true" write="true" search="true" />
 						<persistence type="property" />
 					</attribute>
-					<attribute qualifier="coverDesign"
-						type="java.lang.String">
+					<attribute qualifier="coverDesign" type="java.lang.String">
 						<modifiers read="true" write="true" search="true" />
 						<persistence type="property" />
 					</attribute>
-					<attribute qualifier="chapterNos"
-						type="java.lang.Integer">
+					<attribute qualifier="chapterNos" type="java.lang.Integer">
 						<modifiers read="true" write="true" search="true" />
 						<persistence type="property" />
 					</attribute>
@@ -250,6 +274,18 @@
 						<modifiers read="true" write="true" search="true" />
 						<persistence type="property" />
 					</attribute>
+					<attribute qualifier="link" type="com.dcx.bookmania.core.atomictypes.LinkAtomicType">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="expressDelivery" type="ExpressDeliverySet">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="bookKeywords" type="KeywordMap">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
 				</attributes>
 			</itemtype>
 			<itemtype code="DcxbookmaniaEditionVariantProduct"
@@ -262,7 +298,29 @@
 					</attribute>
 				</attributes>
 			</itemtype>
+			
+			<itemtype code="DcxbookmaniaMerchandise" autocreate="true" generate="true"
+				jaloclass="com.dcx.bookmania.core.jalo.DcxbookmaniaMerchandise" extends="Product">
+				<deployment table="DcxbookmaniaMerchandises" typecode="11001"/>
+				<attributes>
+					<attribute qualifier="type" type="java.lang.String">
+						<modifiers read="true" write="true" search="true"/>
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="design" type="java.lang.String">
+						<modifiers read="true" write="true" search="true"/>
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="material" type="java.lang.String">
+						<modifiers read="true" write="true" search="true"/>
+						<persistence type="property" />
+					</attribute>
+					<attribute qualifier="size" type="java.lang.Integer">
+						<modifiers read="true" write="true" search="true" />
+						<persistence type="property" />
+					</attribute>
+				</attributes>
+			</itemtype>
 		</typegroup>
-
 	</itemtypes>
 </items>

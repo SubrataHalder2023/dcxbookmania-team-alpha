@@ -190,15 +190,39 @@
 		<property name="populators">
 			<list>
 				<ref bean="dcxbookmaniaPopulator" />
+				<!-- <ref bean="dcxbookmaniaMPopulator" /> -->
 			</list>
 		</property>
 	</bean>
 	<bean id="dcxbookmaniaPopulator" class="com.dcx.bookmania.facades.populators.DcxbookmaniaPopulator"></bean>
+	<bean id="dcxbookmaniaMPopulator" class="com.dcx.bookmania.facades.populators.DcxbookmaniaMPopulator"></bean>
 	
+	<!-- custom solr populators -->
+<!-- 	<alias name="defaultCommerceSearchResultProductConverter" alias="commerceSearchResultProductConverter"/>
+    <bean id="defaultCommerceSearchResultProductConverter" parent="abstractPopulatingConverter">
+        <property name="targetClass" value="de.hybris.platform.commercefacades.product.data.ProductData"/>
+        <property name="populators">
+            <list>
+                <ref bean="dcxbookmaniaSearchResultVariantProductPopulator"/>
+                <ref bean="dcxRating"/>
+            </list>
+        </property>
+    </bean>
+    
+    <bean id="dcxbookmaniaSearchResultVariantProductPopulator" class="com.dcx.bookmania.facades.populators.DcxbookmaniaSearchResultVariantProductPopulator"></bean>
+	<bean id="dcxRating" class="com.dcx.bookmania.facades.populators.DcxbookmaniaMPopulator"></bean>
+     -->
+    
 	<!-- custom solr -->
 	<alias name="dcxbookmaniaSearchResultVariantProductPopulator" alias="commerceSearchResultProductPopulator"/>
     <bean id="dcxbookmaniaSearchResultVariantProductPopulator"
           class="com.dcx.bookmania.facades.populators.DcxbookmaniaSearchResultVariantProductPopulator"
+          parent="variantCommerceSearchResultProductPopulator">
+    </bean>
+    
+    <alias name="dcxRating" alias="commerceSearchResultProductPopulator"/>
+    <bean id="dcxRating"
+          class="com.dcx.bookmania.facades.populators.DcxRating"
           parent="variantCommerceSearchResultProductPopulator">
     </bean>
 </beans>
