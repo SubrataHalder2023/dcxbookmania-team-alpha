@@ -12,12 +12,25 @@
 
 	<div class="facet js-facet">
 
-	<div class="facet__name js-facet-name">
+	<div class="facet__name js-facet-name"style="
+    background-color: #FBB917;
+    margin: 0px 116px 10px 0px;
+    border-radius: 25px;
+    font-family: 'Dosis';
+    padding: 5px 0 5px 6px;
+">
 		<span class="glyphicon facet__arrow"></span>
 		<spring:theme code="search.nav.applied.facets"/>
 	</div>
 		<div class="facet__values js-facet-values">
-			<ul class="facet__list">
+			<ul class="facet__list"style="
+    background-color: #89C35C;
+    border-radius: 26px !important;
+    padding: 0px 0px 0px 0px;
+    font-family: 'Dosis';
+    font-size: 15px;
+    margin: 6px 137px 1px 0px;
+">
 				<c:forEach items="${pageData.breadcrumbs}" var="breadcrumb">
 					<li>
 						<c:url value="${breadcrumb.removeQuery.url}" var="removeQueryUrl"/>

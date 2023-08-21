@@ -7,6 +7,11 @@
 <%@ taglib prefix="formElement" tagdir="/WEB-INF/tags/responsive/formElement"%>
 <%@ taglib prefix="ycommerce" uri="http://hybris.com/tld/ycommercetags"%>
 
+<style>
+div.demo{
+width:50%;
+}
+</style>
 <spring:htmlEscape defaultHtmlEscape="true" />
 
 <c:set var="hideDescription" value="checkout.login.loginAndCheckout" />
@@ -21,6 +26,7 @@
 	</p>
 </c:if>
 
+<div class="demo">
 <form:form action="${action}" method="post" modelAttribute="loginForm">
 	<c:if test="${not empty message}">
 		<span class="has-error"> <spring:theme code="${message}" />
@@ -28,7 +34,7 @@
 	</c:if>	
 	
 		<formElement:formInputBox idKey="j_username" labelKey="login.email"
-			path="j_username" mandatory="true" />
+			path="j_username" mandatory="true"/>
 		<formElement:formPasswordBox idKey="j_password"
 			labelKey="login.password" path="j_password" inputCSS="form-control"
 			mandatory="true" />
@@ -58,4 +64,4 @@
 	</c:if>
 
 </form:form>
-
+</div>
