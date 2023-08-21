@@ -68,7 +68,13 @@ table td {
 	padding: 8px 6px;
 	vertical-align: top;
 }
+
+li:hover {
+	
+	background-color:honeydew;
+}
 </style>
+
 
 <div class="product-details page-title"
 	style="color: grey; font-family: Times New Roman; margin: 0; position: relative; text-align: center; font-size: 10px; text-shadow: 80px 80px 1px #fff; padding: 1rem;">

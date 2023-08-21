@@ -11,7 +11,14 @@
 <c:if test="${not empty facetData.values}">
 <ycommerce:testId code="facetNav_title_${facetData.name}">
 	<div class="facet js-facet">
-		<div class="facet__name js-facet-name">
+		<div class="facet__name js-facet-name"style="
+    background-color: #FBB917;
+    border-radius: 26px !important;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Dosis';
+    font-size: 19px;
+    margin: 0px 102px 0px 0px;
+">
 			<span class="glyphicon facet__arrow"></span>
 			<spring:theme code="search.nav.facetTitle" arguments="${facetData.name}"/>
 		</div>
@@ -69,7 +76,14 @@
 									<input type="checkbox" ${facetValue.selected ? 'checked="checked"' : ''}  class="facet__list__checkbox js-facet-checkbox sr-only" />
 									<span class="facet__list__label">
 										<span class="facet__list__mark"></span>
-										<span class="facet__list__text">
+										<span class="facet__list__text"style="
+    background-color: #89C35C;
+    border-radius: 26px !important;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Dosis';
+    font-size: 15px;
+    margin: 0px 100px 0px 0px;
+">
 											${fn:escapeXml(facetValue.name)}&nbsp;
 											<ycommerce:testId code="facetNav_count">
 												<span class="facet__value__count"><spring:theme code="search.nav.facetValueCount" arguments="${facetValue.count}"/></span>

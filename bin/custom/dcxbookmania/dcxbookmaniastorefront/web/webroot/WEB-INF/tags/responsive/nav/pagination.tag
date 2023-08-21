@@ -43,13 +43,22 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-md-4">
                             <div class="form-group">
-                                <label class="control-label " for="sortForm${top ? '1' : '2'}">
+                                <label class="control-label " for="sortForm${top ? '1' : '2'}"style="
+    background-color: #FBB917;
+    font-size: 3rem;
+    border-radius: 25px !important;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Dosis';
+">
                                     <spring:theme code="${themeMsgKey}.sortTitle"/>
                                 </label>
 
                                 <form id="sortForm${top ? '1' : '2'}" name="sortForm${top ? '1' : '2'}" method="get"
                                       action="#">
-                                    <select id="sortOptions${top ? '1' : '2'}" name="sort" class="form-control">
+                                    <select id="sortOptions${top ? '1' : '2'}" name="sort" class="form-control" style="
+    border-radius: 25px;
+    font-size: 15px;
+">
                                         <option disabled><spring:theme code="${themeMsgKey}.sortTitle"/></option>
                                         <c:forEach items="${searchPageData.sorts}" var="sort">
                                             <option value="${fn:escapeXml(sort.code)}" ${sort.selected? 'selected="selected"' : ''}>

@@ -81,10 +81,18 @@
 							<div class="key"><spring:theme code="popup.cart.total"/></div>
 							<div class="value"><format:price priceData="${cartData.totalPrice}"/></div>
 						</div>
-						<a href="${fn:escapeXml(cartUrl)}" class="btn btn-primary btn-block mini-cart-checkout-button">
+						<a href="${fn:escapeXml(cartUrl)}" class="btn btn-primary btn-block mini-cart-checkout-button"style="
+    background-color: #89C35C;
+    border-color: #89C35C;
+    border-radius:  25px !important;
+">
 							<spring:theme code="${miniCartProceed }" />
 						</a>
-						<a href="" class="btn btn-default btn-block js-mini-cart-close-button">
+						<a href="" class="btn btn-default btn-block js-mini-cart-close-button"style="
+    background-color: #FBB917;
+    border-color: #FBB917;
+    border-radius: 25px !important;
+">
 							<spring:theme code="cart.page.continue"/>
 						</a>
 				</c:when>
