@@ -11,5 +11,37 @@
   		<property name="location" value="/dcxbookmaniabackoffice-backoffice-labels/"/>
   		<property name="name" value="labels"/>
   	</bean>
+  	
+  	<alias name="extensionOneLoginInformationHandler" alias="loginInformationHandler"/>	
+	<bean id="extensionOneLoginInformationHandler" parent="defaultLoginInformationHandler" init-method="init" scope="session">
+		<property name="configuration">
+			<list merge="true">
+				<bean class="com.hybris.cockpitng.handler.login.LoginInformationConfigData">
+					<constructor-arg value="tenant"></constructor-arg>
+					<constructor-arg value="login.tenant.extension.one.label"></constructor-arg>
+					<constructor-arg value="java.lang.String"></constructor-arg>
+					<constructor-arg>
+						<value type="java.lang.Integer">3</value>
+					</constructor-arg>
+				</bean>
+				<bean class="com.hybris.cockpitng.handler.login.LoginInformationConfigData">
+					<constructor-arg value="enumExtensionOne"></constructor-arg>
+					<constructor-arg value="login.enum.extension.one"></constructor-arg>
+					<constructor-arg value="ENUM(backofficeadmingroup, backofficeauditgroup, backofficeworkflowusergroup, backofficeworkflowadmingroup, backofficeproductmanagergroup)"></constructor-arg>
+					<constructor-arg>
+						<value type="java.lang.Integer">4</value>
+					</constructor-arg>
+				</bean>
+				<bean class="com.hybris.cockpitng.handler.login.LoginInformationConfigData">
+					<constructor-arg value="modtwo"></constructor-arg>
+					<constructor-arg value="login.modtwo.boolean"></constructor-arg>
+					<constructor-arg value="java.lang.Boolean"></constructor-arg>
+					<constructor-arg >
+						<value type="java.lang.Integer">6</value>
+					</constructor-arg>
+				</bean>
+			</list>
+		</property>	
+	</bean>
 
 </beans>

@@ -29,10 +29,6 @@
         <cms:component component="${feature}" element="div" class="no-space yComponentWrapper"/>
     </cms:pageSlot
 
-    <cms:pageSlot position="Section4" var="feature" element="div" class="row no-margin" style=" padding:15px; background-color:yellowgreen;">
-        <cms:component component="${feature}" element="div" class="col-xs-6 col-md-3 no-space yComponentWrapper"/>
-    </cms:pageSlot>
-
     <cms:pageSlot position="Section5" var="feature" element="div">
         <cms:component component="${feature}" element="div" class="yComponentWrapper" style=" padding:15px; background-color:white ;"/>
     </cms:pageSlot>

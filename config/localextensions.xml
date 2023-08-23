@@ -46,6 +46,7 @@
     <extension name='notificationoccaddon' />
 	<extension name='commercefacades' />
 	<extension name='commerceservices' />
+	<extension name='acceleratorservices' />
 	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniacore"/>
 	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniabackoffice"/>
 	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniafacades"/>

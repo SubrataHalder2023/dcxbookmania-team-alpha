@@ -5,6 +5,7 @@
 
 # Insert Product taxes for US
 INSERT_UPDATE ProductTaxCode;productCode[unique=true];taxCode;taxArea[unique=true]
+;p8;TAX001;US
 
 # Insert Product taxes for JP
 INSERT_UPDATE ProductTaxCode;productCode[unique=true];taxCode;taxArea[unique=true]

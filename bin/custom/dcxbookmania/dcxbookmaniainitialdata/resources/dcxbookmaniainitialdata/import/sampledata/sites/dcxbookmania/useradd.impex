@@ -1,0 +1,26 @@
+# Sample customers
+#INSERT_UPDATE Customer;originalUid[unique=true];uid[unique=true];title(code);name;description;sessionLanguage(isocode);sessionCurrency(isocode);groups(uid);&userId
+#;DcxbookmaniaUser1@dcxbookmania.com;dcxbookmaniauser1@dcxbookmania.com;mr;dcxbookmania user 1;dcxbookmania user;en;GBP;$customergroup;user4
+#;DcxbookmaniaUser2@dcxbookmania.com;dcxbookmaniauser2@dcxbookmania.com;mr;dcxbookmania user 2;dcxbookmania user;de;USD;$customergroup;user5
+#;DcxbookmaniaUser3@dcxbookmania.com;dcxbookmaniauser3@dcxbookmania.com;mr;dcxbookmania user 3;dcxbookmania user;ja;JPY;$customergroup;user6
+
+
+$defaultCatalog=Default
+$defaultCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$defaultCatalog]),CatalogVersion.version[default=Staged])[default=$defaultCatalog:Staged]
+$defaultPassword=123456
+
+INSERT_UPDATE Employee ; UID[unique=true] ; password[default=$defaultPassword] ; backOfficeLoginDisabled ; groups(uid)[mode=append] ; description                  ; name          
+                       ; subrata@mail.com    ;                                ; false                   ; backofficeadmingroup, backofficeauditgroup, backofficeproductmanagergroup; User with multiple access; Subrata              
+                       ; ankit@dk.com    ;                                    ; false                   ; backofficeadmingroup       ; This Dk emoloyee is for testing purpose ; backoffice admin group
+                       ; harsg@bk.com    ;                                    ; false                   ; backofficeauditgroup      ; This Bk emoloyee is for testing purpose ; backoffice audit group
+                       ; qwerty@bq.com    ;                                    ; false                  ; backofficeworkflowusergroup      ; This Bq emoloyee is for testing purpose ;backoffice workflow usergroup
+                       ; kitty@bb.com    ;                                    ; false                   ; backofficeworkflowadmingroup      ; This Bb emoloyee is for testing purpose  ; backofficeworkflow admin group
+                       ; tello@bd.com    ;                                    ; false                   ; backofficeproductmanagergroup      ; This Bd emoloyee is for testing purpose ; backoffice product manager group
+					   
+INSERT_UPDATE Customer;uid[unique=true];name;groups(uid)[mode=append];sessionLanguage(isocode);sessionCurrency(isocode);password[default=$defaultPassword]
+;customer1@mail.com;Regular Customer;regulargroup;en;GBP
+;customerwithbronze@mail.com;CB;bronzegroup;en;GBP;
+;customerwithsilver@mail.com;CS;silvergroup;en;GBP;
+;customerwithgold@mail.com;CG;goldgroup;en;GBP;
+;customerwithplatinum@mail.com;CP;platinumgroup;en;GBP;
+

@@ -344,7 +344,7 @@ INSERT_UPDATE RotatingImagesComponent;$contentCV[unique=true];uid[unique=true];n
 ;;DcxbookmaniaHomepageCarouselComponent;Dcxbookmania Homepage Carousel;CarouselCyberBanner,CarouselCamcorderBanner,CarouselFunBanner;DcxbookmaniaHomepageCarouselComponent
 
 INSERT_UPDATE ProductCarouselComponent;$contentCV[unique=true];uid[unique=true];name;products(code,$productCV);scroll(code);popup;&componentRef
-;;DcxbookmaniaHomepageProductCarouselComponent;Dcxbookmania Homepage Product Carousel;300938,358639,553637,816802,1934793,1382080,1981415,816780,1934406,1986316,592506;allVisible;false;DcxbookmaniaHomepageProductCarouselComponent
+;;DcxbookmaniaHomepageProductCarouselComponent;Dcxbookmania Homepage Product Carousel;p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11;allVisible;false;DcxbookmaniaHomepageProductCarouselComponent
 
 INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active;cmsComponents(&componentRef)
 ;;Section1Slot-Homepage;Section1 Slot for Homepage;true;BrandsGaloreBanner

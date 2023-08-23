@@ -177,9 +177,9 @@ INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];cmsComponents
 ;;ProductLeftRefinements;RefinementFacetComponent
 
 INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];mime;realfilename;@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];folder(qualifier)[default='images']
-;;CamerasPagePreview;text/png;CamerasPage.png;$jarResourceCms/preview-images/electronics/CamerasPage.png
-;;DigitalCamerasPagePreview;text/png;DigitalCamerasPage.png;$jarResourceCms/preview-images/electronics/DigitalCamerasPage.png
-;;CameraAccessoriesPagePreview;text/png;CameraAccessoriesPage.png;$jarResourceCms/preview-images/electronics/CameraAccessoriesPage.png
+;;CamerasPagePreview;text/png;CamerasPage.png;$jarResourceCms/preview-images/dcxbookmania/CamerasPage.png
+;;DigitalCamerasPagePreview;text/png;DigitalCamerasPage.png;$jarResourceCms/preview-images/dcxbookmania/DigitalCamerasPage.png
+;;CameraAccessoriesPagePreview;text/png;CameraAccessoriesPage.png;$jarResourceCms/preview-images/dcxbookmania/CameraAccessoriesPage.png
 
 # Category Pages
 INSERT_UPDATE CategoryPage;$contentCV[unique=true];uid[unique=true];name;masterTemplate(uid,$contentCV);defaultPage;approvalStatus(code)[default='approved'];previewImage(code, $contentCV)
@@ -219,29 +219,29 @@ INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;pa
 
 # Preview Image for use in the CMS Cockpit for special ContentPages
 INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];mime;realfilename;@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];folder(qualifier)[default='images']
-;;addEditAddressPagePreview;text/png;AddEditAddressPage.png;$jarResourceCms/preview-images/electronics/AddEditAddressPage.png
-;;addressBookPagePreview;text/png;AddressBook.png;$jarResourceCms/preview-images/electronics/AddressBookPage.png
-;;cartPagePreview;text/png;CartPage.png;$jarResourceCms/preview-images/electronics/CartPage.png
-;;checkoutLoginPagePreview;text/png;CheckoutLoginPage.png;$jarResourceCms/preview-images/electronics/CheckoutLoginPage.png
-;;multiStepCheckoutSummaryPagePreview;text/png;MultiStepCheckoutSummaryPage.png;$jarResourceCms/preview-images/electronics/MultiStepCheckoutSummaryPage.png
-;;frequentlyAskedQuestionsPage;text/png;FrequentlyAskedQuestionsPage.png;$jarResourceCms/preview-images/electronics/FrequentlyAskedQuestionsPage.png;;;
-;;termsAndConditionsPage;text/png;TermsAndConditionsPage.png;$jarResourceCms/preview-images/electronics/TermsAndConditionsPage.png;;;
-;;homepagePreview;text/png;Homepage.png;$jarResourceCms/preview-images/electronics/Homepage.png
-;;loginPagePreview;text/png;LoginPage.png;$jarResourceCms/preview-images/electronics/LoginPage.png
-;;notFoundPagePreview;text/png;NotFoundPage.png;$jarResourceCms/preview-images/electronics/NotFoundPage.png
-;;orderConfirmationPagePreview;text/png;OrderConfirmationPage.png;$jarResourceCms/preview-images/electronics/OrderConfirmationPage.png
-;;orderDetailsPagePreview;text/png;OrderDetailsPage.png;$jarResourceCms/preview-images/electronics/OrderDetailsPage.png
-;;orderHistoryPagePreview;text/png;OrderHistoryPage.png;$jarResourceCms/preview-images/electronics/OrderHistoryPage.png
-;;paymentDetailsPagePreview;text/png;PaymentDetailsPage.png;$jarResourceCms/preview-images/electronics/PaymentDetailsPage.png
-;;productDetailsPagePreview;text/png;ProductDetailsPage.png;$jarResourceCms/preview-images/electronics/ProductDetailsPage.png
-;;productListPagePreview;text/png;ProductListPage.png;$jarResourceCms/preview-images/electronics/ProductListPage.png
-;;searchResultsEmptyPagePreview;text/png;SearchResultsEmptyPage.png;$jarResourceCms/preview-images/electronics/SearchResultsEmptyPage.png
-;;searchResultsPagePreview;text/png;SearchResultsPage.png;$jarResourceCms/preview-images/electronics/SearchResultsPage.png
-;;storefinderPagePreview;text/png;StoreFinderPage.png;$jarResourceCms/preview-images/electronics/StoreFinderPage.png
-;;updateForgottenPasswordPagePreview;text/png;UpdateForgottenPasswordPage.png;$jarResourceCms/preview-images/electronics/UpdateForgottenPasswordPage.png
-;;productGridPagePreview;text/png;ProductGridPage.png;$jarResourceCms/preview-images/electronics/ProductGridPage.png
-;;defaultCategoryPagePreview;text/png;DefaultCategoryPage.png;$jarResourceCms/preview-images/electronics/DefaultCategoryPage.png
-;;orderExpiredPagePreview;text/png;OrderExpiredPage.png;$jarResourceCms/preview-images/electronics/OrderExpiredPage.png;;;
+;;addEditAddressPagePreview;text/png;AddEditAddressPage.png;$jarResourceCms/preview-images/dcxbookmania/AddEditAddressPage.png
+;;addressBookPagePreview;text/png;AddressBook.png;$jarResourceCms/preview-images/dcxbookmania/AddressBookPage.png
+;;cartPagePreview;text/png;CartPage.png;$jarResourceCms/preview-images/dcxbookmania/CartPage.png
+;;checkoutLoginPagePreview;text/png;CheckoutLoginPage.png;$jarResourceCms/preview-images/dcxbookmania/CheckoutLoginPage.png
+;;multiStepCheckoutSummaryPagePreview;text/png;MultiStepCheckoutSummaryPage.png;$jarResourceCms/preview-images/dcxbookmania/MultiStepCheckoutSummaryPage.png
+;;frequentlyAskedQuestionsPage;text/png;FrequentlyAskedQuestionsPage.png;$jarResourceCms/preview-images/dcxbookmania/FrequentlyAskedQuestionsPage.png;;;
+;;termsAndConditionsPage;text/png;TermsAndConditionsPage.png;$jarResourceCms/preview-images/dcxbookmania/TermsAndConditionsPage.png;;;
+;;homepagePreview;text/png;Homepage.png;$jarResourceCms/preview-images/dcxbookmania/Homepage.png
+;;loginPagePreview;text/png;LoginPage.png;$jarResourceCms/preview-images/dcxbookmania/LoginPage.png
+;;notFoundPagePreview;text/png;NotFoundPage.png;$jarResourceCms/preview-images/dcxbookmania/NotFoundPage.png
+;;orderConfirmationPagePreview;text/png;OrderConfirmationPage.png;$jarResourceCms/preview-images/dcxbookmania/OrderConfirmationPage.png
+;;orderDetailsPagePreview;text/png;OrderDetailsPage.png;$jarResourceCms/preview-images/dcxbookmania/OrderDetailsPage.png
+;;orderHistoryPagePreview;text/png;OrderHistoryPage.png;$jarResourceCms/preview-images/dcxbookmania/OrderHistoryPage.png
+;;paymentDetailsPagePreview;text/png;PaymentDetailsPage.png;$jarResourceCms/preview-images/dcxbookmania/PaymentDetailsPage.png
+;;productDetailsPagePreview;text/png;ProductDetailsPage.png;$jarResourceCms/preview-images/dcxbookmania/ProductDetailsPage.png
+;;productListPagePreview;text/png;ProductListPage.png;$jarResourceCms/preview-images/dcxbookmania/ProductListPage.png
+;;searchResultsEmptyPagePreview;text/png;SearchResultsEmptyPage.png;$jarResourceCms/preview-images/dcxbookmania/SearchResultsEmptyPage.png
+;;searchResultsPagePreview;text/png;SearchResultsPage.png;$jarResourceCms/preview-images/dcxbookmania/SearchResultsPage.png
+;;storefinderPagePreview;text/png;StoreFinderPage.png;$jarResourceCms/preview-images/dcxbookmania/StoreFinderPage.png
+;;updateForgottenPasswordPagePreview;text/png;UpdateForgottenPasswordPage.png;$jarResourceCms/preview-images/dcxbookmania/UpdateForgottenPasswordPage.png
+;;productGridPagePreview;text/png;ProductGridPage.png;$jarResourceCms/preview-images/dcxbookmania/ProductGridPage.png
+;;defaultCategoryPagePreview;text/png;DefaultCategoryPage.png;$jarResourceCms/preview-images/dcxbookmania/DefaultCategoryPage.png
+;;orderExpiredPagePreview;text/png;OrderExpiredPage.png;$jarResourceCms/preview-images/dcxbookmania/OrderExpiredPage.png;;;
 
 # Site-wide Homepage
 UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];previewImage(code, $contentCV);linkComponents(&linkRef)
@@ -322,7 +322,7 @@ INSERT_UPDATE RotatingImagesComponent;$contentCV[unique=true];uid[unique=true];n
 ;;ElectronicsHomepageCarouselComponent;Electronics Homepage Carousel;CarouselCyberBanner,CarouselCamcorderBanner,CarouselFunBanner;ElectronicsHomepageCarouselComponent
 
 INSERT_UPDATE ProductCarouselComponent;$contentCV[unique=true];uid[unique=true];name;products(code,$productCV);scroll(code);popup;&componentRef
-;;ElectronicsHomepageProductCarouselComponent;Electronics Homepage Product Carousel;300938,358639,553637,816802,1934793,1382080,1981415,816780,1934406,1986316,592506;allVisible;false;ElectronicsHomepageProductCarouselComponent
+;;ElectronicsHomepageProductCarouselComponent;Electronics Homepage Product Carousel;p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11;allVisible;false;ElectronicsHomepageProductCarouselComponent
 
 INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active;cmsComponents(&componentRef)
 ;;Section1Slot-Homepage;Section1 Slot for Homepage;true;BrandsGaloreBanner
@@ -565,6 +565,7 @@ INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];positi
 ;;BodyContent-add-edit-address;BodyContent;;BodyContent-add-edit-address;;;
 
 ######  Account payment detail page
+
 # ContentSlot
 INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active;cmsComponents(&componentRef);;;
 ;;SideContent-payment-details;Side Content Slot for My Account payment-details;true;;;;
@@ -749,7 +750,7 @@ INSERT_UPDATE ProductCarouselComponent;$contentCV[unique=true];uid[unique=true];
 ;;ElectronicsHomepageProductCarouselComponent;ElectronicsHomepageProductCarouselComponent
 
 INSERT_UPDATE ProductCarouselComponent;$contentCV[unique=true];uid[unique=true];name;products(code,$productCV);scroll(code);popup;&componentRef
-;;NewElectronicsHomepageProductCarouselComponent;What's New Electronics Homepage Product Carousel;2278102,1992693,1981415,1934796,1776948,1641905,932577;allVisible;true;NewElectronicsHomepageProductCarouselComponent
+;;NewElectronicsHomepageProductCarouselComponent;Whats New Electronics Homepage Product Carousel;p21,p22,p23,p24,p25,p26,p27;allVisible;true;NewElectronicsHomepageProductCarouselComponent
 
 INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];cmsComponents(&componentRef)
 ;;Section3Slot-Homepage;ElectronicsHomepageProductCarouselComponent,NewElectronicsHomepageProductCarouselComponent
@@ -1039,7 +1040,7 @@ INSERT_UPDATE JspIncludeComponent;$contentCV[unique=true];uid[unique=true];name;
 ;;ImportCSVSavedCartComponent;Import CSV as Saved Cart Component;csv/importCSVSavedCartPage.jsp;;ImportCSVSavedCartComponent
 
 INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];mime;realfilename;@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];folder(qualifier)[default='images']
-;;importCSVSavedCartPagePreview;text/png;OrderHistoryPage.png;$jarResourceCms/preview-images/electronics/OrderHistoryPage.png
+;;importCSVSavedCartPagePreview;text/png;OrderHistoryPage.png;$jarResourceCms/preview-images/dcxbookmania/OrderHistoryPage.png
 
 UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];previewImage(code, $contentCV)
 ;;importCSVSavedCartPage;importCSVSavedCartPagePreview
@@ -1065,7 +1066,7 @@ INSERT_UPDATE JspIncludeComponent;$contentCV[unique=true];uid[unique=true];name;
 
 # Preview image
 INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];mime;realfilename;@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];folder(qualifier)[default='images']
-;;savedCartDetailsPagePreview;text/png;SavedCartDetailsPage.png;$jarResourceCms/preview-images/electronics/SavedCartDetailsPage.png
+;;savedCartDetailsPagePreview;text/png;SavedCartDetailsPage.png;$jarResourceCms/preview-images/dcxbookmania/SavedCartDetailsPage.png
 
 UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];previewImage(code, $contentCV)
 ;;savedCartDetailsPage;savedCartDetailsPagePreview
@@ -1075,7 +1076,7 @@ UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];previewImage(code, $
 ######## Account Saved Carts Page Start #######
 
 INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];mime;realfilename;@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];folder(qualifier)[default='images']
-;;savedCartsPagePreview;text/png;SavedCartsPage.png;$jarResourceCms/preview-images/electronics/SavedCartsPage.png
+;;savedCartsPagePreview;text/png;SavedCartsPage.png;$jarResourceCms/preview-images/dcxbookmania/SavedCartsPage.png
 
 UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];previewImage(code, $contentCV)
 ;;saved-carts;savedCartsPagePreview

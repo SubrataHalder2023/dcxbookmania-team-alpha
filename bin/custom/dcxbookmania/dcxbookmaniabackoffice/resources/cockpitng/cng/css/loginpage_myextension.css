@@ -1,0 +1,7 @@
+@import url("login.css");
+body {
+	background: pink;
+}
+ .login-wrapper:before {
+	background: url("images/my_bg.png") center no-repeat;
+}

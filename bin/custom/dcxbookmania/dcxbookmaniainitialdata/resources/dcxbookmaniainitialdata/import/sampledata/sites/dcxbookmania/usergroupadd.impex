@@ -1,0 +1,15 @@
+$regulargroup=regulargroup
+$bronzegroup=bronzegroup
+$silvergroup=silvergroup
+$goldgroup=goldgroup
+$platinumgroup=platinumgroup
+
+
+# Create Customer Group
+
+INSERT_UPDATE Usergroup;uid[unique=true];groups(uid)[mode=append]
+;$regulargroup;customergroup
+;$bronzegroup;customergroup
+;$silvergroup;customergroup
+;$goldgroup;customergroup
+;$platinumgroup;customergroup

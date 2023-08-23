@@ -1,0 +1,18 @@
+@import url("cockpit.css");
+body {
+  background: url('images/my_bg.png');
+}
+.yw-com_hybris_cockpitng_widgets_common_systembar div.yw-systemBarContainer {
+  background-color: green;
+}
+.yw-systemBarContainer .yw-systemItemsContainer .z-toolbarbutton {
+  display: none;
+}
+.cng-adminmode .mainToolbar > div.yw-logoContainer,
+.yw-systemBarContainer .yw-statusToolbar div.yw-logoContainer {
+  background: url('images/my_bg.jpg');
+  background-position: 0 -28px;
+  width: 200px;
+  height: 34px;
+  margin-top: 5px;
+}
