@@ -20,15 +20,15 @@
 
 <c:url value="${urlLink}" var="simpleResponsiveBannerUrl" />
 
-<div class="simple-banner banner__component--responsive">
+<div class="simple-banner banner__component--responsive" style=" padding:25px; background-color:white ;">
 	<c:set var="imagerDataJson" value="{${imagerData}}"/>
 	<c:choose>
 		<c:when test="${empty simpleResponsiveBannerUrl || simpleResponsiveBannerUrl eq '#' || !ycommerce:validateUrlScheme(simpleResponsiveBannerUrl)}">
-			<img class="js-responsive-image" data-media='${fn:escapeXml(imagerDataJson)}' alt='${altTextHtml}' title='${altTextHtml}' style="">
+			<img class="js-responsive-image" data-media='${fn:escapeXml(imagerDataJson)}' alt='${altTextHtml}' title='${altTextHtml}' style=" ">
 		</c:when>
 		<c:otherwise>
 			<a href="${fn:escapeXml(simpleResponsiveBannerUrl)}">
-				<img class="js-responsive-image" data-media='${fn:escapeXml(imagerDataJson)}' title='${altTextHtml}' alt='${altTextHtml}' style="">
+				<img class="js-responsive-image" data-media='${fn:escapeXml(imagerDataJson)}' title='${altTextHtml}' alt='${altTextHtml}' style="padding: 10px 10px 10px 10px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;	background-color:#FBB917;">
 			</a>
 		</c:otherwise>
 	</c:choose>
