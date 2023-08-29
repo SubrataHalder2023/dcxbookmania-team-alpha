@@ -1,4 +1,4 @@
-<%@ tag body-content="empty" trimDirectiveWhitespaces="true"%>
+ <%@ tag body-content="empty" trimDirectiveWhitespaces="true"%>
 <%@ attribute name="product" required="true"
 	type="de.hybris.platform.commercefacades.product.data.ProductData"%>
 <%@ taglib prefix="product" tagdir="/WEB-INF/tags/responsive/product"%>
@@ -64,6 +64,7 @@ li:hover {
 				Author : <span style="color:red; font-weight:800">${product.author}</span>
 			</h5>
 			<h5>Rating : <span  style="color:green; font-weight:800">${product.rating}</span> </h5>
+			<h5>Number Of Pages : <span  style="color:green; font-weight:800">${product.numberOfPages}</span> </h5>
 		</c:if>
 
 
@@ -77,10 +78,4 @@ li:hover {
 		</div>
 
 	</ycommerce:testId></li>
-
-
-
-
-
-
 
