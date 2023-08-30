@@ -1,4 +1,4 @@
- <%@ tag body-content="empty" trimDirectiveWhitespaces="true"%>
+<%@ tag body-content="empty" trimDirectiveWhitespaces="true"%>
 <%@ attribute name="product" required="true"
 	type="de.hybris.platform.commercefacades.product.data.ProductData"%>
 <%@ taglib prefix="product" tagdir="/WEB-INF/tags/responsive/product"%>
