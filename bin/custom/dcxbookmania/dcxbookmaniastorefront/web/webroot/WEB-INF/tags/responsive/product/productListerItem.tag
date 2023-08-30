@@ -64,6 +64,7 @@ li:hover {
 				Author : <span style="color:red; font-weight:800">${product.author}</span>
 			</h5>
 			<h5>Rating : <span  style="color:green; font-weight:800">${product.rating}</span> </h5>
+			<h5>Number Of Pages : <span  style="color:green; font-weight:800">${product.numberOfPages}</span> </h5>
 		</c:if>
 
 

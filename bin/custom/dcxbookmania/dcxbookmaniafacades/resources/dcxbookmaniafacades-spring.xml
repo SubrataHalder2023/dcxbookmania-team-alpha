@@ -225,4 +225,12 @@
           class="com.dcx.bookmania.facades.populators.DcxRating"
           parent="variantCommerceSearchResultProductPopulator">
     </bean>
+    
+     <alias name="dcxNumberOfPages" alias="commerceSearchResultProductPopulator"/>
+    <bean id="dcxNumberOfPages"
+          class="com.dcx.bookmania.facades.populators.DcxNumberOfPages"
+          parent="variantCommerceSearchResultProductPopulator">
+    </bean>
+   
 </beans>
+
