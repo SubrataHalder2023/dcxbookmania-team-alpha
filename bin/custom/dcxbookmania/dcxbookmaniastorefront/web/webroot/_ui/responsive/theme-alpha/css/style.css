@@ -8956,7 +8956,7 @@ ul.nav__links::after {
     position: relative;
     cursor: pointer;
     margin: 0 auto;
-    color: #89c35c;
+    color: #ffffff;
     font-size: 29px;
     top: 2px;
   }
@@ -9009,7 +9009,7 @@ ul.nav__links::after {
     text-decoration: none;
   }
   .navigation--middle .mobile__nav__row--btn span.glyphicon {
-    color: #89c35c;
+    color: #ffffff;
   }
 }
 .navigation--middle .mobile-menu {
@@ -9027,13 +9027,13 @@ ul.nav__links::after {
   position: relative;
   cursor: pointer;
   margin: 0 auto;
-  color: #89c35c;
+  color: #ffffff;
   font-size: 29px;
   top: 2px;
 }
 .navigation--bottom {
-  background-color: #89c35c;
-  border-bottom: 1px solid #89c35c;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 @media (max-width: 1023px) {
   .navigation--bottom {
@@ -9078,7 +9078,7 @@ ul.nav__links::after {
   }
 }
 .navigation--bottom.js-enquire-offcanvas-navigation .close-nav button span {
-  color: #89c35c;
+  color: #ffffff;
   font-size: 25px;
 }
 .navigation--bottom:before,
@@ -9470,7 +9470,7 @@ ul.nav__links::after {
     background-color: #ffffff;
     padding: 5px 12px 5px 20px;
     cursor: pointer;
-    color: #89c35c;
+    color: #ffffff;
     display: inline-block;
     width: 80%;
     float: left;
@@ -9482,7 +9482,7 @@ ul.nav__links::after {
 @media (max-width: 1023px) {
   .navigation--bottom .userGroup a {
     border: none;
-    color: #89c35c;
+    color: #ffffff;
   }
   .navigation--bottom .userGroup a:hover {
     background-color: transparent !important;
@@ -9589,7 +9589,7 @@ ul.nav__links::after {
     text-align: left;
     width: 80%;
     display: inline-block;
-    color: #89c35c;
+    color: #ffffff;
     padding: 20px 30% 20px 50px;
   }
 }
@@ -9631,7 +9631,7 @@ ul.nav__links::after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e032";
-  color: #89c35c;
+  color: #ffffff;
   font-size: 30px;
 }
 @media (max-width: 639px) {
@@ -13309,7 +13309,7 @@ a.product__listing .product__listing--promo:focus {
 }
 .cart__quote__edit .quote__head {
   color: #ffffff;
-  background-color: #89c35c;
+  background-color: #ffffff;
   padding: 20px 0;
   padding-left: 30px;
   padding-right: 30px;
@@ -13396,7 +13396,7 @@ textarea.quote__comments--textarea {
 .quote__comments--toggle:focus,
 .quote__form--toggle:focus {
   border: none;
-  outline: #89c35c;
+  outline: #ffffff;
 }
 .quote__form--toggle {
   color: #ffffff;

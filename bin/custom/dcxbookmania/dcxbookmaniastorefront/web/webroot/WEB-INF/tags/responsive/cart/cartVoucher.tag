@@ -27,7 +27,11 @@
                     id="js-voucher-code-text" maxlength="100" placeholder="${voucherInputPlaceholder}"
                     path="voucherCode" disabled="${disableUpdate}"/>
 		<c:if test="${not disableUpdate}">
-	        <button type="button" id="js-voucher-apply-btn" class="btn btn-primary btn-small cart-voucher__btn">
+	        <button type="button" id="js-voucher-apply-btn" class="btn btn-primary btn-small cart-voucher__btn"  style="
+    background-color: #89C35C;
+    border-color: #89C35C;
+    border-radius: 25px !important;
+">
 	            <spring:theme code="text.voucher.apply.button.label"/></button>
 		</c:if>
     </form:form>
