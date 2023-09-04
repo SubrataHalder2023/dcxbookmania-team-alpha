@@ -55,7 +55,11 @@
                 <div class="row">
                     <div class="col-sm-4 col-md-3 pull-right">
                         <ycommerce:testId code="checkoutButton">
-                            <button class="btn btn-primary btn-block btn--continue-checkout js-continue-checkout-button" data-checkout-url="${fn:escapeXml(checkoutUrl)}">
+                            <button class="btn btn-primary btn-block btn--continue-checkout js-continue-checkout-button" data-checkout-url="${fn:escapeXml(checkoutUrl)}"style="
+    background-color: #89C35C;
+    border-color: #89C35C;
+    border-radius:  25px !important;
+">
                                 <spring:theme code="checkout.checkout"/>
                             </button>
                         </ycommerce:testId>
@@ -70,7 +74,11 @@
                     </c:if>
 
                     <div class="col-sm-4 col-md-3 pull-right">
-                        <button class="btn btn-default btn-block btn--continue-shopping js-continue-shopping-button" data-continue-shopping-url="${fn:escapeXml(continueShoppingUrl)}">
+                        <button class="btn btn-default btn-block btn--continue-shopping js-continue-shopping-button" data-continue-shopping-url="${fn:escapeXml(continueShoppingUrl)}"style="
+    background-color: #FBB917;
+    border-color: #FBB917;
+    border-radius: 25px !important;
+">
                             <spring:theme code="cart.page.continue"/>
                         </button>
                     </div>

@@ -13,14 +13,24 @@
 <ul class="item__list item__list__cart">
     <li class="hidden-xs hidden-sm">
         <ul class="item__list--header">
-            <li class="item__toggle"></li>
-            <li class="item__image"></li>
-            <li class="item__info"><spring:theme code="basket.page.item"/></li>
-            <li class="item__price"><spring:theme code="basket.page.price"/></li>
-            <li class="item__quantity"><spring:theme code="basket.page.qty"/></li>
-            <li class="item__delivery"><spring:theme code="basket.page.delivery"/></li>
-            <li class="item__total--column"><spring:theme code="basket.page.total"/></li>
-            <li class="item__remove"></li>
+            <li class="item__toggle" style="background-color: #FBB917;"></li>
+            <li class="item__image"style="background-color: #FBB917;"></li>
+            <li class="item__info" style="
+    background-color: #FBB917;
+"><spring:theme code="basket.page.item"/></li>
+            <li class="item__price" style="
+    background-color: #FBB917;
+"><spring:theme code="basket.page.price"/></li>
+            <li class="item__quantity" style="
+    background-color: #FBB917;
+"><spring:theme code="basket.page.qty"/></li>
+            <li class="item__delivery" style="
+    background-color: #FBB917;
+"><spring:theme code="basket.page.delivery"/></li>
+            <li class="item__total--column"style="
+    background-color: #FBB917;"><spring:theme code="basket.page.total"/></li>
+            <li class="item__remove"style="
+    background-color: #FBB917;"></li>
         </ul>
     </li>
 

@@ -57,7 +57,11 @@
             </c:choose>
 
             <ycommerce:testId code="checkoutLinkInPopup">
-                <a href="${fn:escapeXml(cartUrl)}" class="btn btn-primary btn-block add-to-cart-button">
+                <a href="${fn:escapeXml(cartUrl)}" class="btn btn-primary btn-block add-to-cart-button"style="
+    background-color: #89C35C;
+    border-color: #89C35C;
+    border-radius:  25px !important;
+">
 	                <c:choose>
 		                <c:when test="${isQuote}">
 		                	<spring:theme code="quote.view" />
@@ -70,7 +74,11 @@
             </ycommerce:testId>
 
 
-            <a href="" class="btn btn-default btn-block js-mini-cart-close-button">
+            <a href="" class="btn btn-default btn-block js-mini-cart-close-button"style="
+    background-color: #FBB917;
+    border-color: #FBB917;
+    border-radius: 25px !important;
+">
                 <spring:theme code="cart.page.continue"/>
             </a>
 		</div>
