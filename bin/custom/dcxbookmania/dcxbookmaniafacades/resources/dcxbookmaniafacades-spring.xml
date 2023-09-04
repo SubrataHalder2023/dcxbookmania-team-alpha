@@ -225,4 +225,11 @@
           class="com.dcx.bookmania.facades.populators.DcxRating"
           parent="variantCommerceSearchResultProductPopulator">
     </bean>
+
+<alias name="dcxbookmaniaRegisterFacadeImpl" alias="customerFacade" />
+	<bean id="dcxbookmaniaRegisterFacadeImpl"
+		class="com.dcx.bookmania.facades.register.impl.DcxbookmaniaRegisterFacadeImpl"
+		parent="defaultCustomerFacade">
+	</bean>
+	
 </beans>

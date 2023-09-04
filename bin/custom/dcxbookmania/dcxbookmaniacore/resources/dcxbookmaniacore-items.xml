@@ -176,6 +176,25 @@
 				</attributes>
 			</itemtype>
 		</typegroup>
+		
+		<typegroup name="Customer">
+			<itemtype code="Customer" autocreate="false"
+				generate="false">
+				<attributes>
+					<attribute generate="true" autocreate="true"
+						qualifier="phonenumber" type="java.lang.String">
+						<persistence type="property" qualifier="" />
+						<modifiers read="true" write="true" search="true"/>
+					</attribute>
+					<attribute generate="true" autocreate="true"
+						qualifier="age" type="java.lang.String">
+						<persistence type="property" qualifier="" />
+						<modifiers read="true" write="true" search="true"/>
+					</attribute>
+				</attributes>
+			</itemtype>
+		</typegroup>
+		
 
 		<typegroup name="Dcxbookmania">
 			<itemtype code="DcxbookmaniaProduct" extends="Product"
