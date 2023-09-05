@@ -44,15 +44,17 @@
     <extension name='pcmbackofficesamplesaddon' />
     <extension name='platformbackoffice' />
     <extension name='notificationoccaddon' />
-	<extension name='commercefacades' />
-	<extension name='commerceservices' />
-	<extension name='acceleratorservices' />
-	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniacore"/>
-	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniabackoffice"/>
-	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniafacades"/>
-	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniafulfilmentprocess"/>
-	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniainitialdata"/>
-	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniatest"/>
-	<extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniastorefront"/>
+    <extension name='commercefacades' />
+    <extension name='commerceservices' />
+    <extension name='acceleratorservices' />
+    <extension name='swaggerintegration' />
+    <extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmaniaocc"/>
+    <extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniacore"/>
+    <extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniabackoffice"/>
+    <extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniafacades"/>
+    <extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniafulfilmentprocess"/>
+    <extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniainitialdata"/>
+    <extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniatest"/>
+    <extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniastorefront"/>
   </extensions>
 </hybrisconfig>

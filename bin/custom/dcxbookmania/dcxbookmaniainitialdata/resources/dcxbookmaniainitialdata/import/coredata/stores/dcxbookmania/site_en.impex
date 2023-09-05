@@ -10,5 +10,5 @@ $lang=en
 
 # Create CMS Site
 UPDATE CMSSite;uid[unique=true];name[lang=$lang];locale[lang=$lang]
- ;dcxbookmania;"dcxbookmania Site";en_GB
- ;dcxbookmania-standalone;"dcxbookmania Site Standalone";en_GB
+;dcxbookmania;"Dcxbookmania Site";en_GB
+;dcxbookmania-standalone;"Dcxbookmania Site Standalone";en_GB

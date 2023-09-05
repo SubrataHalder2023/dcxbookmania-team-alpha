@@ -107,11 +107,6 @@ INSERT_UPDATE DcxbookmaniaProduct;code[unique=true];$supercategories;manufacture
 ;p99;C10;Beth OLeary;TA0699;pieces;
 ;p100;C10;Kate Spencer;TA06100;pieces;
 
-# Custom DCX products
-
-INSERT_UPDATE DcxbookmaniaProduct;code[unique=true];$supercategories;manufacturerName;manufacturerAID;unit(code);ean;variantType(code);$catalogVersion;$approved
-;dp1;c1;Dcxbookmania manufacturer 1;DCXM001;pieces
-
 # Insert Products
 INSERT_UPDATE Product;code[unique=true];$supercategories;manufacturerName;manufacturerAID;unit(code);ean;variantType(code);$catalogVersion;$approved
 ;23191;1288, brand_5;Sony;ACC-CSPW;pieces;

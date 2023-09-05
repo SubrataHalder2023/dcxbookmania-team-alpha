@@ -24,7 +24,7 @@ UPDATE CMSSite;uid[unique=true];defaultPreviewCategory(code, $productCV);default
 
 # Site Logo
 INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];realfilename;@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];altText;folder(qualifier)[default='images']
-;;/images/theme/logo-hybris.svg;logo-hybris.svg;$siteResource/images/theme/logo-hybris.svg;image/png;hybris Accelerator;
+;;/images/theme/logo_bookmania.png;logo_bookmania.png;$siteResource/images/theme/logo_bookmania.png;image/png;hybris Accelerator;
 #;;/images/theme/logo-hybris_zh.png;logo-hybris_zh.png;$siteResource/images/theme/logo-hybris_zh.png;image/png;hybris Accelerator;
 
 # Site Logo Component
