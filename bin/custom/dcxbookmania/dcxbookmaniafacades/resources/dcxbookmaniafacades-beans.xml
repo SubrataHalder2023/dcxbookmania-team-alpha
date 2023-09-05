@@ -46,6 +46,14 @@
 		<property name="name" type="String"/>
 	</bean>
 	
+	<bean class="de.hybris.platform.commercefacades.user.data.RegisterData">
+	<property name="phoneNumber" type="String"/>
+</bean>
+	
+	<bean class="de.hybris.platform.commercefacades.user.data.RegisterData">
+	<property name="age" type="String"/>
+</bean>
+	
 	<bean class="com.dcx.bookmania.core.atomictypes.LinkAtomicType">
 		<property name="link" type="String"/>
 	</bean>
