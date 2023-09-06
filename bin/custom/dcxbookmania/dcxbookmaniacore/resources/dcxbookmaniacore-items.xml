@@ -181,13 +181,13 @@
 				generate="false">
 				<attributes>
 					<attribute generate="true" autocreate="true"
-						qualifier="phonenumber" type="java.lang.String">
-						<persistence type="property" qualifier="" />
+						qualifier="phoneNumber" type="java.lang.String">
+						<persistence type="property" />
 						<modifiers read="true" write="true" search="true"/>
 					</attribute>
 					<attribute generate="true" autocreate="true"
 						qualifier="age" type="java.lang.String">
-						<persistence type="property" qualifier="" />
+						<persistence type="property" />
 						<modifiers read="true" write="true" search="true"/>
 					</attribute>
 				</attributes>
