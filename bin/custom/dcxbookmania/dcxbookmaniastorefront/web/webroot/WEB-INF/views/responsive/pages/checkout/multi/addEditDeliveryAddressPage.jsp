@@ -77,7 +77,13 @@
 
 
                     <button id="addressSubmit" type="button"
-                        class="btn btn-primary btn-block checkout-next"><spring:theme code="checkout.multi.deliveryAddress.continue"/></button>
+                        class="btn btn-primary btn-block checkout-next"style="
+    width: 10em;
+    margin: auto;
+    border-radius: 25px !important;
+    border-color: #FBB917;
+    background-color: #FBB917;
+"><spring:theme code="checkout.multi.deliveryAddress.continue"/></button>
                 </ycommerce:testId>
             </jsp:body>
         </multi-checkout:checkoutSteps>

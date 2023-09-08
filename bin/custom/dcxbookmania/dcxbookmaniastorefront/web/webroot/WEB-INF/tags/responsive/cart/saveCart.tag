@@ -3,7 +3,7 @@
 
 <spring:htmlEscape defaultHtmlEscape="true" />
 
-<a href="#" class="save__cart--link cart__head--link js-save-cart-link">
+<a href="#" class="save__cart--link cart__head--link js-save-cart-link"style="color:#FBB917">
     <spring:theme code="basket.save.cart" />
 </a>
     

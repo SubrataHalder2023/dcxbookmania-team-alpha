@@ -14,7 +14,7 @@
 
 <div class="checkout-summary-headline"><spring:theme code="checkout.multi.order.summary" /></div>
 
-<div class="checkout-order-summary">
+<div class="checkout-order-summary"style="background-color:#89C35C;border-radius:25px;-webkit-text-stroke-width: medium;padding: 0px 5px 15px 0px;">
     <multi-checkout:deliveryCartItems cartData="${cartData}" showDeliveryAddress="${showDeliveryAddress}" />
 
     <c:forEach items="${cartData.pickupOrderGroups}" var="groupData" varStatus="status">

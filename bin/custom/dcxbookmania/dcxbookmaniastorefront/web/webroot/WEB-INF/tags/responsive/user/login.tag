@@ -48,18 +48,23 @@ width:50%;
 			</div>
 		<ycommerce:testId code="loginAndCheckoutButton">
 			<button type="submit" class="btn btn-primary btn-block" style="
-    background-color: #FBB917;
+    background-color: #89C35C;
     border: black;
-    border: 2px solid #FBB917;
+    border: 2px solid #89C35C;
     border-radius: 25px !important;
-    width: 67%;">
+    width: 75%;">
 				<spring:theme code="${actionNameKey}" />
 			</button>
 		</ycommerce:testId>
 
 	
 	<c:if test="${expressCheckoutAllowed}">
-		<button type="submit" class="btn btn-default btn-block expressCheckoutButton"><spring:theme code="text.expresscheckout.header" /></button>
+		<button type="submit" class="btn btn-default btn-block expressCheckoutButton"style="
+    background-color: #FBB917;
+    border: black;
+    border: 2px solid #FBB917;
+    border-radius: 25px !important;
+    width: 75%;"><spring:theme code="text.expresscheckout.header" /></button>
 		<input id="expressCheckoutCheckbox" name="expressCheckoutEnabled" type="checkbox" class="form left doExpressCheckout display-none" />
 	</c:if>
 
