@@ -140,7 +140,13 @@
                          </div>
                     </div>
 
-                    <button type="button" class="btn btn-primary btn-block submit_silentOrderPostForm checkout-next"><spring:theme code="checkout.multi.paymentMethod.continue"/></button>
+                    <button type="button" class="btn btn-primary btn-block submit_silentOrderPostForm checkout-next"style="
+    border-radius: 25px !important;
+    width: 10em;
+    margin: auto;
+    background-color: #FBB917;
+    border-color: #FBB917 !important;
+"><spring:theme code="checkout.multi.paymentMethod.continue"/></button>
                 </c:if>
 
 				<c:if test="${not empty paymentInfos}">

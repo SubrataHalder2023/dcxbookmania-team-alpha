@@ -23,7 +23,12 @@
 
 	<ycommerce:testId code="guest_Checkout_button">
 		<div class="form-group">
-			<button type="submit" disabled="disabled" class="btn btn-default btn-block guestCheckoutBtn"><spring:theme code="${actionNameKey}"/></button>
+			<button type="submit" disabled="disabled" class="btn btn-default btn-block guestCheckoutBtn" style="
+    background-color: #89C35C;
+    border: black;
+    border: 2px solid #89C35C;
+    border-radius: 25px !important;
+    width: 75%;" ><spring:theme code="${actionNameKey}"/></button>
 		</div>
 	</ycommerce:testId>
 

@@ -35,7 +35,13 @@
 							<p>${ycommerce:sanitizeHTML(deliveryMethodMessageHtml)}</p>
 						</div>
 					</div>
-					<button id="deliveryMethodSubmit" type="button" class="btn btn-primary btn-block checkout-next"><spring:theme code="checkout.multi.deliveryMethod.continue"/></button>
+					<button id="deliveryMethodSubmit" type="button" class="btn btn-primary btn-block checkout-next"style="
+    border-radius: 25px !important;
+    width: 10em;
+    margin: auto;
+    background-color: #FBB917;
+    border-color: #FBB917 !important;
+"><spring:theme code="checkout.multi.deliveryMethod.continue"/></button>
 				</ycommerce:testId>
 			</jsp:body>
 		</multi-checkout:checkoutSteps>

@@ -53,7 +53,7 @@
 	</c:if>
 
     <div class="col-xs-6 cart-totals-left grand-total"><spring:theme code="basket.page.totals.total"/></div>
-    <div class="col-xs-6 cart-totals-right text-right grand-total">
+    <div class="col-xs-6 cart-totals-right text-right grand-total"style="border-radius: 25px;background: #89C35C;padding: 1rem;margin-top: 1rem;margin-bottom: 1rem;width: fit-content;height: 5rem;">
         <ycommerce:testId code="cart_totalPrice_label">
             <c:choose>
                 <c:when test="${showTax}">

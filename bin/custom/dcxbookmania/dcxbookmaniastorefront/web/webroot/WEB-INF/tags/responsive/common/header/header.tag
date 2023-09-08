@@ -74,7 +74,7 @@
 									<ycommerce:testId code="header_signOut">
 										<c:url value="/logout" var="logoutUrl"/>
 										<form id="logoutForm" action="${logoutUrl}" method="post">
-                                            <button type="submit" class="btn" style="color:#154259;font-weight:400;display:block;background-color:inherit">
+                                            <button type="submit" class="btn" style="color:white;font-weight:400;display:block;background-color:#FBB917;border-radius:25px!important;">
                                                 <spring:theme code="header.link.logout" />
                                             </button>
                                             <sec:csrfInput />
@@ -91,7 +91,7 @@
 	</nav>
 	<%-- a hook for the my account links in desktop/wide desktop--%>
 	<div class="hidden-xs hidden-sm js-secondaryNavAccount collapse" id="accNavComponentDesktopOne">
-		<ul class="nav__links">
+		<ul class="nav__links"style="background-color:#FBB917">
 
 		</ul>
 	</div>
