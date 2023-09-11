@@ -16,5 +16,16 @@
 		<property name="flag" type="boolean"/>
 	</bean>
 	-->
+	
+	<bean class="de.hybris.platform.commercewebservicescommons.dto.product.ProductWsDTO">
+        <description>Representation of a Product</description>
+        <hints>
+            <hint name="wsRelated"/>
+            <hint name="alias">Product</hint>
+        </hints>
+        <property name="fonts" type="java.lang.String">
+            <description>Fonts used in the book</description>
+        </property>
+    </bean>
 
 </beans>

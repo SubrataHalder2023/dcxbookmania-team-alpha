@@ -14,5 +14,17 @@
            http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config/>
+    
+    <alias name="cwsProductConverter" alias="productConverter" />
+	<bean id="cwsProductConverter" parent="abstractPopulatingConverter">
+		<property name="targetClass" value="de.hybris.platform.commercefacades.product.data.ProductData" />
+		<property name="populators">
+			<list>
+				<ref bean="dcxbookmaniaPopulator" />
+				<!-- <ref bean="dcxbookmaniaMPopulator" /> -->
+			</list>
+		</property>
+	</bean>
+	<bean id="dcxbookmaniaPopulator" class="com.dcx.bookmania.facades.populators.DcxbookmaniaPopulator"></bean>
 
 </beans>
