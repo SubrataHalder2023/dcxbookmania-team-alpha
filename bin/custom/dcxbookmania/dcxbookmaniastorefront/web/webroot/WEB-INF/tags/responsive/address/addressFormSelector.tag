@@ -86,7 +86,7 @@
 							<div class="col-sm-6 col-sm-push-6 accountButtons">
 								<ycommerce:testId code="editAddress_saveAddress_button">
 									<button class="btn btn-primary btn-block change_address_button show_processing_message"
-											type="submit">
+											type="submit"style="background-color:#89C35C;border-color:#89C35C;border-radius:25px !important">
 										<spring:theme code="text.button.save" />
 									</button>
 								</ycommerce:testId>
@@ -94,7 +94,7 @@
 							<div class="col-sm-6 col-sm-pull-6 accountButtons">
 								<ycommerce:testId code="editAddress_cancelAddress_button">
 									<c:url value="${cancelUrl}" var="cancel"/>
-									<a class="btn btn-block btn-default" href="${fn:escapeXml(cancel)}">
+									<a class="btn btn-block btn-default" href="${fn:escapeXml(cancel)}"style="background-color:#FBB917;border-color:#FBB917;border-radius:25px !important">
 										<spring:theme code="text.button.cancel" />
 									</a>
 								</ycommerce:testId>
