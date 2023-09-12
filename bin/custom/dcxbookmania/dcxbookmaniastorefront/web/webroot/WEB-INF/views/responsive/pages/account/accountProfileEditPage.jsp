@@ -30,7 +30,7 @@
                         <div class="col-sm-6 col-sm-push-6">
                             <div class="accountActions">
                                 <ycommerce:testId code="personalDetails_savePersonalDetails_button">
-                                    <button type="submit" class="btn btn-primary btn-block">
+                                    <button type="submit" class="btn btn-primary btn-block"style="background-color:#89C35C;border-color:#89C35C;border-radius:25px !important">
                                         <spring:theme code="text.account.profile.saveUpdates" text="Save Updates"/>
                                     </button>
                                 </ycommerce:testId>
@@ -39,7 +39,7 @@
                         <div class="col-sm-6 col-sm-pull-6">
                             <div class="accountActions">
                                 <ycommerce:testId code="personalDetails_cancelPersonalDetails_button">
-                                    <button type="button" class="btn btn-default btn-block backToHome">
+                                    <button type="button" class="btn btn-default btn-block backToHome"style="background-color:#FBB917;border-color:#FBB917;border-radius:25px !important">
                                         <spring:theme code="text.account.profile.cancel" text="Cancel"/>
                                     </button>
                                 </ycommerce:testId>

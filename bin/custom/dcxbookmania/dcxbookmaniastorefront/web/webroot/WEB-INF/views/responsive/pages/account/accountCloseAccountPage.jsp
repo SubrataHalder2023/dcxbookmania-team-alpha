@@ -20,7 +20,7 @@
                     ${ycommerce:sanitizeHTML(retentionInfoHtml)}
                 </div>
             </div>
-            <button type="button" class="btn btn-primary pull-right js-close-account-popup-button" data-popup-title="<spring:theme code="text.account.closeAccount.popup.title"/>">
+            <button type="button" class="btn btn-primary pull-right js-close-account-popup-button" data-popup-title="<spring:theme code="text.account.closeAccount.popup.title"/>"style="background-color:red;border-color:red;border-radius:25px !important">
                 <spring:theme code="text.account.closeAccount.button"/>
             </button>
 
