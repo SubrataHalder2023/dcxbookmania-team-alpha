@@ -36,11 +36,11 @@
 	            <div class="modal-actions">
                     <div class="row">
                         <div class="col-sm-12">
-                            <button type="submit" class="btn btn-primary btn-block" id="saveCartButton" disabled="disabled">
+                            <button type="submit" class="btn btn-primary btn-block" id="saveCartButton" disabled="disabled"style="background-color:#FBB917;border-color:#FBB917;border-radius:25px !important">
                                 <spring:theme code="basket.save.cart.action.save"/>
                             </button>
 
-                            <button type="button" class="btn btn-default btn-block" id="cancelSaveCartButton">
+                            <button type="button" class="btn btn-default btn-block" id="cancelSaveCartButton"style="background-color:#89C35C;border-color:#89C35C;border-radius:25px !important">
                                 <spring:theme code="basket.save.cart.action.cancel"/>
                             </button>
                         </div>
