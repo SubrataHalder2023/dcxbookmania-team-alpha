@@ -214,23 +214,35 @@
      -->
     
 	<!-- custom solr -->
-	<alias name="dcxbookmaniaSearchResultVariantProductPopulator" alias="commerceSearchResultProductPopulator"/>
-    <bean id="dcxbookmaniaSearchResultVariantProductPopulator"
-          class="com.dcx.bookmania.facades.populators.DcxbookmaniaSearchResultVariantProductPopulator"
-          parent="variantCommerceSearchResultProductPopulator">
-    </bean>
-    
-    <alias name="dcxRating" alias="commerceSearchResultProductPopulator"/>
-    <bean id="dcxRating"
-          class="com.dcx.bookmania.facades.populators.DcxRating"
-          parent="variantCommerceSearchResultProductPopulator">
-    </bean>
-    
-     <alias name="dcxNumberOfPages" alias="commerceSearchResultProductPopulator"/>
-    <bean id="dcxNumberOfPages"
-          class="com.dcx.bookmania.facades.populators.DcxNumberOfPages"
-          parent="variantCommerceSearchResultProductPopulator">
-    </bean>
-   
+
+    <alias name="dcxbookmaniaSearchResultVariantProductPopulator"
+		alias="dcxbookmaniaSearchResultVariantProductPopulator" />
+	<bean id="dcxbookmaniaSearchResultVariantProductPopulator"
+		class="com.dcx.bookmania.facades.populators.DcxbookmaniaSearchResultVariantProductPopulator" />
+	<bean parent="modifyPopulatorList">
+		<property name="list"
+			ref="commerceSearchResultProductConverter" />
+		<property name="add" ref="dcxbookmaniaSearchResultVariantProductPopulator" />
+	</bean>
+
+   	<alias name="dcxRating"
+		alias="dcxRating" />
+	<bean id="dcxRating"
+		class="com.dcx.bookmania.facades.populators.DcxRating" />
+	<bean parent="modifyPopulatorList">
+		<property name="list"
+			ref="commerceSearchResultProductConverter" />
+		<property name="add" ref="dcxRating" />
+	</bean>    
+ 
+   	<alias name="dcxNumberOfPages"
+		alias="dcxNumberOfPages" />
+	<bean id="dcxNumberOfPages"
+		class="com.dcx.bookmania.facades.populators.DcxNumberOfPages" />
+	<bean parent="modifyPopulatorList">
+		<property name="list"
+			ref="commerceSearchResultProductConverter" />
+		<property name="add" ref="dcxNumberOfPages" />
+	</bean>
 </beans>
 
