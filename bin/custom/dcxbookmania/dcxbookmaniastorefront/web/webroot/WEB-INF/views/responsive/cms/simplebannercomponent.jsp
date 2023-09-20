@@ -5,7 +5,7 @@
 
 <c:url value="${urlLink}" var="simpleBannerUrl" />
 
-<div class="banner__component simple-banner"style="display:none">
+<div class="banner__component simple-banner">
 	<c:if test="${ycommerce:validateUrlScheme(media.url)}">
 		<c:choose>
 			<c:when test="${empty simpleBannerUrl || simpleBannerUrl eq '#' || !ycommerce:validateUrlScheme(simpleBannerUrl)}">
