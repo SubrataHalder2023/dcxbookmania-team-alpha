@@ -14,7 +14,7 @@
 				<formElement:formInputBox idKey="forgottenPwd.email" labelKey="forgottenPwd.email" path="email" mandatory="true"/>
 			</ycommerce:testId>
 			<ycommerce:testId code="login_forgotPasswordSubmit_button">
-				<button class="btn btn-primary btn-block" type="submit">
+				<button class="btn btn-primary btn-block" type="submit"style="background-color:#1589FF;border-color:#1589FF;border-radius:25px !important">
 					<spring:theme code="forgottenPwd.title"/>
 				</button>
 			</ycommerce:testId>
