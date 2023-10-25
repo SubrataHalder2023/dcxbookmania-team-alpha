@@ -9,8 +9,8 @@
         
         <!-- you should add all required extensions to this list, except platform extensions which are automatically required -->
         
-        <requires-extension name="commercewebservices"/>
         <requires-extension name="dcxbookmaniafacades"/>
+        <requires-extension name="commercewebservices"/>
         
         <coremodule generated="true" manager="com.dcx.bookmania.jalo.DcxbookmaniaoccManager" packageroot="com.dcx.bookmania"/>	
     

@@ -6,9 +6,12 @@ package com.dcx.bookmania.facades.register.impl;
 import static de.hybris.platform.servicelayer.util.ServicesUtil.validateParameterNotNullStandardMessage;
 
 import de.hybris.platform.commercefacades.customer.impl.DefaultCustomerFacade;
+import de.hybris.platform.commercefacades.user.data.CustomerData;
 import de.hybris.platform.commercefacades.user.data.RegisterData;
 import de.hybris.platform.commerceservices.customer.DuplicateUidException;
 import de.hybris.platform.core.model.user.CustomerModel;
+
+import java.util.UUID;
 
 import org.springframework.util.Assert;
 
@@ -34,6 +37,17 @@ public class DcxbookmaniaRegisterFacadeImpl extends DefaultCustomerFacade implem
 		final CustomerModel newCustomer = getModelService().create(CustomerModel.class);
 		setCommonPropertiesForRegister(registerData, newCustomer);
 		getCustomerAccountService().register(newCustomer, registerData.getPassword());
+	}
+
+	@Override
+	public CustomerData nextDummyCustomerData(final RegisterData registerData)
+	{
+		final CustomerModel userModel = new CustomerModel();
+		setCommonPropertiesForRegister(registerData, userModel);
+		userModel.setCustomerID(UUID.randomUUID().toString());
+		userModel.setAge(registerData.getAge());
+		userModel.setPhoneNumber(registerData.getPhoneNumber());
+		return getCustomerConverter().convert(userModel);
 	}
 
 	@Override

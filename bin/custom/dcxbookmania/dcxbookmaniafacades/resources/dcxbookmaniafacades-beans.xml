@@ -54,5 +54,10 @@
 		<property name="phoneNumber" type="String"/>
 		<property name="age" type="String"/>
 	</bean>
+	
+	<bean class="de.hybris.platform.commercefacades.user.data.CustomerData">
+		<property name="phoneNumber" type="String"/>
+		<property name="age" type="String"/>
+	</bean>
 
 </beans>

@@ -48,6 +48,10 @@
     <extension name='commerceservices' />
     <extension name='acceleratorservices' />
     <extension name='swaggerintegration' />
+    <extension name='commercewebservices' />
+    <extension name='commercewebservicescommons' />
+    <extension name='webservicescommons' />
+    
     <extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmaniaocc"/>
     <extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniacore"/>
     <extension dir="C:\DCXBOOKMANIA\hybris\bin/custom/dcxbookmania/dcxbookmaniabackoffice"/>

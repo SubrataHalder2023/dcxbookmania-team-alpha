@@ -27,5 +27,34 @@
             <description>Fonts used in the book</description>
         </property>
     </bean>
+    
+    <bean class="de.hybris.platform.commercewebservicescommons.dto.user.UserSignUpWsDTO">
+        <description>Representation of an UserSignUp. Consists of fields required to register new customer</description>
+        <hints>
+            <hint name="wsRelated"/>
+            <hint name="alias">UserSignUp</hint>
+        </hints>
+        <property name="age" type="String">
+            <description>age of the user</description>
+        </property>
+        <property name="phoneNumber" type="String">
+            <description>user phoneNumber</description>
+        </property>
+    </bean>
+    
+	<bean class="de.hybris.platform.commercewebservicescommons.dto.user.UserWsDTO"
+          extends="de.hybris.platform.commercewebservicescommons.dto.user.PrincipalWsDTO">
+        <description>Representation of an User</description>
+        <hints>
+            <hint name="wsRelated"/>
+            <hint name="alias">User</hint>
+        </hints>
+        <property name="age" type="String">
+            <description>age of the user</description>
+        </property>
+        <property name="phoneNumber" type="String">
+            <description>user phoneNumber</description>
+        </property>
+    </bean>
 
 </beans>

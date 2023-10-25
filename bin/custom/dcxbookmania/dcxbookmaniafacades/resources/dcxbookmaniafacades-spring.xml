@@ -244,5 +244,13 @@
 			ref="commerceSearchResultProductConverter" />
 		<property name="add" ref="dcxNumberOfPages" />
 	</bean>
+	
+	<!-- populator for age and phoneNumber -->
+    <alias name="dcxbookmaniaRegisterFacadeImpl" alias="customerFacade"/>
+	<bean id="dcxbookmaniaRegisterFacadeImpl"
+		class="com.dcx.bookmania.facades.register.impl.DcxbookmaniaRegisterFacadeImpl"
+		parent="defaultCustomerFacade">
+	</bean>
+	
 </beans>
 
