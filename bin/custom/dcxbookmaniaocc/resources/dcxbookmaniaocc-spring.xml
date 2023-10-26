@@ -15,16 +15,51 @@
 
     <context:annotation-config/>
     
-    <alias name="cwsProductConverter" alias="productConverter" />
+    <!-- <alias name="cwsProductConverter" alias="productConverter" />
 	<bean id="cwsProductConverter" parent="abstractPopulatingConverter">
 		<property name="targetClass" value="de.hybris.platform.commercefacades.product.data.ProductData" />
 		<property name="populators">
 			<list>
 				<ref bean="dcxbookmaniaPopulator" />
-				<!-- <ref bean="dcxbookmaniaMPopulator" /> -->
+				<ref bean="dcxbookmaniaMPopulator" />
 			</list>
 		</property>
 	</bean>
-	<bean id="dcxbookmaniaPopulator" class="com.dcx.bookmania.facades.populators.DcxbookmaniaPopulator"></bean>
+	<bean id="dcxbookmaniaPopulator" class="com.dcx.bookmania.facades.populators.DcxbookmaniaPopulator"></bean> -->
+	
+	<alias name="defaultWsCustomerFacade" alias="wsCustomerFacade"/>
+	<bean id="defaultWsCustomerFacade" parent="customerFacade">
+		<property name="userMatchingService" ref="wsUserMatchingService"/>
+		<property name="userFacade" ref="wsUserFacade"/>
+	</bean>
+	
+	
+	<!-- extra -->
+	
+	<alias name="dcxbookmaniaProductDao" alias="dcxbookmaniaProductDao" />
+	<bean id="dcxbookmaniaProductDao" class="com.dcx.bookmania.dao.impl.DcxbookmaniaProductDaoImpl">
+		<property name="flexibleSearchService" ref="flexibleSearchService" />
+		<property name="modelService" ref="modelService" />
+	</bean>
 
+	<bean id="dcxbookmaniaProductService" class="com.dcx.bookmania.services.impl.DcxbookmaniaProductServiceImpl" />
+
+
+	<alias name="dcxbookmaniaProductFacade" alias="dcxbookmaniaProductFacade" />
+	<bean id="dcxbookmaniaProductFacade" class="com.dcx.bookmania.facades.impl.DcxbookmaniaProductFacadeImpl">
+		<property name="dcxbookmaniaProductService" ref="dcxbookmaniaProductService" />
+		<property name="dcxbookmaniaProductConverter" ref="dcxbookmaniaProductConverter"/>
+	</bean>
+
+	<alias name="dcxbookmaniaProductConverter" alias="dcxbookmaniaProductConverter"/>
+	<bean id="dcxbookmaniaProductConverter" parent="abstractPopulatingConverter">
+		<property name="targetClass" value="de.hybris.platform.commercefacades.product.data.ProductData" />
+		<property name="populators">
+			<list>
+				<ref bean="dcxbookmaniaProductPopulator" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="dcxbookmaniaProductPopulator" class="com.dcx.bookmania.populator.DcxbookmaniaProductPopulator" />
 </beans>
