@@ -16,13 +16,13 @@
 	<ul class="item__list item__list__cart quick-order__list js-ul-container">
 		<li class="hidden-xs hidden-sm">
 			<ul class="item__list--header">
-				<li class="item__sku__input"><spring:theme code="text.quickOrder.page.product"/></li>
-				<li class="item__image"></li>
-				<li class="item__info"></li>
-				<li class="item__price"><spring:theme code="text.quickOrder.page.price"/></li>
-				<li class="item__quantity"><spring:theme code="text.quickOrder.page.qty"/></li>
-				<li class="item__total--column"><spring:theme code="text.quickOrder.page.total"/></li>
-				<li class="item__remove"></li>
+				<li class="item__sku__input"style="background-color: #FBB917;"><spring:theme code="text.quickOrder.page.product"/></li>
+				<li class="item__image"style="background-color: #FBB917;"></li>
+				<li class="item__info"style="background-color: #FBB917;"></li>
+				<li class="item__price"style="background-color: #FBB917;"><spring:theme code="text.quickOrder.page.price"/></li>
+				<li class="item__quantity"style="background-color: #FBB917;"><spring:theme code="text.quickOrder.page.qty"/></li>
+				<li class="item__total--column"style="background-color: #FBB917;"><spring:theme code="text.quickOrder.page.total"/></li>
+				<li class="item__remove"style="background-color: #FBB917;"></li>
 			</ul>
 		</li>
 

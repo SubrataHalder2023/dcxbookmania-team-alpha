@@ -38,9 +38,9 @@
                         <strong><spring:theme code="import.csv.savedCart.selectFile"/></strong>
 
                         <div class="form-group file-upload js-file-upload">
-                            <div class="file-upload__wrapper btn btn-default btn-small" id="chooseFileButton">
+                            <div class="file-upload__wrapper btn btn-default btn-small" id="chooseFileButton"style="background-color:#FBB917;border-color:#FBB917;border-radius:25px !important">
                                 <span><spring:theme code="import.csv.savedCart.chooseFile"/></span>
-                                <input type="file" id="csvFile" name="csvFile" class="file-upload__input js-file-upload__input"
+                                <input type="file" id="csvFile" name="csvFile" class="file-upload__input js-file-upload__input" 
                                        accept="text/csv" data-file-max-size="${fn:escapeXml(csvFileMaxSize)}"/>
                             </div>
                             <span class="file-upload__file-name js-file-upload__file-name">
@@ -53,7 +53,7 @@
             <div class="import-csv__actions js-import-csv">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-3 pull-right">
-                        <button class="btn btn-primary btn-block" type="submit" id="importButton">
+                        <button class="btn btn-primary btn-block" type="submit" id="importButton"style="background-color:#1589FF;border-color:#1589FF;border-radius:25px !important">
                             <spring:theme code="import.csv.savedCart.import"/>
                         </button>
                     </div>

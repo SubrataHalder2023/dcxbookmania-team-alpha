@@ -22,7 +22,7 @@
 							<div class="input-group">
 								<formElement:formInputBox idKey="storelocator-query" labelKey="storelocator.query" path="q" labelCSS="sr-only" inputCSS="form-control js-store-finder-search-input" mandatory="true"  placeholder="pickup.search.message" />
 								<span class="input-group-btn">
-									<button class="btn btn-primary" type="submit" data-search-empty="<spring:theme code="storelocator.error.no.results.subtitle" />">
+									<button class="btn btn-primary" type="submit" data-search-empty="<spring:theme code="storelocator.error.no.results.subtitle" />"style="background-color:#1589FF;border-color:#1589FF;border-radius:25px !important">
 										<span class="glyphicon glyphicon-search"></span>
 									</button>
 								</span>
@@ -32,7 +32,7 @@
 				</div>
 				<div class="col-sm-6">
 					<ycommerce:testId code="storeFinder_nearMe_button">
-						<button id="findStoresNearMe" class="btn btn-primary btn-block" type="button" disabled>
+						<button id="findStoresNearMe" class="btn btn-primary btn-block" type="button" disabled style="background-color:#1589FF;border-color:#1589FF;border-radius:25px !important">
 							<spring:theme code="storeFinder.findStoresNearMe"/>
 						</button>
 					</ycommerce:testId>
